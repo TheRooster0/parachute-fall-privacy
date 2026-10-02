@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Parachute Fall – Privacy Policy</title>
-<meta name="description" content="Privacy policy of the mobile game Parachute Fall (com.patpatt.game): the game collects no personal data, shows no ads and keeps your progress only on your device.">
+<meta name="description" content="Privacy policy of the mobile game Parachute Fall (com.patpatt.game): the game collects no personal data, uses the internet only for a connection check and the optional Instagram follow reward, uses no cookies, shows no ads and keeps your progress on your device.">
 <link rel="icon" type="image/png" href="favicon.png">
 <script>document.documentElement.className = 'js';</script>
 <style>
@@ -148,21 +148,22 @@
 <!-- ============================== English (reference version) ============================== -->
 <article id="en" data-lang="en" lang="en">
   <h1>Parachute Fall – Privacy Policy</h1>
-  <p class="dates">Effective date: 25 September 2026 · Last updated: 25 September 2026</p>
+  <p class="dates">Effective date: 25 September 2026 · Last updated: 2 October 2026</p>
   <p>This Privacy Policy explains how the mobile game <strong>Parachute Fall</strong> (Android package name <code>com.patpatt.game</code>, the “Game”) handles information. The Game is developed and published by the developer named on the Game’s Google Play page (“we”, “us”, “our”). If you have any questions, contact us at <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>.</p>
 
   <div class="summary">
     <h2>In short</h2>
     <ul>
-      <li>The Game does not collect, transmit, sell or share any personal data.</li>
+      <li>The Game itself does not collect, sell or share any personal data.</li>
       <li>There are no accounts or sign-ins, no advertisements, no analytics or tracking tools, and no in-app purchases.</li>
       <li>Your progress and settings are saved only on your own device.</li>
-      <li>The Game can be played completely offline.</li>
+      <li>The Game needs an internet connection. It uses it only to check that the connection works and, if you take part in the follow reward, to look up whether your reward code has been confirmed. These requests contain no personal data.</li>
+      <li>Neither the Game nor this website uses cookies.</li>
     </ul>
   </div>
 
   <h2>1. Information we collect</h2>
-  <p>We do not collect any personal data through the Game. The Game does not ask for your name, email address, phone number, location, contacts, photos or any other personal information, and it does not create or use advertising IDs or other device identifiers.</p>
+  <p>We do not collect any personal data through the Game. The Game does not ask for your name, email address, phone number, location, contacts, photos or any other personal information, and it does not create or use advertising IDs or other device identifiers. If you take part in the Instagram follow reward, the limited processing described in section 5 applies.</p>
 
   <h2>2. Information stored only on your device</h2>
   <p>To remember your game, the Game saves a small file in its private storage on your device (Android “shared preferences”). It contains:</p>
@@ -172,6 +173,7 @@
     <li>settings: sound, music, vibration, tilt control, graphics quality, control speed and language;</li>
     <li>gameplay statistics, such as the number of levels completed and obstacles dodged;</li>
     <li>the state of daily rewards and daily quests, whether the tutorial is finished and whether you have already been asked to rate the Game.</li>
+    <li>the follow reward: whether you have opened our Instagram page from the Game, the reward code the Game created for your device, whether you have sent it, and whether you have collected the reward.</li>
   </ul>
   <p>The Game never sends this file off your device, and we cannot see it. It is deleted when you uninstall the Game or clear its data. Gold and keys in the Game have no real-world value.</p>
 
@@ -185,50 +187,65 @@
   </ul>
 
   <h2>4. Permissions</h2>
-  <p>The Game does not ask for any permission that needs your approval (such as location, camera, microphone, contacts, files or phone). Its Android package contains two standard permissions that are granted automatically at installation:</p>
+  <p>The Game does not ask for any permission that needs your approval (such as location, camera, microphone, contacts, files or phone). Its Android package contains only permissions that are granted automatically at installation:</p>
   <ul>
+    <li><strong>INTERNET:</strong> for the internet connection the Game needs to be played (see below).</li>
+    <li><strong>ACCESS_NETWORK_STATE:</strong> to see whether your device is connected to a network, so that the Game can tell you at once when the connection is lost.</li>
     <li><strong>VIBRATE:</strong> for the vibration feedback described above.</li>
-    <li><strong>INTERNET:</strong> included by the Unity engine the Game is built with. The Game does not use the internet to send or receive your data; links you tap (for example, to rate the Game or to read this policy) open in Google Play or your web browser.</li>
+    <li><strong>An internal permission</strong> (<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) that Android’s own libraries use to stop other apps from sending messages to the Game. It gives the Game access to nothing.</li>
   </ul>
+  <p>The Game is played online, but it uses the internet for only two things:</p>
+  <ul>
+    <li><strong>Connection check:</strong> while the Game is open, it downloads a tiny file (<code>ping.txt</code>) from our service on GitHub Pages (<code>therooster0.github.io/parachute-fall-api</code>) about every 30 seconds. If that file cannot be reached, it asks Google’s connection check (<code>www.google.com/generate_204</code>). Without a connection, the Game pauses until the connection is back.</li>
+    <li><strong>Follow reward:</strong> when you tap VERIFY in the “Get a reward” window, the Game downloads a list of confirmed reward codes from the same service and looks for your code in it (see section 5). Your code is not sent; only the part of the list where your code would be is downloaded.</li>
+  </ul>
+  <p>These requests contain no personal data and no account or device identifier. As with any internet connection, the servers that receive them (GitHub, and Google for the fallback check) see your IP address and basic technical information, such as the time of the request. Links you tap (for example, to rate the Game, to open Instagram or to read this policy or our Terms of Use) open in Google Play, the Instagram app or your web browser.</p>
 
   <h2>5. Third-party services</h2>
   <p>The Game contains no third-party advertising, analytics, social network or payment SDKs. However, the following services may process information under their own privacy policies:</p>
   <ul>
     <li><strong>Google Play:</strong> when you download, install or update the Game, Google processes information as described in the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>. Through Google Play Console, Google gives us only aggregated statistics (for example, the number of installs) and, if you have allowed your device to share usage and diagnostics data, anonymous crash and performance reports that do not identify you.</li>
     <li><strong>Rating the Game:</strong> if you choose to rate the Game, it opens its page in the Google Play Store; ratings and reviews you post there are handled by Google.</li>
-    <li><strong>Unity:</strong> the Game is made with the Unity engine by Unity Technologies. We have turned off Unity’s optional data services in the Game (Unity Analytics, hardware statistics, crash and performance reporting). More information: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Privacy Policy</a>.</li>
+    <li><strong>Instagram (follow reward):</strong> if you tap FOLLOW in the “Get a reward” window, our Instagram page (@stamgamesdev) opens in the Instagram app or your browser. To confirm that you follow us, you can send the reward code shown in the Game to our account in an Instagram message. Our verification service then automatically reads the message through Meta’s Instagram API, uses the ID that Instagram gives the sender for our account to ask Instagram whether that account follows ours, and sends a short reply. It publishes only a one-way SHA-256 hash of a confirmed code, which cannot be linked to you or your Instagram account; it does not store your name, username, ID or message. Your message stays in our Instagram inbox like any other message; you can ask us to delete the conversation. Sending the code is your choice; the legal basis for this processing is your request to receive the reward (Art. 6(1)(b) GDPR). Meta processes your use of Instagram as described in the <a href="https://privacycenter.instagram.com/policy">Instagram Privacy Policy</a>.</li>
+    <li><strong>GitHub (our service):</strong> the connection check and the list of confirmed codes are hosted on GitHub Pages, and the verification service runs on GitHub Actions, both provided by GitHub, Inc. (USA). When the Game connects, GitHub may process technical data such as your IP address (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>).</li>
+    <li><strong>Google connection check:</strong> only if our service cannot be reached, the Game asks <code>www.google.com/generate_204</code>, which returns an empty answer; as with any website, Google sees your IP address (<a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>).</li>
+    <li><strong>Unity:</strong> the Game is made with the Unity engine by Unity Technologies. We have turned off Unity’s optional data services (Unity Analytics, hardware statistics, crash and performance reporting) and left Unity’s analytics module out of the Game entirely, so the Game sends no data to Unity. More information: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Privacy Policy</a>.</li>
     <li><strong>Android backup:</strong> if backup is turned on on your device, Android may include the Game’s saved data in your device backup stored in your Google Account. This backup is controlled by you and Google; we have no access to it.</li>
     <li><strong>This page:</strong> this privacy policy is hosted on GitHub Pages. When you open it, GitHub may process technical data such as your IP address (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>). We do not add any cookies, analytics or tracking to this page.</li>
   </ul>
 
-  <h2>6. Sharing and selling of data</h2>
-  <p>Because we do not collect personal data through the Game, we have nothing to sell, rent, trade or share with anyone, including advertisers and data brokers. We do not transfer any data to other countries.</p>
+  <h2>6. Cookies and similar technologies</h2>
+  <p>The Game does not use cookies, web beacons, advertising IDs, device fingerprinting or any similar tracking technology. The only thing it stores on your device is the save file described in section 2, which is strictly necessary for the Game to work and never leaves your device. This website (this policy and our Terms of Use) sets no cookies and loads nothing from other websites. That is why neither the Game nor this website shows a cookie consent banner: there is nothing to consent to.</p>
 
-  <h2>7. Advertising and in-app purchases</h2>
-  <p>The Game shows no advertisements. Nothing can currently be bought with real money: shop items that would cost real money are marked “Soon”. Gold and keys earned in the Game have no real-world value. If we add features in the future that involve data (for example, in-app purchases whose payments would be processed by Google Play), we will update this policy before those features become available.</p>
+  <h2>7. Sharing and selling of data</h2>
+  <p>Because the Game itself collects no personal data, we have nothing to sell, rent, trade or share with anyone, including advertisers and data brokers. The services described in sections 4 and 5 (Google, GitHub, Meta) are based in the United States and may process technical data, such as IP addresses, there under their own safeguards.</p>
 
-  <h2>8. Children’s privacy</h2>
-  <p>The Game is suitable for a general audience, including children. Because the Game does not collect personal information from anyone, children can play it without providing any personal data. We do not knowingly collect personal information from children under 13 (or under the minimum age that applies in their country). If you are a parent or guardian and believe that your child has sent us personal information (for example, by email), please contact us and we will delete it.</p>
+  <h2>8. Advertising and in-app purchases</h2>
+  <p>The Game shows no advertisements. Nothing can currently be bought with real money: shop items that would cost real money are marked “Soon”. Gold and keys earned in the Game have no real-world value. If we add features in the future that involve data (for example, in-app purchases whose payments would be processed by Google Play), we will update this policy before those features become available. For the rules on in-game items, purchases and refunds, see our <a href="terms.html?lang=en">Terms of Use</a>.</p>
 
-  <h2>9. If you contact us</h2>
+  <h2>9. Children’s privacy</h2>
+  <p>The Game is suitable for a general audience, including children. Because the Game does not collect personal information from anyone, children can play it without providing any personal data. We do not knowingly collect personal information from children under 13 (or under the minimum age that applies in their country). If you are a parent or guardian and believe that your child has sent us personal information (for example, by email), please contact us and we will delete it. The Instagram follow reward is meant for players who are old enough to use Instagram under its terms (at least 13).</p>
+
+  <h2>10. If you contact us</h2>
   <p>If you email us, we receive your email address and the content of your message. We use them only to reply to you, do not share them with anyone, and delete them when they are no longer needed to handle your request.</p>
 
-  <h2>10. Data retention and deletion</h2>
+  <h2>11. Data retention and deletion</h2>
   <ul>
     <li><strong>Data on your device:</strong> stays until you uninstall the Game or clear its data (Android Settings → Apps → Parachute Fall → Storage → Clear data). This permanently resets your progress.</li>
     <li><strong>Emails:</strong> kept only as long as needed to reply to you. You can ask us to delete them at any time.</li>
+    <li><strong>Follow reward messages:</strong> the verification service reads new messages within minutes and keeps only the hash of a confirmed code and the time of the last message it read. Messages stay in our Instagram inbox until they are deleted; write to us if you would like us to delete yours.</li>
   </ul>
 
-  <h2>11. Your rights</h2>
+  <h2>12. Your rights</h2>
   <p>Depending on where you live, laws such as the EU and UK General Data Protection Regulation (GDPR), Türkiye’s Personal Data Protection Law No. 6698 (KVKK) and the California Consumer Privacy Act (CCPA/CPRA) give you rights over your personal data, such as the right to access, correct, delete or port it, to object to or restrict its processing, and to withdraw your consent. Because the Game does not collect personal data, these rights mainly concern emails you send us. To exercise them, write to <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>; we will reply within 30 days. You also have the right to complain to the data protection authority in your country. We do not sell or share personal information as defined by the CCPA.</p>
 
-  <h2>12. Security</h2>
-  <p>Your game data stays in the Game’s private storage on your device, protected by Android’s app sandbox, and is not sent over the internet. Emails you send us are protected by the security measures of our email provider.</p>
+  <h2>13. Security</h2>
+  <p>Your game data stays in the Game’s private storage on your device, protected by Android’s app sandbox, and is not sent over the internet. The Game’s connection check and code lookup use encrypted HTTPS connections. Emails you send us are protected by the security measures of our email provider.</p>
 
-  <h2>13. Changes to this policy</h2>
+  <h2>14. Changes to this policy</h2>
   <p>We may update this policy, for example when the Game gets new features. The new version will be published on this page with a new “Last updated” date, and the link in the Game’s Settings always leads here. If a change affects how your data is handled, we will update this policy before the change takes effect in the Game.</p>
 
-  <h2>14. Contact</h2>
+  <h2>15. Contact</h2>
   <p>Questions or requests about this privacy policy: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">This policy is available in several languages. If a translation differs from the English version, the English version applies.</p>
@@ -237,21 +254,22 @@
 <!-- ============================== Türkçe ============================== -->
 <article id="tr" data-lang="tr" lang="tr">
   <h1>Parachute Fall – Gizlilik Politikası</h1>
-  <p class="dates">Yürürlük tarihi: 25 Eylül 2026 · Son güncelleme: 25 Eylül 2026</p>
+  <p class="dates">Yürürlük tarihi: 25 Eylül 2026 · Son güncelleme: 2 Ekim 2026</p>
   <p>Bu Gizlilik Politikası, <strong>Parachute Fall</strong> mobil oyununun (Android paket adı <code>com.patpatt.game</code>, “Oyun”) bilgileri nasıl ele aldığını açıklar. Oyun, Google Play’deki sayfasında adı geçen geliştirici (“biz”) tarafından geliştirilir ve yayınlanır. Sorularınız için <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a> adresine yazabilirsiniz.</p>
 
   <div class="summary">
     <h2>Kısaca</h2>
     <ul>
-      <li>Oyun hiçbir kişisel veri toplamaz, göndermez, satmaz ve paylaşmaz.</li>
+      <li>Oyunun kendisi hiçbir kişisel veri toplamaz, satmaz ve paylaşmaz.</li>
       <li>Hesap veya oturum açma, reklam, analiz ya da izleme aracı ve uygulama içi satın alma yoktur.</li>
       <li>İlerlemeniz ve ayarlarınız yalnızca kendi cihazınızda saklanır.</li>
-      <li>Oyun tamamen çevrimdışı oynanabilir.</li>
+      <li>Oyun internet bağlantısı gerektirir. İnterneti yalnızca bağlantının çalıştığını kontrol etmek ve takip ödülüne katılırsanız ödül kodunuzun onaylanıp onaylanmadığına bakmak için kullanır. Bu isteklerde kişisel veri bulunmaz.</li>
+      <li>Ne Oyun ne de bu web sitesi çerez kullanır.</li>
     </ul>
   </div>
 
   <h2>1. Topladığımız bilgiler</h2>
-  <p>Oyun aracılığıyla hiçbir kişisel veri toplamayız. Oyun adınızı, e-posta adresinizi, telefon numaranızı, konumunuzu, rehberinizi, fotoğraflarınızı veya başka bir kişisel bilginizi istemez; reklam kimliği ya da başka bir cihaz tanımlayıcısı oluşturmaz veya kullanmaz.</p>
+  <p>Oyun aracılığıyla hiçbir kişisel veri toplamayız. Oyun adınızı, e-posta adresinizi, telefon numaranızı, konumunuzu, rehberinizi, fotoğraflarınızı veya başka bir kişisel bilginizi istemez; reklam kimliği ya da başka bir cihaz tanımlayıcısı oluşturmaz veya kullanmaz. Instagram takip ödülüne katılırsanız 5. bölümde açıklanan sınırlı işleme geçerlidir.</p>
 
   <h2>2. Yalnızca cihazınızda saklanan bilgiler</h2>
   <p>Oyun, kaldığınız yeri hatırlamak için cihazınızda kendisine ait özel depolama alanına (Android “shared preferences”) küçük bir dosya kaydeder. Bu dosyada şunlar bulunur:</p>
@@ -261,6 +279,7 @@
     <li>ayarlar: ses, müzik, titreşim, eğme kontrolü, grafik kalitesi, kontrol hızı ve dil;</li>
     <li>oyun istatistikleri, örneğin tamamlanan bölüm ve kaçılan engel sayısı;</li>
     <li>günlük ödüllerin ve günlük görevlerin durumu, eğitimin bitip bitmediği ve Oyunu puanlamanızın istenip istenmediği.</li>
+    <li>takip ödülü: Instagram sayfamızı Oyundan açıp açmadığınız, Oyunun cihazınız için oluşturduğu ödül kodu, bu kodu gönderip göndermediğiniz ve ödülü alıp almadığınız.</li>
   </ul>
   <p>Oyun bu dosyayı hiçbir zaman cihazınızın dışına göndermez ve biz onu göremeyiz. Oyunu kaldırdığınızda veya verilerini temizlediğinizde silinir. Oyundaki altın ve anahtarların gerçek bir değeri yoktur.</p>
 
@@ -274,50 +293,65 @@
   </ul>
 
   <h2>4. İzinler</h2>
-  <p>Oyun, onayınızı gerektiren hiçbir izin (konum, kamera, mikrofon, rehber, dosyalar veya telefon gibi) istemez. Android paketinde, kurulumda otomatik olarak verilen iki standart izin bulunur:</p>
+  <p>Oyun, onayınızı gerektiren hiçbir izin (konum, kamera, mikrofon, rehber, dosyalar veya telefon gibi) istemez. Android paketinde yalnızca kurulumda otomatik olarak verilen izinler bulunur:</p>
   <ul>
+    <li><strong>INTERNET:</strong> Oyunun oynanması için gereken internet bağlantısı için (aşağıya bakın).</li>
+    <li><strong>ACCESS_NETWORK_STATE (ağ durumu):</strong> cihazınızın bir ağa bağlı olup olmadığını görmek, böylece bağlantı koptuğunda bunu size hemen bildirmek için.</li>
     <li><strong>VIBRATE (titreşim):</strong> yukarıda açıklanan titreşimli geri bildirim için.</li>
-    <li><strong>INTERNET:</strong> Oyunun yapıldığı Unity motoru tarafından eklenir. Oyun verilerinizi göndermek veya almak için interneti kullanmaz; dokunduğunuz bağlantılar (örneğin Oyunu puanlamak veya bu politikayı okumak için) Google Play’de ya da web tarayıcınızda açılır.</li>
+    <li><strong>Dahili bir izin</strong> (<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>): Android’in kendi kütüphaneleri, diğer uygulamaların Oyuna mesaj göndermesini engellemek için kullanır. Oyuna hiçbir şeye erişim sağlamaz.</li>
   </ul>
+  <p>Oyun internetle oynanır, ancak interneti yalnızca iki iş için kullanır:</p>
+  <ul>
+    <li><strong>Bağlantı kontrolü:</strong> Oyun açıkken yaklaşık 30 saniyede bir, GitHub Pages’teki hizmetimizden (<code>therooster0.github.io/parachute-fall-api</code>) çok küçük bir dosya (<code>ping.txt</code>) indirir. Bu dosyaya ulaşılamazsa Google’ın bağlantı kontrolüne (<code>www.google.com/generate_204</code>) sorar. Bağlantı yoksa Oyun, bağlantı geri gelene kadar duraklar.</li>
+    <li><strong>Takip ödülü:</strong> “Ödül Kazan” penceresinde DOĞRULA’ya dokunduğunuzda Oyun, aynı hizmetten onaylanmış ödül kodlarının listesini indirir ve kodunuzu orada arar (5. bölüme bakın). Kodunuz gönderilmez; yalnızca listenin kodunuzun bulunabileceği kısmı indirilir.</li>
+  </ul>
+  <p>Bu isteklerde kişisel veri, hesap veya cihaz tanımlayıcısı bulunmaz. Her internet bağlantısında olduğu gibi, istekleri alan sunucular (GitHub ve yedek kontrol için Google) IP adresinizi ve isteğin zamanı gibi temel teknik bilgileri görür. Dokunduğunuz bağlantılar (örneğin Oyunu puanlamak, Instagram’ı açmak, bu politikayı veya Kullanım Koşullarımızı okumak için) Google Play’de, Instagram uygulamasında ya da web tarayıcınızda açılır.</p>
 
   <h2>5. Üçüncü taraf hizmetleri</h2>
   <p>Oyunda üçüncü tarafların reklam, analiz, sosyal ağ veya ödeme yazılımları (SDK) bulunmaz. Ancak aşağıdaki hizmetler, kendi gizlilik politikaları kapsamında bilgi işleyebilir:</p>
   <ul>
     <li><strong>Google Play:</strong> Oyunu indirdiğinizde, kurduğunuzda veya güncellediğinizde Google, bilgileri <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>’nda açıklandığı şekilde işler. Google, Google Play Console üzerinden bize yalnızca toplu istatistikler (örneğin yükleme sayısı) ve cihazınızın kullanım ve teşhis verilerini paylaşmasına izin verdiyseniz sizi tanımlamayan anonim çökme ve performans raporları sunar.</li>
     <li><strong>Oyunu puanlama:</strong> Oyunu puanlamayı seçerseniz Oyun, Google Play Store’daki sayfasını açar; orada verdiğiniz puanları ve yazdığınız yorumları Google yönetir.</li>
-    <li><strong>Unity:</strong> Oyun, Unity Technologies’in Unity motoruyla yapılmıştır. Unity’nin isteğe bağlı veri hizmetlerini (Unity Analytics, donanım istatistikleri, çökme ve performans raporlama) Oyunda kapattık. Ayrıntılar: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Gizlilik Politikası</a>.</li>
+    <li><strong>Instagram (takip ödülü):</strong> “Ödül Kazan” penceresinde TAKİP ET’e dokunursanız Instagram sayfamız (@stamgamesdev) Instagram uygulamasında ya da tarayıcınızda açılır. Bizi takip ettiğinizi onaylatmak için Oyunda gösterilen ödül kodunu hesabımıza Instagram mesajıyla gönderebilirsiniz. Doğrulama hizmetimiz bu mesajı Meta’nın Instagram API’si üzerinden otomatik olarak okur, Instagram’ın gönderene hesabımız için verdiği kimliği kullanarak o hesabın bizi takip edip etmediğini Instagram’a sorar ve kısa bir yanıt gönderir. Onaylanan bir kodun yalnızca tek yönlü SHA-256 özetini yayımlar; bu özet sizinle veya Instagram hesabınızla ilişkilendirilemez. Adınızı, kullanıcı adınızı, kimliğinizi veya mesajınızı saklamaz. Mesajınız, diğer mesajlar gibi Instagram gelen kutumuzda kalır; yazışmanın silinmesini isteyebilirsiniz. Kodu göndermek sizin tercihinizdir; bu işlemenin hukuki sebebi, ödülü alma talebinizdir (GDPR md. 6(1)(b); KVKK md. 5(2)(c)). Meta, Instagram kullanımınızı <a href="https://privacycenter.instagram.com/policy">Instagram Gizlilik İlkesi</a>’nde açıklandığı şekilde işler.</li>
+    <li><strong>GitHub (hizmetimiz):</strong> Bağlantı kontrolü ve onaylanmış kod listesi GitHub Pages’te barındırılır, doğrulama hizmeti GitHub Actions’ta çalışır; ikisini de GitHub, Inc. (ABD) sağlar. Oyun bağlandığında GitHub, IP adresiniz gibi teknik verileri işleyebilir (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Gizlilik Bildirimi</a>).</li>
+    <li><strong>Google bağlantı kontrolü:</strong> Yalnızca hizmetimize ulaşılamazsa Oyun, boş bir yanıt döndüren <code>www.google.com/generate_204</code> adresine sorar; her web sitesinde olduğu gibi Google IP adresinizi görür (<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>).</li>
+    <li><strong>Unity:</strong> Oyun, Unity Technologies’in Unity motoruyla yapılmıştır. Unity’nin isteğe bağlı veri hizmetlerini (Unity Analytics, donanım istatistikleri, çökme ve performans raporlama) kapattık ve Unity’nin analiz modülünü Oyuna hiç dahil etmedik; bu yüzden Oyun Unity’ye hiçbir veri göndermez. Ayrıntılar: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Gizlilik Politikası</a>.</li>
     <li><strong>Android yedekleme:</strong> Cihazınızda yedekleme açıksa Android, Oyunun kayıtlı verilerini Google Hesabınızda saklanan cihaz yedeğine ekleyebilir. Bu yedeği siz ve Google yönetirsiniz; bizim erişimimiz yoktur.</li>
     <li><strong>Bu sayfa:</strong> Bu gizlilik politikası GitHub Pages’te yayınlanır. Sayfayı açtığınızda GitHub, IP adresiniz gibi teknik verileri işleyebilir (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Gizlilik Bildirimi</a>). Bu sayfaya çerez, analiz veya izleme aracı eklemiyoruz.</li>
   </ul>
 
-  <h2>6. Verilerin paylaşılması ve satılması</h2>
-  <p>Oyun aracılığıyla kişisel veri toplamadığımız için reklamverenler ve veri simsarları dahil hiç kimseye satacağımız, kiralayacağımız, takas edeceğimiz ya da paylaşacağımız bir veri yoktur. Yurt dışına veri aktarmayız.</p>
+  <h2>6. Çerezler ve benzeri teknolojiler</h2>
+  <p>Oyun; çerez, web işaretçisi, reklam kimliği, cihaz parmak izi veya benzeri hiçbir izleme teknolojisi kullanmaz. Cihazınızda sakladığı tek şey 2. bölümde açıklanan kayıt dosyasıdır; bu dosya Oyunun çalışması için zorunludur ve cihazınızdan hiç çıkmaz. Bu web sitesi (bu politika ve Kullanım Koşullarımız) çerez yerleştirmez ve başka sitelerden hiçbir şey yüklemez. Bu yüzden ne Oyunda ne de bu sitede çerez onay penceresi bulunur: onay verilecek bir şey yoktur.</p>
 
-  <h2>7. Reklamlar ve uygulama içi satın almalar</h2>
-  <p>Oyunda reklam gösterilmez. Şu anda gerçek parayla hiçbir şey satın alınamaz: gerçek parayla satılacak mağaza ürünleri “Yakında” olarak işaretlidir. Oyunda kazanılan altın ve anahtarların gerçek dünyada bir değeri yoktur. İleride veri içeren özellikler eklersek (örneğin ödemelerini Google Play’in işleyeceği uygulama içi satın almalar), bu özellikler kullanıma sunulmadan önce bu politikayı güncelleriz.</p>
+  <h2>7. Verilerin paylaşılması ve satılması</h2>
+  <p>Oyunun kendisi kişisel veri toplamadığı için reklamverenler ve veri simsarları dahil hiç kimseye satacağımız, kiralayacağımız, takas edeceğimiz ya da paylaşacağımız bir veri yoktur. 4. ve 5. bölümlerde açıklanan hizmetler (Google, GitHub, Meta) ABD merkezlidir ve IP adresleri gibi teknik verileri kendi güvenceleri kapsamında orada işleyebilir.</p>
 
-  <h2>8. Çocukların gizliliği</h2>
-  <p>Oyun, çocuklar da dahil olmak üzere genel kitleye uygundur. Oyun kimseden kişisel bilgi toplamadığı için çocuklar hiçbir kişisel veri vermeden oynayabilir. 13 yaşın (veya ülkelerinde geçerli asgari yaşın) altındaki çocuklardan bilerek kişisel bilgi toplamayız. Ebeveyn veya vasiyseniz ve çocuğunuzun bize kişisel bilgi gönderdiğini düşünüyorsanız (örneğin e-postayla), lütfen bize yazın; bu bilgileri sileriz.</p>
+  <h2>8. Reklamlar ve uygulama içi satın almalar</h2>
+  <p>Oyunda reklam gösterilmez. Şu anda gerçek parayla hiçbir şey satın alınamaz: gerçek parayla satılacak mağaza ürünleri “Yakında” olarak işaretlidir. Oyunda kazanılan altın ve anahtarların gerçek dünyada bir değeri yoktur. İleride veri içeren özellikler eklersek (örneğin ödemelerini Google Play’in işleyeceği uygulama içi satın almalar), bu özellikler kullanıma sunulmadan önce bu politikayı güncelleriz. Oyun içi eşyalar, satın almalar ve iadelerle ilgili kurallar için <a href="terms.html?lang=tr">Kullanım Koşulları</a>’na bakın.</p>
 
-  <h2>9. Bize yazarsanız</h2>
+  <h2>9. Çocukların gizliliği</h2>
+  <p>Oyun, çocuklar da dahil olmak üzere genel kitleye uygundur. Oyun kimseden kişisel bilgi toplamadığı için çocuklar hiçbir kişisel veri vermeden oynayabilir. 13 yaşın (veya ülkelerinde geçerli asgari yaşın) altındaki çocuklardan bilerek kişisel bilgi toplamayız. Ebeveyn veya vasiyseniz ve çocuğunuzun bize kişisel bilgi gönderdiğini düşünüyorsanız (örneğin e-postayla), lütfen bize yazın; bu bilgileri sileriz. Instagram takip ödülü, Instagram’ın kendi koşullarına göre Instagram kullanabilecek yaştaki (en az 13 yaş) oyuncular içindir.</p>
+
+  <h2>10. Bize yazarsanız</h2>
   <p>Bize e-posta gönderirseniz e-posta adresinizi ve mesajınızın içeriğini alırız. Bunları yalnızca size yanıt vermek için kullanır, kimseyle paylaşmaz ve talebinizi karşılamak için artık gerekmediğinde sileriz.</p>
 
-  <h2>10. Verilerin saklanması ve silinmesi</h2>
+  <h2>11. Verilerin saklanması ve silinmesi</h2>
   <ul>
     <li><strong>Cihazınızdaki veriler:</strong> Oyunu kaldırana veya verilerini temizleyene kadar kalır (Android Ayarlar → Uygulamalar → Parachute Fall → Depolama → Verileri temizle). Bu işlem ilerlemenizi kalıcı olarak sıfırlar.</li>
     <li><strong>E-postalar:</strong> yalnızca size yanıt vermek için gerektiği sürece saklanır. İstediğiniz zaman silinmelerini isteyebilirsiniz.</li>
+    <li><strong>Takip ödülü mesajları:</strong> Doğrulama hizmeti yeni mesajları birkaç dakika içinde okur ve yalnızca onaylanan kodun özetini ve okuduğu son mesajın zamanını saklar. Mesajlar silinene kadar Instagram gelen kutumuzda kalır; sizinkinin silinmesini isterseniz bize yazın.</li>
   </ul>
 
-  <h2>11. Haklarınız</h2>
+  <h2>12. Haklarınız</h2>
   <p>Yaşadığınız yere bağlı olarak AB ve Birleşik Krallık Genel Veri Koruma Tüzüğü (GDPR), 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Kaliforniya Tüketici Gizliliği Yasası (CCPA/CPRA) gibi yasalar size kişisel verileriniz üzerinde haklar tanır: verilerinize erişme, bunların düzeltilmesini, silinmesini veya aktarılmasını isteme, işlenmelerine itiraz etme veya işlemenin kısıtlanmasını isteme ve verdiğiniz onayı geri çekme gibi. Oyun kişisel veri toplamadığı için bu haklar esas olarak bize gönderdiğiniz e-postalarla ilgilidir. Haklarınızı kullanmak için <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a> adresine yazın; 30 gün içinde yanıt veririz. Ayrıca ülkenizdeki veri koruma otoritesine (Türkiye’de Kişisel Verileri Koruma Kurumu) şikâyette bulunma hakkınız vardır. CCPA’da tanımlandığı anlamda kişisel bilgi satmayız veya paylaşmayız.</p>
 
-  <h2>12. Güvenlik</h2>
-  <p>Oyun verileriniz cihazınızda, Android’in uygulama korumalı alanı (sandbox) tarafından korunan Oyuna özel depolama alanında kalır ve internet üzerinden gönderilmez. Bize gönderdiğiniz e-postalar, e-posta sağlayıcımızın güvenlik önlemleriyle korunur.</p>
+  <h2>13. Güvenlik</h2>
+  <p>Oyun verileriniz cihazınızda, Android’in uygulama korumalı alanı (sandbox) tarafından korunan Oyuna özel depolama alanında kalır ve internet üzerinden gönderilmez. Oyunun bağlantı kontrolü ve kod sorgusu şifreli HTTPS bağlantıları kullanır. Bize gönderdiğiniz e-postalar, e-posta sağlayıcımızın güvenlik önlemleriyle korunur.</p>
 
-  <h2>13. Bu politikadaki değişiklikler</h2>
+  <h2>14. Bu politikadaki değişiklikler</h2>
   <p>Bu politikayı, örneğin Oyuna yeni özellikler eklendiğinde güncelleyebiliriz. Yeni sürüm bu sayfada yeni bir “Son güncelleme” tarihiyle yayınlanır ve Oyunun Ayarlar ekranındaki bağlantı her zaman buraya çıkar. Bir değişiklik verilerinizin nasıl işlendiğini etkiliyorsa, değişiklik Oyunda geçerli olmadan önce bu politikayı güncelleriz.</p>
 
-  <h2>14. İletişim</h2>
+  <h2>15. İletişim</h2>
   <p>Bu gizlilik politikasıyla ilgili soru ve talepleriniz için: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">Bu politika birden fazla dilde sunulmaktadır. Bir çeviri İngilizce sürümden farklıysa İngilizce sürüm geçerlidir.</p>
@@ -326,21 +360,22 @@
 <!-- ============================== Deutsch ============================== -->
 <article id="de" data-lang="de" lang="de">
   <h1>Parachute Fall – Datenschutzerklärung</h1>
-  <p class="dates">Gültig ab: 25. September 2026 · Zuletzt aktualisiert: 25. September 2026</p>
+  <p class="dates">Gültig ab: 25. September 2026 · Zuletzt aktualisiert: 2. Oktober 2026</p>
   <p>Diese Datenschutzerklärung erläutert, wie das Handyspiel <strong>Parachute Fall</strong> (Android-Paketname <code>com.patpatt.game</code>, das „Spiel“) mit Informationen umgeht. Das Spiel wird von dem Entwickler entwickelt und veröffentlicht, der auf der Google-Play-Seite des Spiels genannt ist („wir“, „uns“). Bei Fragen erreichen Sie uns unter <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>.</p>
 
   <div class="summary">
     <h2>Kurz gesagt</h2>
     <ul>
-      <li>Das Spiel erhebt, überträgt, verkauft oder teilt keine personenbezogenen Daten.</li>
+      <li>Das Spiel selbst erhebt, verkauft und teilt keine personenbezogenen Daten.</li>
       <li>Es gibt keine Konten oder Anmeldungen, keine Werbung, keine Analyse- oder Tracking-Tools und keine In-App-Käufe.</li>
       <li>Ihr Spielfortschritt und Ihre Einstellungen werden nur auf Ihrem eigenen Gerät gespeichert.</li>
-      <li>Das Spiel kann vollständig offline gespielt werden.</li>
+      <li>Das Spiel benötigt eine Internetverbindung. Es nutzt sie nur, um zu prüfen, ob die Verbindung funktioniert, und – wenn Sie an der Folgen-Belohnung teilnehmen – um nachzusehen, ob Ihr Belohnungscode bestätigt wurde. Diese Anfragen enthalten keine personenbezogenen Daten.</li>
+      <li>Weder das Spiel noch diese Website verwendet Cookies.</li>
     </ul>
   </div>
 
   <h2>1. Welche Daten wir erheben</h2>
-  <p>Wir erheben über das Spiel keine personenbezogenen Daten. Das Spiel fragt nicht nach Ihrem Namen, Ihrer E-Mail-Adresse, Telefonnummer, Ihrem Standort, Ihren Kontakten, Fotos oder anderen persönlichen Informationen und erstellt oder verwendet keine Werbe-IDs oder anderen Gerätekennungen.</p>
+  <p>Wir erheben über das Spiel keine personenbezogenen Daten. Das Spiel fragt nicht nach Ihrem Namen, Ihrer E-Mail-Adresse, Telefonnummer, Ihrem Standort, Ihren Kontakten, Fotos oder anderen persönlichen Informationen und erstellt oder verwendet keine Werbe-IDs oder anderen Gerätekennungen. Wenn Sie an der Instagram-Folgen-Belohnung teilnehmen, gilt die in Abschnitt 5 beschriebene begrenzte Verarbeitung.</p>
 
   <h2>2. Daten, die nur auf Ihrem Gerät gespeichert werden</h2>
   <p>Damit Ihr Spielstand erhalten bleibt, speichert das Spiel eine kleine Datei in seinem privaten Speicherbereich auf Ihrem Gerät (Android „Shared Preferences“). Sie enthält:</p>
@@ -350,6 +385,7 @@
     <li>Einstellungen: Ton, Musik, Vibration, Neigungssteuerung, Grafikqualität, Steuerungsgeschwindigkeit und Sprache;</li>
     <li>Spielstatistiken, zum Beispiel die Anzahl abgeschlossener Level und ausgewichener Hindernisse;</li>
     <li>den Stand der täglichen Belohnungen und Aufgaben, ob das Tutorial abgeschlossen ist und ob Sie bereits um eine Bewertung des Spiels gebeten wurden.</li>
+    <li>die Folgen-Belohnung: ob Sie unsere Instagram-Seite aus dem Spiel geöffnet haben, der Belohnungscode, den das Spiel für Ihr Gerät erstellt hat, ob Sie ihn gesendet haben und ob Sie die Belohnung abgeholt haben.</li>
   </ul>
   <p>Das Spiel sendet diese Datei niemals von Ihrem Gerät weg, und wir können sie nicht einsehen. Sie wird gelöscht, wenn Sie das Spiel deinstallieren oder seine Daten löschen. Gold und Schlüssel im Spiel haben keinen realen Wert.</p>
 
@@ -363,50 +399,65 @@
   </ul>
 
   <h2>4. Berechtigungen</h2>
-  <p>Das Spiel fordert keine Berechtigung an, die Ihre Zustimmung erfordert (etwa Standort, Kamera, Mikrofon, Kontakte, Dateien oder Telefon). Das Android-Paket enthält zwei Standardberechtigungen, die bei der Installation automatisch erteilt werden:</p>
+  <p>Das Spiel fordert keine Berechtigung an, die Ihre Zustimmung erfordert (etwa Standort, Kamera, Mikrofon, Kontakte, Dateien oder Telefon). Das Android-Paket enthält nur Berechtigungen, die bei der Installation automatisch erteilt werden:</p>
   <ul>
+    <li><strong>INTERNET:</strong> für die Internetverbindung, die das Spiel zum Spielen braucht (siehe unten).</li>
+    <li><strong>ACCESS_NETWORK_STATE:</strong> um zu sehen, ob Ihr Gerät mit einem Netzwerk verbunden ist, damit das Spiel sofort anzeigen kann, wenn die Verbindung abbricht.</li>
     <li><strong>VIBRATE:</strong> für die oben beschriebene Vibrationsrückmeldung.</li>
-    <li><strong>INTERNET:</strong> wird von der Unity-Engine hinzugefügt, mit der das Spiel erstellt wurde. Das Spiel nutzt das Internet nicht, um Ihre Daten zu senden oder zu empfangen; Links, die Sie antippen (z. B. um das Spiel zu bewerten oder diese Erklärung zu lesen), öffnen sich in Google Play oder Ihrem Webbrowser.</li>
+    <li><strong>Eine interne Berechtigung</strong> (<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>), mit der Androids eigene Bibliotheken verhindern, dass andere Apps dem Spiel Nachrichten senden. Sie gibt dem Spiel keinerlei Zugriff.</li>
   </ul>
+  <p>Das Spiel wird online gespielt, nutzt das Internet aber nur für zwei Dinge:</p>
+  <ul>
+    <li><strong>Verbindungsprüfung:</strong> Solange das Spiel geöffnet ist, lädt es etwa alle 30 Sekunden eine winzige Datei (<code>ping.txt</code>) von unserem Dienst auf GitHub Pages (<code>therooster0.github.io/parachute-fall-api</code>). Ist diese Datei nicht erreichbar, fragt es die Verbindungsprüfung von Google (<code>www.google.com/generate_204</code>). Ohne Verbindung pausiert das Spiel, bis die Verbindung wieder da ist.</li>
+    <li><strong>Folgen-Belohnung:</strong> Wenn Sie im Fenster „Belohnung“ auf PRÜFEN tippen, lädt das Spiel vom selben Dienst eine Liste bestätigter Belohnungscodes und sucht darin nach Ihrem Code (siehe Abschnitt 5). Ihr Code wird nicht gesendet; geladen wird nur der Teil der Liste, in dem Ihr Code stehen würde.</li>
+  </ul>
+  <p>Diese Anfragen enthalten keine personenbezogenen Daten und keine Konto- oder Gerätekennung. Wie bei jeder Internetverbindung sehen die empfangenden Server (GitHub und für die Ersatzprüfung Google) Ihre IP-Adresse und grundlegende technische Angaben wie den Zeitpunkt der Anfrage. Links, die Sie antippen (zum Beispiel zum Bewerten des Spiels, zu Instagram oder zu dieser Erklärung und unseren Nutzungsbedingungen), öffnen sich in Google Play, in der Instagram-App oder in Ihrem Webbrowser.</p>
 
   <h2>5. Dienste Dritter</h2>
   <p>Das Spiel enthält keine Werbe-, Analyse-, Social-Media- oder Zahlungs-SDKs von Drittanbietern. Die folgenden Dienste können jedoch nach ihren eigenen Datenschutzbestimmungen Daten verarbeiten:</p>
   <ul>
     <li><strong>Google Play:</strong> Wenn Sie das Spiel herunterladen, installieren oder aktualisieren, verarbeitet Google Daten wie in der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a> beschrieben. Über die Google Play Console erhalten wir von Google nur zusammengefasste Statistiken (z. B. die Anzahl der Installationen) und – sofern Sie Ihrem Gerät erlaubt haben, Nutzungs- und Diagnosedaten zu teilen – anonyme Absturz- und Leistungsberichte, die Sie nicht identifizieren.</li>
     <li><strong>Spiel bewerten:</strong> Wenn Sie das Spiel bewerten möchten, öffnet es seine Seite im Google Play Store; Bewertungen und Rezensionen, die Sie dort abgeben, werden von Google verwaltet.</li>
-    <li><strong>Unity:</strong> Das Spiel wurde mit der Unity-Engine von Unity Technologies erstellt. Die optionalen Datendienste von Unity (Unity Analytics, Hardwarestatistiken, Absturz- und Leistungsberichte) haben wir im Spiel deaktiviert. Mehr dazu: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Datenschutzerklärung von Unity</a>.</li>
+    <li><strong>Instagram (Folgen-Belohnung):</strong> Wenn Sie im Fenster „Belohnung“ auf FOLGEN tippen, öffnet sich unsere Instagram-Seite (@stamgamesdev) in der Instagram-App oder in Ihrem Browser. Um zu bestätigen, dass Sie uns folgen, können Sie den im Spiel angezeigten Belohnungscode per Instagram-Nachricht an unser Konto senden. Unser Bestätigungsdienst liest diese Nachricht dann automatisch über die Instagram-API von Meta, fragt Instagram anhand der Kennung, die Instagram dem Absender für unser Konto zuweist, ob dieses Konto unserem folgt, und sendet eine kurze Antwort. Er veröffentlicht nur einen nicht umkehrbaren SHA-256-Hash eines bestätigten Codes, der weder Ihnen noch Ihrem Instagram-Konto zugeordnet werden kann; Ihren Namen, Nutzernamen, Ihre Kennung und Ihre Nachricht speichert er nicht. Ihre Nachricht bleibt wie jede andere Nachricht in unserem Instagram-Postfach; Sie können uns bitten, den Chat zu löschen. Das Senden des Codes ist freiwillig; Rechtsgrundlage dieser Verarbeitung ist Ihre Anfrage, die Belohnung zu erhalten (Art. 6 Abs. 1 lit. b DSGVO). Meta verarbeitet Ihre Instagram-Nutzung gemäß der <a href="https://privacycenter.instagram.com/policy">Instagram-Datenschutzrichtlinie</a>.</li>
+    <li><strong>GitHub (unser Dienst):</strong> Die Verbindungsprüfung und die Liste bestätigter Codes liegen auf GitHub Pages, der Bestätigungsdienst läuft auf GitHub Actions; beides stellt GitHub, Inc. (USA) bereit. Wenn sich das Spiel verbindet, kann GitHub technische Daten wie Ihre IP-Adresse verarbeiten (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>).</li>
+    <li><strong>Verbindungsprüfung von Google:</strong> Nur wenn unser Dienst nicht erreichbar ist, fragt das Spiel <code>www.google.com/generate_204</code>, das eine leere Antwort liefert; wie bei jeder Website sieht Google dabei Ihre IP-Adresse (<a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>).</li>
+    <li><strong>Unity:</strong> Das Spiel wurde mit der Unity-Engine von Unity Technologies erstellt. Wir haben die optionalen Datendienste von Unity (Unity Analytics, Hardwarestatistiken, Absturz- und Leistungsberichte) abgeschaltet und das Analysemodul von Unity ganz aus dem Spiel herausgelassen; das Spiel sendet daher keine Daten an Unity. Mehr dazu: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity-Datenschutzerklärung</a>.</li>
     <li><strong>Android-Sicherung:</strong> Wenn die Sicherung auf Ihrem Gerät aktiviert ist, kann Android die gespeicherten Spieldaten in die Gerätesicherung in Ihrem Google-Konto aufnehmen. Diese Sicherung wird von Ihnen und Google verwaltet; wir haben keinen Zugriff darauf.</li>
     <li><strong>Diese Seite:</strong> Diese Datenschutzerklärung wird auf GitHub Pages bereitgestellt. Beim Aufruf kann GitHub technische Daten wie Ihre IP-Adresse verarbeiten (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>). Wir setzen auf dieser Seite keine Cookies, Analyse- oder Tracking-Tools ein.</li>
   </ul>
 
-  <h2>6. Weitergabe und Verkauf von Daten</h2>
-  <p>Da wir über das Spiel keine personenbezogenen Daten erheben, haben wir nichts, was wir an irgendjemanden – einschließlich Werbetreibender und Datenhändler – verkaufen, vermieten, tauschen oder weitergeben könnten. Wir übermitteln keine Daten in andere Länder.</p>
+  <h2>6. Cookies und ähnliche Technologien</h2>
+  <p>Das Spiel verwendet keine Cookies, Web-Beacons, Werbe-IDs, Geräte-Fingerprinting oder ähnliche Tracking-Technologien. Das Einzige, was es auf Ihrem Gerät speichert, ist die in Abschnitt 2 beschriebene Speicherdatei; sie ist für das Funktionieren des Spiels unbedingt erforderlich und verlässt Ihr Gerät nie. Diese Website (diese Erklärung und unsere Nutzungsbedingungen) setzt keine Cookies und lädt nichts von anderen Websites. Deshalb zeigen weder das Spiel noch diese Website ein Cookie-Banner: Es gibt nichts, dem Sie zustimmen müssten.</p>
 
-  <h2>7. Werbung und In-App-Käufe</h2>
-  <p>Das Spiel zeigt keine Werbung. Derzeit kann nichts mit echtem Geld gekauft werden: Shop-Artikel, die echtes Geld kosten würden, sind mit „Bald“ gekennzeichnet. Gold und Schlüssel aus dem Spiel haben keinen realen Wert. Falls wir künftig Funktionen hinzufügen, die Daten betreffen (z. B. In-App-Käufe, deren Zahlungen Google Play abwickeln würde), aktualisieren wir diese Erklärung, bevor diese Funktionen verfügbar werden.</p>
+  <h2>7. Weitergabe und Verkauf von Daten</h2>
+  <p>Da das Spiel selbst keine personenbezogenen Daten erhebt, haben wir nichts, was wir verkaufen, vermieten, tauschen oder mit anderen teilen könnten, auch nicht mit Werbetreibenden oder Datenhändlern. Die in den Abschnitten 4 und 5 beschriebenen Dienste (Google, GitHub, Meta) haben ihren Sitz in den USA und können technische Daten wie IP-Adressen dort unter ihren eigenen Garantien verarbeiten.</p>
 
-  <h2>8. Datenschutz von Kindern</h2>
-  <p>Das Spiel eignet sich für ein allgemeines Publikum, einschließlich Kindern. Da das Spiel von niemandem personenbezogene Daten erhebt, können Kinder es spielen, ohne persönliche Daten anzugeben. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren (bzw. unter dem in ihrem Land geltenden Mindestalter). Wenn Sie als Elternteil oder Erziehungsberechtigte(r) glauben, dass Ihr Kind uns personenbezogene Daten geschickt hat (etwa per E-Mail), kontaktieren Sie uns bitte – wir löschen sie.</p>
+  <h2>8. Werbung und In-App-Käufe</h2>
+  <p>Das Spiel zeigt keine Werbung. Derzeit kann nichts mit echtem Geld gekauft werden: Shop-Artikel, die echtes Geld kosten würden, sind mit „Bald“ gekennzeichnet. Gold und Schlüssel aus dem Spiel haben keinen realen Wert. Falls wir künftig Funktionen hinzufügen, die Daten betreffen (z. B. In-App-Käufe, deren Zahlungen Google Play abwickeln würde), aktualisieren wir diese Erklärung, bevor diese Funktionen verfügbar werden. Die Regeln zu Spielgegenständen, Käufen und Erstattungen finden Sie in unseren <a href="terms.html?lang=de">Nutzungsbedingungen</a>.</p>
 
-  <h2>9. Wenn Sie uns kontaktieren</h2>
+  <h2>9. Datenschutz von Kindern</h2>
+  <p>Das Spiel eignet sich für ein allgemeines Publikum, einschließlich Kindern. Da das Spiel von niemandem personenbezogene Daten erhebt, können Kinder es spielen, ohne persönliche Daten anzugeben. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren (bzw. unter dem in ihrem Land geltenden Mindestalter). Wenn Sie als Elternteil oder Erziehungsberechtigte(r) glauben, dass Ihr Kind uns personenbezogene Daten geschickt hat (etwa per E-Mail), kontaktieren Sie uns bitte – wir löschen sie. Die Instagram-Folgen-Belohnung richtet sich an Spieler, die nach den Bedingungen von Instagram alt genug sind, Instagram zu nutzen (mindestens 13 Jahre).</p>
+
+  <h2>10. Wenn Sie uns kontaktieren</h2>
   <p>Wenn Sie uns eine E-Mail schreiben, erhalten wir Ihre E-Mail-Adresse und den Inhalt Ihrer Nachricht. Wir verwenden sie nur, um Ihnen zu antworten, geben sie nicht weiter und löschen sie, sobald sie für die Bearbeitung Ihrer Anfrage nicht mehr benötigt werden.</p>
 
-  <h2>10. Speicherdauer und Löschung</h2>
+  <h2>11. Speicherdauer und Löschung</h2>
   <ul>
     <li><strong>Daten auf Ihrem Gerät:</strong> bleiben erhalten, bis Sie das Spiel deinstallieren oder seine Daten löschen (Android-Einstellungen → Apps → Parachute Fall → Speicher → Daten löschen). Dadurch wird Ihr Fortschritt dauerhaft zurückgesetzt.</li>
     <li><strong>E-Mails:</strong> werden nur so lange aufbewahrt, wie es für die Antwort nötig ist. Sie können jederzeit ihre Löschung verlangen.</li>
+    <li><strong>Nachrichten zur Folgen-Belohnung:</strong> Der Bestätigungsdienst liest neue Nachrichten innerhalb weniger Minuten und speichert nur den Hash eines bestätigten Codes und den Zeitpunkt der zuletzt gelesenen Nachricht. Die Nachrichten bleiben in unserem Instagram-Postfach, bis sie gelöscht werden; schreiben Sie uns, wenn wir Ihre löschen sollen.</li>
   </ul>
 
-  <h2>11. Ihre Rechte</h2>
+  <h2>12. Ihre Rechte</h2>
   <p>Je nach Wohnort gewähren Ihnen Gesetze wie die Datenschutz-Grundverordnung der EU und des Vereinigten Königreichs (DSGVO), das türkische Datenschutzgesetz Nr. 6698 (KVKK) und der California Consumer Privacy Act (CCPA/CPRA) Rechte an Ihren personenbezogenen Daten, etwa auf Auskunft, Berichtigung, Löschung und Datenübertragbarkeit, auf Widerspruch gegen die Verarbeitung oder deren Einschränkung sowie auf Widerruf einer Einwilligung. Da das Spiel keine personenbezogenen Daten erhebt, betreffen diese Rechte vor allem E-Mails, die Sie uns senden. Um sie auszuüben, schreiben Sie an <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>; wir antworten innerhalb von 30 Tagen. Außerdem haben Sie das Recht, sich bei der Datenschutzaufsichtsbehörde Ihres Landes zu beschweren. Wir verkaufen oder teilen keine personenbezogenen Daten im Sinne des CCPA.</p>
 
-  <h2>12. Sicherheit</h2>
-  <p>Ihre Spieldaten bleiben im privaten Speicher des Spiels auf Ihrem Gerät, geschützt durch die App-Sandbox von Android, und werden nicht über das Internet übertragen. E-Mails, die Sie uns senden, sind durch die Sicherheitsmaßnahmen unseres E-Mail-Anbieters geschützt.</p>
+  <h2>13. Sicherheit</h2>
+  <p>Ihre Spieldaten bleiben im privaten Speicher des Spiels auf Ihrem Gerät, geschützt durch die App-Sandbox von Android, und werden nicht über das Internet gesendet. Die Verbindungsprüfung und die Codeabfrage des Spiels nutzen verschlüsselte HTTPS-Verbindungen. E-Mails, die Sie uns senden, sind durch die Sicherheitsmaßnahmen unseres E-Mail-Anbieters geschützt.</p>
 
-  <h2>13. Änderungen dieser Erklärung</h2>
+  <h2>14. Änderungen dieser Erklärung</h2>
   <p>Wir können diese Erklärung aktualisieren, zum Beispiel wenn das Spiel neue Funktionen erhält. Die neue Fassung wird auf dieser Seite mit einem neuen Datum „Zuletzt aktualisiert“ veröffentlicht, und der Link in den Optionen des Spiels führt immer hierher. Betrifft eine Änderung den Umgang mit Ihren Daten, aktualisieren wir diese Erklärung, bevor die Änderung im Spiel wirksam wird.</p>
 
-  <h2>14. Kontakt</h2>
+  <h2>15. Kontakt</h2>
   <p>Fragen oder Anliegen zu dieser Datenschutzerklärung: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">Diese Erklärung ist in mehreren Sprachen verfügbar. Weicht eine Übersetzung von der englischen Fassung ab, gilt die englische Fassung.</p>
@@ -415,21 +466,22 @@
 <!-- ============================== Français ============================== -->
 <article id="fr" data-lang="fr" lang="fr">
   <h1>Parachute Fall – Politique de confidentialité</h1>
-  <p class="dates">Date d’entrée en vigueur : 25 septembre 2026 · Dernière mise à jour : 25 septembre 2026</p>
+  <p class="dates">Date d’entrée en vigueur : 25 septembre 2026 · Dernière mise à jour : 2 octobre 2026</p>
   <p>La présente politique de confidentialité explique comment le jeu mobile <strong>Parachute Fall</strong> (nom de package Android <code>com.patpatt.game</code>, le « Jeu ») traite les informations. Le Jeu est développé et publié par le développeur indiqué sur la page Google Play du Jeu (« nous »). Pour toute question, écrivez-nous à <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>.</p>
 
   <div class="summary">
     <h2>En bref</h2>
     <ul>
-      <li>Le Jeu ne collecte, ne transmet, ne vend et ne partage aucune donnée personnelle.</li>
+      <li>Le Jeu lui-même ne collecte, ne vend ni ne partage aucune donnée personnelle.</li>
       <li>Il n’y a ni compte ni connexion, ni publicité, ni outil d’analyse ou de suivi, ni achat intégré.</li>
       <li>Votre progression et vos réglages sont enregistrés uniquement sur votre propre appareil.</li>
-      <li>Le Jeu peut être joué entièrement hors ligne.</li>
+      <li>Le Jeu nécessite une connexion Internet. Il ne l’utilise que pour vérifier que la connexion fonctionne et, si vous participez à la récompense d’abonnement, pour savoir si votre code de récompense a été confirmé. Ces requêtes ne contiennent aucune donnée personnelle.</li>
+      <li>Ni le Jeu ni ce site n’utilisent de cookies.</li>
     </ul>
   </div>
 
   <h2>1. Informations que nous collectons</h2>
-  <p>Nous ne collectons aucune donnée personnelle par l’intermédiaire du Jeu. Le Jeu ne vous demande pas votre nom, votre adresse e-mail, votre numéro de téléphone, votre position, vos contacts, vos photos ni aucune autre information personnelle, et il ne crée ni n’utilise d’identifiant publicitaire ou d’autre identifiant d’appareil.</p>
+  <p>Nous ne collectons aucune donnée personnelle par l’intermédiaire du Jeu. Le Jeu ne vous demande pas votre nom, votre adresse e-mail, votre numéro de téléphone, votre position, vos contacts, vos photos ni aucune autre information personnelle, et il ne crée ni n’utilise d’identifiant publicitaire ou d’autre identifiant d’appareil. Si vous participez à la récompense d’abonnement Instagram, le traitement limité décrit à la section 5 s’applique.</p>
 
   <h2>2. Informations stockées uniquement sur votre appareil</h2>
   <p>Pour se souvenir de votre partie, le Jeu enregistre un petit fichier dans son espace de stockage privé sur votre appareil (« shared preferences » d’Android). Il contient :</p>
@@ -439,6 +491,7 @@
     <li>les réglages : son, musique, vibrations, contrôle par inclinaison, qualité graphique, vitesse des commandes et langue ;</li>
     <li>des statistiques de jeu, comme le nombre de niveaux terminés et d’obstacles évités ;</li>
     <li>l’état des récompenses et des quêtes quotidiennes, si le tutoriel est terminé et si l’on vous a déjà proposé de noter le Jeu.</li>
+    <li>la récompense d’abonnement : si vous avez ouvert notre page Instagram depuis le Jeu, le code de récompense que le Jeu a créé pour votre appareil, si vous l’avez envoyé et si vous avez récupéré la récompense.</li>
   </ul>
   <p>Le Jeu n’envoie jamais ce fichier hors de votre appareil, et nous ne pouvons pas le consulter. Il est supprimé lorsque vous désinstallez le Jeu ou effacez ses données. L’or et les clés du Jeu n’ont aucune valeur réelle.</p>
 
@@ -452,50 +505,65 @@
   </ul>
 
   <h2>4. Autorisations</h2>
-  <p>Le Jeu ne demande aucune autorisation nécessitant votre accord (comme la position, l’appareil photo, le micro, les contacts, les fichiers ou le téléphone). Son package Android contient deux autorisations standard accordées automatiquement lors de l’installation :</p>
+  <p>Le Jeu ne demande aucune autorisation nécessitant votre accord (comme la position, l’appareil photo, le micro, les contacts, les fichiers ou le téléphone). Son package Android ne contient que des autorisations accordées automatiquement lors de l’installation :</p>
   <ul>
+    <li><strong>INTERNET :</strong> pour la connexion Internet dont le Jeu a besoin pour être joué (voir ci-dessous).</li>
+    <li><strong>ACCESS_NETWORK_STATE :</strong> pour savoir si votre appareil est connecté à un réseau, afin que le Jeu puisse vous prévenir immédiatement si la connexion est perdue.</li>
     <li><strong>VIBRATE :</strong> pour le retour par vibration décrit ci-dessus.</li>
-    <li><strong>INTERNET :</strong> ajoutée par le moteur Unity avec lequel le Jeu est conçu. Le Jeu n’utilise pas Internet pour envoyer ou recevoir vos données ; les liens sur lesquels vous appuyez (par exemple pour noter le Jeu ou lire cette politique) s’ouvrent dans Google Play ou dans votre navigateur.</li>
+    <li><strong>Une autorisation interne</strong> (<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) que les bibliothèques d’Android utilisent pour empêcher d’autres applications d’envoyer des messages au Jeu. Elle ne donne au Jeu accès à rien.</li>
   </ul>
+  <p>Le Jeu se joue en ligne, mais il n’utilise Internet que pour deux choses :</p>
+  <ul>
+    <li><strong>Vérification de la connexion :</strong> tant que le Jeu est ouvert, il télécharge environ toutes les 30 secondes un tout petit fichier (<code>ping.txt</code>) depuis notre service sur GitHub Pages (<code>therooster0.github.io/parachute-fall-api</code>). Si ce fichier est inaccessible, il interroge la vérification de connexion de Google (<code>www.google.com/generate_204</code>). Sans connexion, le Jeu se met en pause jusqu’au retour de la connexion.</li>
+    <li><strong>Récompense d’abonnement :</strong> lorsque vous touchez VÉRIFIER dans la fenêtre « Récompense », le Jeu télécharge depuis le même service une liste de codes de récompense confirmés et y cherche votre code (voir la section 5). Votre code n’est pas envoyé ; seule la partie de la liste où se trouverait votre code est téléchargée.</li>
+  </ul>
+  <p>Ces requêtes ne contiennent aucune donnée personnelle ni aucun identifiant de compte ou d’appareil. Comme pour toute connexion Internet, les serveurs qui les reçoivent (GitHub, et Google pour la vérification de secours) voient votre adresse IP et des informations techniques de base, comme l’heure de la requête. Les liens que vous touchez (par exemple pour noter le Jeu, ouvrir Instagram ou lire cette politique et nos Conditions d’utilisation) s’ouvrent dans Google Play, l’application Instagram ou votre navigateur.</p>
 
   <h2>5. Services tiers</h2>
   <p>Le Jeu ne contient aucun SDK tiers de publicité, d’analyse, de réseau social ou de paiement. Toutefois, les services suivants peuvent traiter des informations selon leurs propres politiques de confidentialité :</p>
   <ul>
     <li><strong>Google Play :</strong> lorsque vous téléchargez, installez ou mettez à jour le Jeu, Google traite des informations comme décrit dans les <a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>. Via la Google Play Console, Google ne nous fournit que des statistiques agrégées (par exemple le nombre d’installations) et, si vous avez autorisé votre appareil à partager les données d’utilisation et de diagnostic, des rapports anonymes de plantage et de performances qui ne vous identifient pas.</li>
     <li><strong>Noter le Jeu :</strong> si vous choisissez de noter le Jeu, celui-ci ouvre sa page sur le Google Play Store ; les notes et avis que vous y publiez sont gérés par Google.</li>
-    <li><strong>Unity :</strong> le Jeu est conçu avec le moteur Unity de Unity Technologies. Nous avons désactivé dans le Jeu les services de données facultatifs d’Unity (Unity Analytics, statistiques matérielles, rapports de plantage et de performances). En savoir plus : <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">politique de confidentialité d’Unity</a>.</li>
+    <li><strong>Instagram (récompense d’abonnement) :</strong> si vous touchez S’ABONNER dans la fenêtre « Récompense », notre page Instagram (@stamgamesdev) s’ouvre dans l’application Instagram ou votre navigateur. Pour confirmer que vous êtes abonné, vous pouvez envoyer le code de récompense affiché dans le Jeu à notre compte par message Instagram. Notre service de vérification lit alors automatiquement ce message via l’API Instagram de Meta, utilise l’identifiant qu’Instagram attribue à l’expéditeur pour notre compte afin de demander à Instagram si ce compte est abonné au nôtre, et envoie une courte réponse. Il ne publie qu’une empreinte SHA-256 irréversible d’un code confirmé, qui ne peut être reliée ni à vous ni à votre compte Instagram ; il ne conserve ni votre nom, ni votre nom d’utilisateur, ni votre identifiant, ni votre message. Votre message reste dans notre messagerie Instagram comme tout autre message ; vous pouvez nous demander de supprimer la conversation. L’envoi du code est facultatif ; la base légale de ce traitement est votre demande de recevoir la récompense (art. 6, par. 1, point b) du RGPD). Meta traite votre utilisation d’Instagram comme décrit dans la <a href="https://privacycenter.instagram.com/policy">Politique de confidentialité d’Instagram</a>.</li>
+    <li><strong>GitHub (notre service) :</strong> la vérification de connexion et la liste des codes confirmés sont hébergées sur GitHub Pages, et le service de vérification fonctionne sur GitHub Actions, tous deux fournis par GitHub, Inc. (États-Unis). Lorsque le Jeu se connecte, GitHub peut traiter des données techniques comme votre adresse IP (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Déclaration de confidentialité de GitHub</a>).</li>
+    <li><strong>Vérification de connexion de Google :</strong> uniquement si notre service est inaccessible, le Jeu interroge <code>www.google.com/generate_204</code>, qui renvoie une réponse vide ; comme pour tout site Web, Google voit votre adresse IP (<a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>).</li>
+    <li><strong>Unity :</strong> le Jeu est réalisé avec le moteur Unity de Unity Technologies. Nous avons désactivé les services de données facultatifs de Unity (Unity Analytics, statistiques matérielles, rapports de plantage et de performances) et laissé entièrement le module d’analyse de Unity hors du Jeu ; le Jeu n’envoie donc aucune donnée à Unity. Plus d’informations : <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Politique de confidentialité de Unity</a>.</li>
     <li><strong>Sauvegarde Android :</strong> si la sauvegarde est activée sur votre appareil, Android peut inclure les données enregistrées du Jeu dans la sauvegarde de votre appareil stockée dans votre compte Google. Cette sauvegarde est gérée par vous et par Google ; nous n’y avons pas accès.</li>
     <li><strong>Cette page :</strong> cette politique de confidentialité est hébergée sur GitHub Pages. Lorsque vous l’ouvrez, GitHub peut traiter des données techniques comme votre adresse IP (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Déclaration de confidentialité de GitHub</a>). Nous n’ajoutons à cette page aucun cookie ni outil d’analyse ou de suivi.</li>
   </ul>
 
-  <h2>6. Partage et vente de données</h2>
-  <p>Comme nous ne collectons aucune donnée personnelle par le biais du Jeu, nous n’avons rien à vendre, louer, échanger ou partager avec qui que ce soit, y compris les annonceurs et les courtiers en données. Nous ne transférons aucune donnée vers d’autres pays.</p>
+  <h2>6. Cookies et technologies similaires</h2>
+  <p>Le Jeu n’utilise ni cookies, ni balises web, ni identifiants publicitaires, ni empreinte de l’appareil, ni aucune technologie de suivi similaire. La seule chose qu’il enregistre sur votre appareil est le fichier de sauvegarde décrit à la section 2 ; il est strictement nécessaire au fonctionnement du Jeu et ne quitte jamais votre appareil. Ce site (cette politique et nos Conditions d’utilisation) ne dépose aucun cookie et ne charge rien depuis d’autres sites. C’est pourquoi ni le Jeu ni ce site n’affichent de bannière de consentement aux cookies : il n’y a rien à accepter.</p>
 
-  <h2>7. Publicité et achats intégrés</h2>
-  <p>Le Jeu n’affiche aucune publicité. Rien ne peut actuellement être acheté avec de l’argent réel : les articles de la boutique qui coûteraient de l’argent réel sont marqués « Bientôt ». L’or et les clés gagnés dans le Jeu n’ont aucune valeur réelle. Si nous ajoutons à l’avenir des fonctionnalités impliquant des données (par exemple des achats intégrés dont les paiements seraient traités par Google Play), nous mettrons à jour cette politique avant qu’elles ne soient disponibles.</p>
+  <h2>7. Partage et vente de données</h2>
+  <p>Comme le Jeu lui-même ne collecte aucune donnée personnelle, nous n’avons rien à vendre, louer, échanger ou partager avec qui que ce soit, y compris les annonceurs et les courtiers en données. Les services décrits aux sections 4 et 5 (Google, GitHub, Meta) sont établis aux États-Unis et peuvent y traiter des données techniques, comme les adresses IP, selon leurs propres garanties.</p>
 
-  <h2>8. Confidentialité des enfants</h2>
-  <p>Le Jeu convient à un public général, y compris aux enfants. Comme le Jeu ne collecte d’informations personnelles auprès de personne, les enfants peuvent y jouer sans fournir de données personnelles. Nous ne collectons pas sciemment d’informations personnelles auprès d’enfants de moins de 13 ans (ou de moins de l’âge minimum applicable dans leur pays). Si vous êtes parent ou tuteur et pensez que votre enfant nous a envoyé des informations personnelles (par exemple par e-mail), contactez-nous et nous les supprimerons.</p>
+  <h2>8. Publicité et achats intégrés</h2>
+  <p>Le Jeu n’affiche aucune publicité. Rien ne peut actuellement être acheté avec de l’argent réel : les articles de la boutique qui coûteraient de l’argent réel sont marqués « Bientôt ». L’or et les clés gagnés dans le Jeu n’ont aucune valeur réelle. Si nous ajoutons à l’avenir des fonctionnalités impliquant des données (par exemple des achats intégrés dont les paiements seraient traités par Google Play), nous mettrons à jour cette politique avant qu’elles ne soient disponibles. Pour les règles relatives aux objets du jeu, aux achats et aux remboursements, consultez nos <a href="terms.html?lang=fr">Conditions d’utilisation</a>.</p>
 
-  <h2>9. Si vous nous contactez</h2>
+  <h2>9. Confidentialité des enfants</h2>
+  <p>Le Jeu convient à un public général, y compris aux enfants. Comme le Jeu ne collecte d’informations personnelles auprès de personne, les enfants peuvent y jouer sans fournir de données personnelles. Nous ne collectons pas sciemment d’informations personnelles auprès d’enfants de moins de 13 ans (ou de moins de l’âge minimum applicable dans leur pays). Si vous êtes parent ou tuteur et pensez que votre enfant nous a envoyé des informations personnelles (par exemple par e-mail), contactez-nous et nous les supprimerons. La récompense d’abonnement Instagram s’adresse aux joueurs qui ont l’âge d’utiliser Instagram selon ses conditions (au moins 13 ans).</p>
+
+  <h2>10. Si vous nous contactez</h2>
   <p>Si vous nous écrivez par e-mail, nous recevons votre adresse e-mail et le contenu de votre message. Nous les utilisons uniquement pour vous répondre, ne les partageons avec personne et les supprimons lorsqu’ils ne sont plus nécessaires au traitement de votre demande.</p>
 
-  <h2>10. Conservation et suppression des données</h2>
+  <h2>11. Conservation et suppression des données</h2>
   <ul>
     <li><strong>Données sur votre appareil :</strong> elles restent jusqu’à ce que vous désinstalliez le Jeu ou effaciez ses données (Paramètres Android → Applications → Parachute Fall → Stockage → Effacer les données). Cela réinitialise définitivement votre progression.</li>
     <li><strong>E-mails :</strong> conservés uniquement le temps nécessaire pour vous répondre. Vous pouvez demander leur suppression à tout moment.</li>
+    <li><strong>Messages de la récompense d’abonnement :</strong> le service de vérification lit les nouveaux messages en quelques minutes et ne conserve que l’empreinte d’un code confirmé et l’heure du dernier message lu. Les messages restent dans notre messagerie Instagram jusqu’à leur suppression ; écrivez-nous si vous souhaitez que nous supprimions le vôtre.</li>
   </ul>
 
-  <h2>11. Vos droits</h2>
+  <h2>12. Vos droits</h2>
   <p>Selon votre lieu de résidence, des lois comme le Règlement général sur la protection des données de l’UE et du Royaume-Uni (RGPD), la loi turque n° 6698 sur la protection des données personnelles (KVKK) et le California Consumer Privacy Act (CCPA/CPRA) vous accordent des droits sur vos données personnelles, comme le droit d’y accéder, de les rectifier, de les effacer ou de les transférer, de vous opposer à leur traitement ou d’en demander la limitation, et de retirer votre consentement. Comme le Jeu ne collecte pas de données personnelles, ces droits concernent principalement les e-mails que vous nous envoyez. Pour les exercer, écrivez à <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a> ; nous répondrons sous 30 jours. Vous avez également le droit d’introduire une réclamation auprès de l’autorité de protection des données de votre pays. Nous ne vendons ni ne partageons d’informations personnelles au sens du CCPA.</p>
 
-  <h2>12. Sécurité</h2>
-  <p>Vos données de jeu restent dans l’espace de stockage privé du Jeu sur votre appareil, protégé par le bac à sable des applications Android, et ne sont pas envoyées sur Internet. Les e-mails que vous nous envoyez sont protégés par les mesures de sécurité de notre fournisseur de messagerie.</p>
+  <h2>13. Sécurité</h2>
+  <p>Vos données de jeu restent dans le stockage privé du Jeu sur votre appareil, protégé par le bac à sable des applications d’Android, et ne sont pas envoyées sur Internet. La vérification de connexion et la recherche de code du Jeu utilisent des connexions HTTPS chiffrées. Les e-mails que vous nous envoyez sont protégés par les mesures de sécurité de notre fournisseur de messagerie.</p>
 
-  <h2>13. Modifications de cette politique</h2>
+  <h2>14. Modifications de cette politique</h2>
   <p>Nous pouvons mettre à jour cette politique, par exemple lorsque le Jeu reçoit de nouvelles fonctionnalités. La nouvelle version sera publiée sur cette page avec une nouvelle date de « Dernière mise à jour », et le lien dans les Réglages du Jeu mène toujours ici. Si une modification change la façon dont vos données sont traitées, nous mettrons à jour cette politique avant que la modification ne prenne effet dans le Jeu.</p>
 
-  <h2>14. Contact</h2>
+  <h2>15. Contact</h2>
   <p>Questions ou demandes concernant cette politique de confidentialité : <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">Cette politique est disponible en plusieurs langues. En cas de divergence entre une traduction et la version anglaise, la version anglaise prévaut.</p>
@@ -504,21 +572,22 @@
 <!-- ============================== Italiano ============================== -->
 <article id="it" data-lang="it" lang="it">
   <h1>Parachute Fall – Informativa sulla privacy</h1>
-  <p class="dates">Data di entrata in vigore: 25 settembre 2026 · Ultimo aggiornamento: 25 settembre 2026</p>
+  <p class="dates">Data di entrata in vigore: 25 settembre 2026 · Ultimo aggiornamento: 2 ottobre 2026</p>
   <p>La presente informativa sulla privacy spiega come il gioco per dispositivi mobili <strong>Parachute Fall</strong> (nome del pacchetto Android <code>com.patpatt.game</code>, il “Gioco”) tratta le informazioni. Il Gioco è sviluppato e pubblicato dallo sviluppatore indicato nella pagina Google Play del Gioco (“noi”). Per qualsiasi domanda, scrivici a <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>.</p>
 
   <div class="summary">
     <h2>In breve</h2>
     <ul>
-      <li>Il Gioco non raccoglie, trasmette, vende né condivide alcun dato personale.</li>
+      <li>Il Gioco in sé non raccoglie, vende né condivide alcun dato personale.</li>
       <li>Non ci sono account o accessi, né pubblicità, né strumenti di analisi o tracciamento, né acquisti in-app.</li>
       <li>I tuoi progressi e le tue impostazioni vengono salvati solo sul tuo dispositivo.</li>
-      <li>Il Gioco si può giocare completamente offline.</li>
+      <li>Il Gioco richiede una connessione a Internet. La usa solo per verificare che la connessione funzioni e, se partecipi al premio per chi ci segue, per controllare se il tuo codice premio è stato confermato. Queste richieste non contengono dati personali.</li>
+      <li>Né il Gioco né questo sito usano cookie.</li>
     </ul>
   </div>
 
   <h2>1. Informazioni che raccogliamo</h2>
-  <p>Non raccogliamo alcun dato personale tramite il Gioco. Il Gioco non ti chiede nome, indirizzo e-mail, numero di telefono, posizione, contatti, foto o altre informazioni personali e non crea né utilizza ID pubblicitari o altri identificatori del dispositivo.</p>
+  <p>Non raccogliamo alcun dato personale tramite il Gioco. Il Gioco non ti chiede nome, indirizzo e-mail, numero di telefono, posizione, contatti, foto o altre informazioni personali e non crea né utilizza ID pubblicitari o altri identificatori del dispositivo. Se partecipi al premio per chi ci segue su Instagram, si applica il trattamento limitato descritto nella sezione 5.</p>
 
   <h2>2. Informazioni salvate solo sul tuo dispositivo</h2>
   <p>Per ricordare la tua partita, il Gioco salva un piccolo file nella propria memoria privata sul tuo dispositivo (“shared preferences” di Android). Contiene:</p>
@@ -528,6 +597,7 @@
     <li>impostazioni: audio, musica, vibrazione, controllo inclinazione, qualità grafica, velocità dei comandi e lingua;</li>
     <li>statistiche di gioco, come il numero di livelli completati e di ostacoli evitati;</li>
     <li>lo stato delle ricompense e delle missioni giornaliere, se il tutorial è stato completato e se ti è già stato chiesto di valutare il Gioco.</li>
+    <li>il premio per chi ci segue: se hai aperto la nostra pagina Instagram dal Gioco, il codice premio che il Gioco ha creato per il tuo dispositivo, se l’hai inviato e se hai ritirato il premio.</li>
   </ul>
   <p>Il Gioco non invia mai questo file fuori dal tuo dispositivo e noi non possiamo vederlo. Viene eliminato quando disinstalli il Gioco o ne cancelli i dati. L’oro e le chiavi del Gioco non hanno alcun valore reale.</p>
 
@@ -541,50 +611,65 @@
   </ul>
 
   <h2>4. Autorizzazioni</h2>
-  <p>Il Gioco non richiede autorizzazioni che necessitano del tuo consenso (come posizione, fotocamera, microfono, contatti, file o telefono). Il suo pacchetto Android contiene due autorizzazioni standard concesse automaticamente all’installazione:</p>
+  <p>Il Gioco non richiede autorizzazioni che necessitano del tuo consenso (come posizione, fotocamera, microfono, contatti, file o telefono). Il suo pacchetto Android contiene solo autorizzazioni concesse automaticamente all’installazione:</p>
   <ul>
+    <li><strong>INTERNET:</strong> per la connessione a Internet di cui il Gioco ha bisogno per essere giocato (vedi sotto).</li>
+    <li><strong>ACCESS_NETWORK_STATE:</strong> per sapere se il tuo dispositivo è connesso a una rete, così il Gioco può avvisarti subito quando la connessione si interrompe.</li>
     <li><strong>VIBRATE:</strong> per la vibrazione di risposta descritta sopra.</li>
-    <li><strong>INTERNET:</strong> aggiunta dal motore Unity con cui è realizzato il Gioco. Il Gioco non usa Internet per inviare o ricevere i tuoi dati; i link che tocchi (ad esempio per valutare il Gioco o leggere questa informativa) si aprono in Google Play o nel tuo browser.</li>
+    <li><strong>Un’autorizzazione interna</strong> (<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) che le librerie di Android usano per impedire ad altre app di inviare messaggi al Gioco. Non dà al Gioco accesso a nulla.</li>
   </ul>
+  <p>Il Gioco si gioca online, ma usa Internet solo per due cose:</p>
+  <ul>
+    <li><strong>Controllo della connessione:</strong> mentre il Gioco è aperto, scarica circa ogni 30 secondi un file minuscolo (<code>ping.txt</code>) dal nostro servizio su GitHub Pages (<code>therooster0.github.io/parachute-fall-api</code>). Se quel file non è raggiungibile, interroga il controllo di connessione di Google (<code>www.google.com/generate_204</code>). Senza connessione, il Gioco si mette in pausa finché la connessione non torna.</li>
+    <li><strong>Premio per chi ci segue:</strong> quando tocchi VERIFICA nella finestra “Premio”, il Gioco scarica dallo stesso servizio un elenco di codici premio confermati e vi cerca il tuo codice (vedi la sezione 5). Il tuo codice non viene inviato; viene scaricata solo la parte dell’elenco in cui si troverebbe.</li>
+  </ul>
+  <p>Queste richieste non contengono dati personali né identificativi di account o dispositivo. Come per qualsiasi connessione a Internet, i server che le ricevono (GitHub e, per il controllo di riserva, Google) vedono il tuo indirizzo IP e informazioni tecniche di base, come l’ora della richiesta. I link che tocchi (ad esempio per valutare il Gioco, aprire Instagram o leggere questa informativa o i nostri Termini di utilizzo) si aprono in Google Play, nell’app Instagram o nel tuo browser.</p>
 
   <h2>5. Servizi di terze parti</h2>
   <p>Il Gioco non contiene SDK di terze parti per pubblicità, analisi, social network o pagamenti. Tuttavia, i seguenti servizi possono trattare informazioni secondo le proprie informative sulla privacy:</p>
   <ul>
     <li><strong>Google Play:</strong> quando scarichi, installi o aggiorni il Gioco, Google tratta le informazioni come descritto nelle <a href="https://policies.google.com/privacy?hl=it">Norme sulla privacy di Google</a>. Tramite Google Play Console, Google ci fornisce solo statistiche aggregate (ad esempio il numero di installazioni) e, se hai consentito al tuo dispositivo di condividere dati di utilizzo e diagnostica, rapporti anonimi su arresti anomali e prestazioni che non ti identificano.</li>
     <li><strong>Valutare il Gioco:</strong> se scegli di valutare il Gioco, questo apre la sua pagina sul Google Play Store; le valutazioni e le recensioni che pubblichi lì sono gestite da Google.</li>
-    <li><strong>Unity:</strong> il Gioco è realizzato con il motore Unity di Unity Technologies. Abbiamo disattivato nel Gioco i servizi di dati facoltativi di Unity (Unity Analytics, statistiche hardware, segnalazione di arresti anomali e prestazioni). Maggiori informazioni: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">informativa sulla privacy di Unity</a>.</li>
+    <li><strong>Instagram (premio per chi ci segue):</strong> se tocchi SEGUI nella finestra “Premio”, la nostra pagina Instagram (@stamgamesdev) si apre nell’app Instagram o nel tuo browser. Per confermare che ci segui, puoi inviare al nostro account, con un messaggio Instagram, il codice premio mostrato nel Gioco. Il nostro servizio di verifica legge quindi automaticamente il messaggio tramite l’API di Instagram di Meta, usa l’identificativo che Instagram assegna al mittente per il nostro account per chiedere a Instagram se quell’account segue il nostro e invia una breve risposta. Pubblica solo un hash SHA-256 irreversibile di un codice confermato, che non può essere collegato a te né al tuo account Instagram; non conserva il tuo nome, il tuo nome utente, il tuo identificativo né il tuo messaggio. Il tuo messaggio resta nella nostra casella di Instagram come qualsiasi altro messaggio; puoi chiederci di eliminare la conversazione. Inviare il codice è una tua scelta; la base giuridica di questo trattamento è la tua richiesta di ricevere il premio (art. 6, par. 1, lett. b) GDPR). Meta tratta il tuo uso di Instagram come descritto nell’<a href="https://privacycenter.instagram.com/policy">Informativa sulla privacy di Instagram</a>.</li>
+    <li><strong>GitHub (il nostro servizio):</strong> il controllo della connessione e l’elenco dei codici confermati sono ospitati su GitHub Pages, e il servizio di verifica funziona su GitHub Actions, entrambi forniti da GitHub, Inc. (USA). Quando il Gioco si connette, GitHub può trattare dati tecnici come il tuo indirizzo IP (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Informativa sulla privacy di GitHub</a>).</li>
+    <li><strong>Controllo di connessione di Google:</strong> solo se il nostro servizio non è raggiungibile, il Gioco interroga <code>www.google.com/generate_204</code>, che restituisce una risposta vuota; come per qualsiasi sito, Google vede il tuo indirizzo IP (<a href="https://policies.google.com/privacy?hl=it">Norme sulla privacy di Google</a>).</li>
+    <li><strong>Unity:</strong> il Gioco è realizzato con il motore Unity di Unity Technologies. Abbiamo disattivato i servizi di dati facoltativi di Unity (Unity Analytics, statistiche hardware, segnalazione di arresti anomali e prestazioni) e non abbiamo incluso affatto nel Gioco il modulo di analisi di Unity; il Gioco quindi non invia dati a Unity. Maggiori informazioni: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">informativa sulla privacy di Unity</a>.</li>
     <li><strong>Backup di Android:</strong> se il backup è attivo sul tuo dispositivo, Android può includere i dati salvati del Gioco nel backup del dispositivo archiviato nel tuo Account Google. Questo backup è gestito da te e da Google; noi non vi abbiamo accesso.</li>
     <li><strong>Questa pagina:</strong> questa informativa è ospitata su GitHub Pages. Quando la apri, GitHub può trattare dati tecnici come il tuo indirizzo IP (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Informativa sulla privacy di GitHub</a>). Non aggiungiamo a questa pagina cookie né strumenti di analisi o tracciamento.</li>
   </ul>
 
-  <h2>6. Condivisione e vendita dei dati</h2>
-  <p>Poiché non raccogliamo dati personali tramite il Gioco, non abbiamo nulla da vendere, affittare, scambiare o condividere con nessuno, inclusi inserzionisti e intermediari di dati. Non trasferiamo dati verso altri Paesi.</p>
+  <h2>6. Cookie e tecnologie simili</h2>
+  <p>Il Gioco non usa cookie, web beacon, ID pubblicitari, fingerprinting del dispositivo né altre tecnologie di tracciamento simili. L’unica cosa che salva sul tuo dispositivo è il file di salvataggio descritto nella sezione 2: è strettamente necessario per il funzionamento del Gioco e non lascia mai il tuo dispositivo. Questo sito (questa informativa e i nostri Termini di utilizzo) non imposta cookie e non carica nulla da altri siti. Per questo né il Gioco né questo sito mostrano un banner per il consenso ai cookie: non c’è nulla a cui acconsentire.</p>
 
-  <h2>7. Pubblicità e acquisti in-app</h2>
-  <p>Il Gioco non mostra pubblicità. Al momento non è possibile acquistare nulla con denaro reale: gli articoli del negozio che costerebbero denaro reale sono contrassegnati con “Presto”. L’oro e le chiavi guadagnati nel Gioco non hanno alcun valore reale. Se in futuro aggiungeremo funzioni che coinvolgono dati (ad esempio acquisti in-app i cui pagamenti sarebbero gestiti da Google Play), aggiorneremo questa informativa prima che tali funzioni siano disponibili.</p>
+  <h2>7. Condivisione e vendita dei dati</h2>
+  <p>Poiché il Gioco in sé non raccoglie dati personali, non abbiamo nulla da vendere, affittare, scambiare o condividere con nessuno, inclusi inserzionisti e intermediari di dati. I servizi descritti nelle sezioni 4 e 5 (Google, GitHub, Meta) hanno sede negli Stati Uniti e possono trattarvi dati tecnici, come gli indirizzi IP, secondo le proprie garanzie.</p>
 
-  <h2>8. Privacy dei minori</h2>
-  <p>Il Gioco è adatto a un pubblico generale, bambini compresi. Poiché il Gioco non raccoglie informazioni personali da nessuno, i bambini possono giocarci senza fornire dati personali. Non raccogliamo consapevolmente informazioni personali da bambini di età inferiore a 13 anni (o all’età minima prevista nel loro Paese). Se sei un genitore o un tutore e ritieni che tuo figlio ci abbia inviato informazioni personali (ad esempio via e-mail), contattaci e le elimineremo.</p>
+  <h2>8. Pubblicità e acquisti in-app</h2>
+  <p>Il Gioco non mostra pubblicità. Al momento non è possibile acquistare nulla con denaro reale: gli articoli del negozio che costerebbero denaro reale sono contrassegnati con “Presto”. L’oro e le chiavi guadagnati nel Gioco non hanno alcun valore reale. Se in futuro aggiungeremo funzioni che coinvolgono dati (ad esempio acquisti in-app i cui pagamenti sarebbero gestiti da Google Play), aggiorneremo questa informativa prima che tali funzioni siano disponibili. Per le regole su oggetti di gioco, acquisti e rimborsi, consulta i nostri <a href="terms.html?lang=it">Termini di utilizzo</a>.</p>
 
-  <h2>9. Se ci contatti</h2>
+  <h2>9. Privacy dei minori</h2>
+  <p>Il Gioco è adatto a un pubblico generale, bambini compresi. Poiché il Gioco non raccoglie informazioni personali da nessuno, i bambini possono giocarci senza fornire dati personali. Non raccogliamo consapevolmente informazioni personali da bambini di età inferiore a 13 anni (o all’età minima prevista nel loro Paese). Se sei un genitore o un tutore e ritieni che tuo figlio ci abbia inviato informazioni personali (ad esempio via e-mail), contattaci e le elimineremo. Il premio per chi ci segue su Instagram è pensato per i giocatori che, secondo le condizioni di Instagram, hanno l’età per usarlo (almeno 13 anni).</p>
+
+  <h2>10. Se ci contatti</h2>
   <p>Se ci scrivi via e-mail, riceviamo il tuo indirizzo e-mail e il contenuto del messaggio. Li usiamo solo per risponderti, non li condividiamo con nessuno e li eliminiamo quando non sono più necessari per gestire la tua richiesta.</p>
 
-  <h2>10. Conservazione ed eliminazione dei dati</h2>
+  <h2>11. Conservazione ed eliminazione dei dati</h2>
   <ul>
     <li><strong>Dati sul tuo dispositivo:</strong> restano finché non disinstalli il Gioco o ne cancelli i dati (Impostazioni di Android → App → Parachute Fall → Spazio di archiviazione → Cancella dati). Questo azzera definitivamente i tuoi progressi.</li>
     <li><strong>E-mail:</strong> conservate solo per il tempo necessario a risponderti. Puoi chiederne l’eliminazione in qualsiasi momento.</li>
+    <li><strong>Messaggi del premio per chi ci segue:</strong> il servizio di verifica legge i nuovi messaggi entro pochi minuti e conserva solo l’hash di un codice confermato e l’ora dell’ultimo messaggio letto. I messaggi restano nella nostra casella di Instagram finché non vengono eliminati; scrivici se vuoi che eliminiamo il tuo.</li>
   </ul>
 
-  <h2>11. I tuoi diritti</h2>
+  <h2>12. I tuoi diritti</h2>
   <p>A seconda di dove vivi, leggi come il Regolamento generale sulla protezione dei dati dell’UE e del Regno Unito (GDPR), la legge turca n. 6698 sulla protezione dei dati personali (KVKK) e il California Consumer Privacy Act (CCPA/CPRA) ti riconoscono diritti sui tuoi dati personali, come il diritto di accedervi, rettificarli, cancellarli o riceverli in formato portabile, di opporti al trattamento o chiederne la limitazione e di revocare il consenso. Poiché il Gioco non raccoglie dati personali, questi diritti riguardano principalmente le e-mail che ci invii. Per esercitarli, scrivi a <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>; risponderemo entro 30 giorni. Hai inoltre il diritto di presentare un reclamo all’autorità per la protezione dei dati del tuo Paese (in Italia: il Garante per la protezione dei dati personali). Non vendiamo né condividiamo informazioni personali ai sensi del CCPA.</p>
 
-  <h2>12. Sicurezza</h2>
-  <p>I tuoi dati di gioco restano nella memoria privata del Gioco sul tuo dispositivo, protetta dalla sandbox delle app di Android, e non vengono inviati tramite Internet. Le e-mail che ci invii sono protette dalle misure di sicurezza del nostro fornitore di posta elettronica.</p>
+  <h2>13. Sicurezza</h2>
+  <p>I tuoi dati di gioco restano nella memoria privata del Gioco sul tuo dispositivo, protetta dalla sandbox delle app di Android, e non vengono inviati tramite Internet. Il controllo della connessione e la ricerca del codice usano connessioni HTTPS cifrate. Le e-mail che ci invii sono protette dalle misure di sicurezza del nostro fornitore di posta elettronica.</p>
 
-  <h2>13. Modifiche a questa informativa</h2>
+  <h2>14. Modifiche a questa informativa</h2>
   <p>Possiamo aggiornare questa informativa, ad esempio quando il Gioco riceve nuove funzioni. La nuova versione sarà pubblicata su questa pagina con una nuova data di “Ultimo aggiornamento” e il link nelle Opzioni del Gioco porta sempre qui. Se una modifica riguarda il modo in cui vengono trattati i tuoi dati, aggiorneremo questa informativa prima che la modifica abbia effetto nel Gioco.</p>
 
-  <h2>14. Contatti</h2>
+  <h2>15. Contatti</h2>
   <p>Domande o richieste su questa informativa sulla privacy: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">Questa informativa è disponibile in più lingue. In caso di differenze tra una traduzione e la versione inglese, prevale la versione inglese.</p>
@@ -593,21 +678,22 @@
 <!-- ============================== 中文（简体） ============================== -->
 <article id="zh" data-lang="zh" lang="zh-Hans">
   <h1>Parachute Fall 隐私政策</h1>
-  <p class="dates">生效日期：2026年9月25日 · 最后更新：2026年9月25日</p>
+  <p class="dates">生效日期：2026年9月25日 · 最后更新：2026年10月2日</p>
   <p>本隐私政策说明手机游戏 <strong>Parachute Fall</strong>（Android 软件包名称 <code>com.patpatt.game</code>，以下简称“本游戏”）如何处理信息。本游戏由其 Google Play 页面上注明的开发者（以下简称“我们”）开发和发行。如有任何问题，请发送电子邮件至 <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>。</p>
 
   <div class="summary">
     <h2>简而言之</h2>
     <ul>
-      <li>本游戏不收集、不传输、不出售、也不共享任何个人数据。</li>
+      <li>本游戏本身不收集、不出售、也不共享任何个人数据。</li>
       <li>没有账号或登录，没有广告，没有分析或跟踪工具，也没有应用内购买。</li>
       <li>您的游戏进度和设置只保存在您自己的设备上。</li>
-      <li>本游戏可以完全离线游玩。</li>
+      <li>本游戏需要互联网连接。它只用网络来检查连接是否正常，以及在您参加关注奖励时查询您的奖励代码是否已确认。这些请求不包含任何个人数据。</li>
+      <li>本游戏和本网站都不使用 Cookie。</li>
     </ul>
   </div>
 
   <h2>1. 我们收集的信息</h2>
-  <p>我们不会通过本游戏收集任何个人数据。本游戏不会要求您提供姓名、电子邮件地址、电话号码、位置、通讯录、照片或任何其他个人信息，也不会创建或使用广告标识符或其他设备标识符。</p>
+  <p>我们不会通过本游戏收集任何个人数据。本游戏不会要求您提供姓名、电子邮件地址、电话号码、位置、通讯录、照片或任何其他个人信息，也不会创建或使用广告标识符或其他设备标识符。 如果您参加 Instagram 关注奖励，则适用第 5 节所述的有限处理。</p>
 
   <h2>2. 仅保存在您设备上的信息</h2>
   <p>为了记住您的游戏进度，本游戏会在您设备上属于本游戏的私有存储空间（Android“shared preferences”）中保存一个小文件，其中包括：</p>
@@ -617,6 +703,7 @@
     <li>设置：音效、音乐、震动、重力感应、画质、操控速度和语言；</li>
     <li>游戏统计数据，例如完成的关卡数和躲避的障碍物数；</li>
     <li>每日奖励和每日任务的状态、是否已完成新手教程，以及是否已邀请您为本游戏评分。</li>
+    <li>关注奖励：您是否从本游戏中打开过我们的 Instagram 页面、本游戏为您的设备生成的奖励代码、您是否已发送该代码，以及您是否已领取奖励。</li>
   </ul>
   <p>本游戏绝不会将此文件发送到您的设备之外，我们也无法查看它。当您卸载本游戏或清除其数据时，该文件会被删除。游戏中的金币和钥匙没有任何现实价值。</p>
 
@@ -630,50 +717,65 @@
   </ul>
 
   <h2>4. 权限</h2>
-  <p>本游戏不会请求任何需要您批准的权限（例如位置、相机、麦克风、通讯录、文件或电话）。其 Android 软件包包含两项在安装时自动授予的标准权限：</p>
+  <p>本游戏不会请求任何需要您批准的权限（例如位置、相机、麦克风、通讯录、文件或电话）。其 Android 软件包只包含在安装时自动授予的权限：</p>
   <ul>
+    <li><strong>INTERNET（网络）：</strong>用于连接互联网，本游戏需要联网才能玩（见下文）。</li>
+    <li><strong>ACCESS_NETWORK_STATE（网络状态）：</strong>用于查看您的设备是否已连接到网络，以便在连接中断时立即提示您。</li>
     <li><strong>VIBRATE（震动）：</strong>用于上述震动反馈。</li>
-    <li><strong>INTERNET（网络）：</strong>由制作本游戏所用的 Unity 引擎添加。本游戏不会通过互联网发送或接收您的数据；您点按的链接（例如为本游戏评分或阅读本政策）会在 Google Play 或您的网络浏览器中打开。</li>
+    <li><strong>一项内部权限</strong>（<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>）：Android 自带的库用它来阻止其他应用向本游戏发送消息。它不会让本游戏访问任何内容。</li>
   </ul>
+  <p>本游戏需要联网游玩，但只将互联网用于两件事：</p>
+  <ul>
+    <li><strong>连接检查：</strong>本游戏打开期间，大约每 30 秒从我们在 GitHub Pages 上的服务（<code>therooster0.github.io/parachute-fall-api</code>）下载一个很小的文件（<code>ping.txt</code>）。如果无法访问该文件，则改为询问 Google 的连接检查（<code>www.google.com/generate_204</code>）。没有网络连接时，本游戏会暂停，直到连接恢复。</li>
+    <li><strong>关注奖励：</strong>当您在“领取奖励”窗口中点按“验证”时，本游戏会从同一服务下载已确认奖励代码的列表，并在其中查找您的代码（见第 5 节）。您的代码不会被发送；只会下载列表中可能包含您代码的那一部分。</li>
+  </ul>
+  <p>这些请求不包含任何个人数据，也不包含账号或设备标识符。与任何互联网连接一样，接收请求的服务器（GitHub，以及备用检查时的 Google）会看到您的 IP 地址和请求时间等基本技术信息。您点按的链接（例如为本游戏评分、打开 Instagram、阅读本政策或我们的使用条款）会在 Google Play、Instagram 应用或您的网络浏览器中打开。</p>
 
   <h2>5. 第三方服务</h2>
   <p>本游戏不包含任何第三方广告、分析、社交网络或支付 SDK。不过，以下服务可能会根据其自身的隐私政策处理信息：</p>
   <ul>
     <li><strong>Google Play：</strong>当您下载、安装或更新本游戏时，Google 会按照 <a href="https://policies.google.com/privacy?hl=zh-CN">Google 隐私权政策</a>处理信息。通过 Google Play 管理中心，Google 只向我们提供汇总统计数据（例如安装次数），以及在您允许设备分享使用情况和诊断数据的情况下，无法识别您身份的匿名崩溃和性能报告。</li>
     <li><strong>为本游戏评分：</strong>如果您选择为本游戏评分，本游戏会打开其在 Google Play 商店中的页面；您在那里发布的评分和评论由 Google 处理。</li>
-    <li><strong>Unity：</strong>本游戏使用 Unity Technologies 的 Unity 引擎制作。我们已在本游戏中关闭 Unity 的可选数据服务（Unity Analytics、硬件统计、崩溃和性能报告）。详情请参阅 <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity 隐私政策</a>。</li>
+    <li><strong>Instagram（关注奖励）：</strong>如果您在“领取奖励”窗口中点按“关注”，我们的 Instagram 页面（@stamgamesdev）会在 Instagram 应用或您的浏览器中打开。为了确认您关注了我们，您可以通过 Instagram 私信把本游戏中显示的奖励代码发送给我们的账号。随后，我们的验证服务会通过 Meta 的 Instagram API 自动读取该消息，使用 Instagram 为发送者在我们账号下分配的标识符向 Instagram 查询该账号是否关注了我们，并发送一条简短回复。它只公开已确认代码的不可逆 SHA-256 哈希值，该值无法与您或您的 Instagram 账号关联；它不会保存您的姓名、用户名、标识符或消息。您的消息会像其他消息一样保留在我们的 Instagram 收件箱中；您可以要求我们删除该对话。是否发送代码由您决定；此项处理的法律依据是您领取奖励的请求（GDPR 第 6 条第 1 款 (b) 项）。Meta 会按照 <a href="https://privacycenter.instagram.com/policy">Instagram 隐私政策</a>处理您使用 Instagram 的信息。</li>
+    <li><strong>GitHub（我们的服务）：</strong>连接检查和已确认代码列表托管在 GitHub Pages 上，验证服务运行在 GitHub Actions 上，二者均由 GitHub, Inc.（美国）提供。本游戏联网时，GitHub 可能会处理您的 IP 地址等技术数据（<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>）。</li>
+    <li><strong>Google 连接检查：</strong>仅当无法访问我们的服务时，本游戏才会询问 <code>www.google.com/generate_204</code>，它返回一个空响应；与访问任何网站一样，Google 会看到您的 IP 地址（<a href="https://policies.google.com/privacy?hl=zh-CN">Google 隐私权政策</a>）。</li>
+    <li><strong>Unity：</strong>本游戏使用 Unity Technologies 的 Unity 引擎制作。我们已关闭 Unity 的可选数据服务（Unity Analytics、硬件统计、崩溃和性能报告），并且完全没有将 Unity 的分析模块放入本游戏，因此本游戏不会向 Unity 发送任何数据。详情请参阅 <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity 隐私政策</a>。</li>
     <li><strong>Android 备份：</strong>如果您的设备开启了备份功能，Android 可能会将本游戏保存的数据包含在存储于您 Google 账号中的设备备份里。该备份由您和 Google 管理，我们无法访问。</li>
     <li><strong>本页面：</strong>本隐私政策托管在 GitHub Pages 上。当您打开本页面时，GitHub 可能会处理您的 IP 地址等技术数据（<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>）。我们不会在本页面添加任何 Cookie、分析或跟踪工具。</li>
   </ul>
 
-  <h2>6. 数据的共享和出售</h2>
-  <p>由于我们不通过本游戏收集个人数据，因此我们没有任何数据可以出售、出租、交换或与任何人（包括广告商和数据经纪商）共享。我们不会向其他国家或地区传输任何数据。</p>
+  <h2>6. Cookie 及类似技术</h2>
+  <p>本游戏不使用 Cookie、网络信标、广告标识符、设备指纹或任何类似的跟踪技术。它在您设备上保存的唯一内容是第 2 节所述的存档文件；该文件是本游戏运行所必需的，且绝不会离开您的设备。本网站（本政策和我们的使用条款）不设置任何 Cookie，也不从其他网站加载任何内容。因此，本游戏和本网站都不会显示 Cookie 同意横幅：没有任何需要您同意的事项。</p>
 
-  <h2>7. 广告和应用内购买</h2>
-  <p>本游戏不展示广告。目前无法用真实货币购买任何物品：需要真实货币的商店商品均标有“即将推出”。游戏中获得的金币和钥匙没有任何现实价值。如果我们将来添加涉及数据的功能（例如由 Google Play 处理付款的应用内购买），我们会在这些功能推出之前更新本政策。</p>
+  <h2>7. 数据的共享和出售</h2>
+  <p>由于本游戏本身不收集个人数据，我们没有任何数据可以出售、出租、交换或与任何人（包括广告商和数据经纪商）共享。第 4 节和第 5 节所述的服务（Google、GitHub、Meta）位于美国，可能会在其自身保障措施下在美国处理 IP 地址等技术数据。</p>
 
-  <h2>8. 儿童隐私</h2>
-  <p>本游戏适合包括儿童在内的一般受众。由于本游戏不向任何人收集个人信息，儿童无需提供任何个人数据即可游玩。我们不会在知情的情况下收集 13 岁以下儿童（或其所在国家或地区规定的最低年龄以下儿童）的个人信息。如果您是家长或监护人，并认为您的孩子向我们发送了个人信息（例如通过电子邮件），请联系我们，我们会将其删除。</p>
+  <h2>8. 广告和应用内购买</h2>
+  <p>本游戏不展示广告。目前无法用真实货币购买任何物品：需要真实货币的商店商品均标有“即将推出”。游戏中获得的金币和钥匙没有任何现实价值。如果我们将来添加涉及数据的功能（例如由 Google Play 处理付款的应用内购买），我们会在这些功能推出之前更新本政策。 有关游戏内物品、购买和退款的规则，请参阅我们的<a href="terms.html?lang=zh">使用条款</a>。</p>
 
-  <h2>9. 如果您联系我们</h2>
+  <h2>9. 儿童隐私</h2>
+  <p>本游戏适合包括儿童在内的一般受众。由于本游戏不向任何人收集个人信息，儿童无需提供任何个人数据即可游玩。我们不会在知情的情况下收集 13 岁以下儿童（或其所在国家或地区规定的最低年龄以下儿童）的个人信息。如果您是家长或监护人，并认为您的孩子向我们发送了个人信息（例如通过电子邮件），请联系我们，我们会将其删除。 Instagram 关注奖励面向根据 Instagram 条款已达到使用 Instagram 年龄（至少 13 岁）的玩家。</p>
+
+  <h2>10. 如果您联系我们</h2>
   <p>如果您给我们发送电子邮件，我们会收到您的电子邮件地址和邮件内容。我们仅将其用于回复您，不会与任何人共享，并会在处理您的请求不再需要时将其删除。</p>
 
-  <h2>10. 数据保留和删除</h2>
+  <h2>11. 数据保留和删除</h2>
   <ul>
     <li><strong>设备上的数据：</strong>在您卸载本游戏或清除其数据之前一直保留（Android 设置 → 应用 → Parachute Fall → 存储 → 清除数据）。这将永久重置您的游戏进度。</li>
     <li><strong>电子邮件：</strong>仅在回复您所需的期限内保留。您可以随时要求我们删除。</li>
+    <li><strong>关注奖励消息：</strong>验证服务会在几分钟内读取新消息，并且只保存已确认代码的哈希值和最后读取消息的时间。消息会保留在我们的 Instagram 收件箱中，直到被删除；如果您希望我们删除您的消息，请写信给我们。</li>
   </ul>
 
-  <h2>11. 您的权利</h2>
+  <h2>12. 您的权利</h2>
   <p>根据您所在的地区，欧盟和英国《通用数据保护条例》（GDPR）、土耳其第 6698 号《个人数据保护法》（KVKK）以及《加州消费者隐私法》（CCPA/CPRA）等法律赋予您对个人数据的权利，例如访问、更正、删除或转移数据的权利，反对或限制处理的权利，以及撤回同意的权利。由于本游戏不收集个人数据，这些权利主要涉及您发送给我们的电子邮件。如需行使这些权利，请发送邮件至 <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>；我们会在 30 天内回复。您还有权向所在国家或地区的数据保护机构投诉。我们不会出售或共享 CCPA 所定义的个人信息。</p>
 
-  <h2>12. 安全</h2>
-  <p>您的游戏数据保存在设备上本游戏的私有存储空间中，受 Android 应用沙盒保护，不会通过互联网发送。您发送给我们的电子邮件受我们电子邮件服务提供商的安全措施保护。</p>
+  <h2>13. 安全</h2>
+  <p>您的游戏数据保存在设备上本游戏的私有存储空间中，受 Android 应用沙盒保护，不会通过互联网发送。本游戏的连接检查和代码查询使用加密的 HTTPS 连接。您发送给我们的电子邮件受我们电子邮件服务提供商的安全措施保护。</p>
 
-  <h2>13. 本政策的变更</h2>
+  <h2>14. 本政策的变更</h2>
   <p>我们可能会更新本政策，例如在本游戏新增功能时。新版本将发布在本页面上并注明新的“最后更新”日期，游戏“设置”中的链接始终指向本页面。如果变更会影响您数据的处理方式，我们会在该变更于游戏中生效之前更新本政策。</p>
 
-  <h2>14. 联系我们</h2>
+  <h2>15. 联系我们</h2>
   <p>有关本隐私政策的问题或请求：<a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">本政策提供多种语言版本。如译文与英文版本有出入，以英文版本为准。</p>
@@ -682,21 +784,22 @@
 <!-- ============================== العربية ============================== -->
 <article id="ar" data-lang="ar" lang="ar" dir="rtl">
   <h1>سياسة الخصوصية للعبة Parachute Fall</h1>
-  <p class="dates">تاريخ السريان: 25 سبتمبر 2026 · آخر تحديث: 25 سبتمبر 2026</p>
+  <p class="dates">تاريخ السريان: 25 سبتمبر 2026 · آخر تحديث: 2 أكتوبر 2026</p>
   <p>توضّح سياسة الخصوصية هذه كيفية تعامل لعبة الهاتف المحمول <strong>Parachute Fall</strong> (اسم حزمة Android: <code>com.patpatt.game</code>، ويُشار إليها بـ"اللعبة") مع المعلومات. تتولى تطوير اللعبة ونشرها الجهةُ المطوِّرة المذكورة في صفحة اللعبة على Google Play (ويُشار إليها بـ"نحن"). إذا كانت لديك أي أسئلة، راسلنا على <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>.</p>
 
   <div class="summary">
     <h2>باختصار</h2>
     <ul>
-      <li>لا تجمع اللعبة أي بيانات شخصية ولا ترسلها ولا تبيعها ولا تشاركها.</li>
+      <li>لا تجمع اللعبة نفسها أي بيانات شخصية ولا تبيعها ولا تشاركها.</li>
       <li>لا توجد حسابات أو تسجيل دخول، ولا إعلانات، ولا أدوات تحليل أو تتبّع، ولا عمليات شراء داخل التطبيق.</li>
       <li>يُحفظ تقدّمك وإعداداتك على جهازك فقط.</li>
-      <li>يمكن لعب اللعبة بالكامل دون اتصال بالإنترنت.</li>
+      <li>تحتاج اللعبة إلى اتصال بالإنترنت. ولا تستخدمه إلا للتحقق من أن الاتصال يعمل، وللتحقق مما إذا كان رمز جائزتك قد تأكّد إذا شاركت في جائزة المتابعة. ولا تحتوي هذه الطلبات على أي بيانات شخصية.</li>
+      <li>لا تستخدم اللعبة ولا هذا الموقع ملفات تعريف الارتباط (الكوكيز).</li>
     </ul>
   </div>
 
   <h2>1. المعلومات التي نجمعها</h2>
-  <p>لا نجمع أي بيانات شخصية عبر اللعبة. لا تطلب اللعبة اسمك أو بريدك الإلكتروني أو رقم هاتفك أو موقعك أو جهات اتصالك أو صورك أو أي معلومات شخصية أخرى، ولا تُنشئ أو تستخدم معرّفات إعلانية أو أي معرّفات أخرى للجهاز.</p>
+  <p>لا نجمع أي بيانات شخصية عبر اللعبة. لا تطلب اللعبة اسمك أو بريدك الإلكتروني أو رقم هاتفك أو موقعك أو جهات اتصالك أو صورك أو أي معلومات شخصية أخرى، ولا تُنشئ أو تستخدم معرّفات إعلانية أو أي معرّفات أخرى للجهاز. إذا شاركت في جائزة المتابعة على Instagram، فتنطبق المعالجة المحدودة الموضّحة في القسم 5.</p>
 
   <h2>2. المعلومات المحفوظة على جهازك فقط</h2>
   <p>لكي تتذكّر اللعبة تقدّمك، تحفظ ملفًا صغيرًا في مساحة التخزين الخاصة بها على جهازك (<span dir="ltr">"shared preferences"</span> في Android). يحتوي هذا الملف على:</p>
@@ -706,6 +809,7 @@
     <li>الإعدادات: الصوت والموسيقى والاهتزاز والتحكم بالإمالة وجودة الرسومات وسرعة التحكم واللغة؛</li>
     <li>إحصاءات اللعب، مثل عدد المراحل المكتملة والعقبات التي تفاديتها؛</li>
     <li>حالة المكافآت والمهام اليومية، وما إذا كان الدرس التعليمي قد اكتمل، وما إذا كنا قد طلبنا منك تقييم اللعبة.</li>
+    <li>جائزة المتابعة: ما إذا كنت قد فتحت صفحتنا على Instagram من اللعبة، ورمز الجائزة الذي أنشأته اللعبة لجهازك، وما إذا كنت قد أرسلته، وما إذا كنت قد استلمت الجائزة.</li>
   </ul>
   <p>لا ترسل اللعبة هذا الملف أبدًا إلى خارج جهازك، ولا يمكننا الاطلاع عليه. ويُحذف عند إلغاء تثبيت اللعبة أو مسح بياناتها. ليس للذهب والمفاتيح في اللعبة أي قيمة حقيقية.</p>
 
@@ -719,50 +823,65 @@
   </ul>
 
   <h2>4. الأذونات</h2>
-  <p>لا تطلب اللعبة أي إذن يحتاج إلى موافقتك (مثل الموقع أو الكاميرا أو الميكروفون أو جهات الاتصال أو الملفات أو الهاتف). وتتضمن حزمة Android الخاصة بها إذنين قياسيين يُمنحان تلقائيًا عند التثبيت:</p>
+  <p>لا تطلب اللعبة أي إذن يحتاج إلى موافقتك (مثل الموقع أو الكاميرا أو الميكروفون أو جهات الاتصال أو الملفات أو الهاتف). ولا تتضمن حزمة Android الخاصة بها إلا أذونات تُمنح تلقائيًا عند التثبيت:</p>
   <ul>
+    <li><strong>INTERNET (الإنترنت):</strong> للاتصال بالإنترنت الذي تحتاجه اللعبة لكي تُلعب (انظر أدناه).</li>
+    <li><strong>ACCESS_NETWORK_STATE (حالة الشبكة):</strong> لمعرفة ما إذا كان جهازك متصلًا بشبكة، حتى تتمكن اللعبة من إخبارك فورًا عند انقطاع الاتصال.</li>
     <li><strong>VIBRATE (الاهتزاز):</strong> للاستجابة بالاهتزاز الموضّحة أعلاه.</li>
-    <li><strong>INTERNET (الإنترنت):</strong> يضيفه محرك Unity الذي صُنعت به اللعبة. لا تستخدم اللعبة الإنترنت لإرسال بياناتك أو استقبالها؛ وتُفتح الروابط التي تنقر عليها (مثل تقييم اللعبة أو قراءة هذه السياسة) في Google Play أو في متصفحك.</li>
+    <li><strong>إذن داخلي</strong> (<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) تستخدمه مكتبات Android نفسها لمنع التطبيقات الأخرى من إرسال رسائل إلى اللعبة. ولا يمنح اللعبة إمكانية الوصول إلى أي شيء.</li>
   </ul>
+  <p>تُلعب اللعبة عبر الإنترنت، لكنها لا تستخدم الإنترنت إلا لأمرين:</p>
+  <ul>
+    <li><strong>التحقق من الاتصال:</strong> ما دامت اللعبة مفتوحة، فإنها تنزّل كل 30 ثانية تقريبًا ملفًا صغيرًا جدًا (<code>ping.txt</code>) من خدمتنا على GitHub Pages ‏(<code>therooster0.github.io/parachute-fall-api</code>). وإذا تعذّر الوصول إلى هذا الملف، فإنها تسأل خدمة التحقق من الاتصال لدى Google ‏(<code>www.google.com/generate_204</code>). وعند عدم وجود اتصال، تتوقف اللعبة مؤقتًا حتى يعود الاتصال.</li>
+    <li><strong>جائزة المتابعة:</strong> عندما تنقر على «تحقّق» في نافذة «اربح جائزة»، تنزّل اللعبة من الخدمة نفسها قائمةً برموز الجوائز المؤكَّدة وتبحث فيها عن رمزك (انظر القسم 5). لا يُرسل رمزك؛ بل يُنزَّل فقط الجزء من القائمة الذي قد يكون رمزك فيه.</li>
+  </ul>
+  <p>لا تحتوي هذه الطلبات على أي بيانات شخصية أو معرّفات للحساب أو الجهاز. وكما في أي اتصال بالإنترنت، ترى الخوادم التي تتلقاها (GitHub، وGoogle عند التحقق الاحتياطي) عنوان IP الخاص بك ومعلومات تقنية أساسية مثل وقت الطلب. وتُفتح الروابط التي تنقر عليها (مثل تقييم اللعبة أو فتح Instagram أو قراءة هذه السياسة أو شروط الاستخدام) في Google Play أو في تطبيق Instagram أو في متصفحك.</p>
 
   <h2>5. خدمات الجهات الخارجية</h2>
   <p>لا تحتوي اللعبة على أي حِزم SDK تابعة لجهات خارجية للإعلانات أو التحليلات أو الشبكات الاجتماعية أو المدفوعات. ومع ذلك، قد تعالج الخدمات التالية معلومات وفقًا لسياسات الخصوصية الخاصة بها:</p>
   <ul>
     <li><strong>Google Play:</strong> عند تنزيل اللعبة أو تثبيتها أو تحديثها، تعالج Google المعلومات كما هو موضّح في <a href="https://policies.google.com/privacy?hl=ar">سياسة خصوصية Google</a>. ومن خلال Google Play Console، لا تزوّدنا Google إلا بإحصاءات مجمّعة (مثل عدد عمليات التثبيت)، وبتقارير مجهولة الهوية عن الأعطال والأداء لا تحدّد هويتك، وذلك إذا سمحت لجهازك بمشاركة بيانات الاستخدام والتشخيص.</li>
     <li><strong>تقييم اللعبة:</strong> إذا اخترت تقييم اللعبة، فستفتح صفحتها في متجر Google Play؛ وتتولى Google إدارة التقييمات والمراجعات التي تنشرها هناك.</li>
-    <li><strong>Unity:</strong> صُنعت اللعبة باستخدام محرك Unity من Unity Technologies. وقد أوقفنا في اللعبة خدمات البيانات الاختيارية في Unity (Unity Analytics وإحصاءات الأجهزة وتقارير الأعطال والأداء). لمزيد من المعلومات: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">سياسة خصوصية Unity</a>.</li>
+    <li><strong>Instagram (جائزة المتابعة):</strong> إذا نقرت على «تابع» في نافذة «اربح جائزة»، تُفتح صفحتنا على Instagram ‏(@stamgamesdev) في تطبيق Instagram أو في متصفحك. ولتأكيد أنك تتابعنا، يمكنك إرسال رمز الجائزة الظاهر في اللعبة إلى حسابنا في رسالة على Instagram. عندئذٍ تقرأ خدمة التحقق لدينا الرسالة تلقائيًا عبر واجهة Instagram البرمجية من Meta، وتستخدم المعرّف الذي يمنحه Instagram للمرسِل ضمن حسابنا لتسأل Instagram عمّا إذا كان ذلك الحساب يتابع حسابنا، ثم ترسل ردًا قصيرًا. ولا تنشر إلا بصمة SHA-256 غير قابلة للعكس لرمز مؤكَّد، ولا يمكن ربطها بك أو بحسابك على Instagram؛ ولا تحفظ اسمك أو اسم المستخدم أو معرّفك أو رسالتك. تبقى رسالتك في صندوق رسائلنا على Instagram مثل أي رسالة أخرى، ويمكنك أن تطلب منا حذف المحادثة. إرسال الرمز اختياري، والأساس القانوني لهذه المعالجة هو طلبك الحصول على الجائزة (المادة 6(1)(ب) من اللائحة العامة لحماية البيانات). وتعالج Meta استخدامك لـ Instagram كما هو موضّح في <a href="https://privacycenter.instagram.com/policy">سياسة خصوصية Instagram</a>.</li>
+    <li><strong>GitHub (خدمتنا):</strong> يُستضاف التحقق من الاتصال وقائمة الرموز المؤكَّدة على GitHub Pages، وتعمل خدمة التحقق على GitHub Actions، وكلاهما مقدَّم من GitHub, Inc. (الولايات المتحدة). عندما تتصل اللعبة، قد يعالج GitHub بيانات تقنية مثل عنوان IP الخاص بك (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">بيان خصوصية GitHub</a>).</li>
+    <li><strong>التحقق من الاتصال لدى Google:</strong> فقط إذا تعذّر الوصول إلى خدمتنا، تسأل اللعبة <code>www.google.com/generate_204</code> الذي يعيد ردًا فارغًا؛ وكما في أي موقع، ترى Google عنوان IP الخاص بك (<a href="https://policies.google.com/privacy?hl=ar">سياسة خصوصية Google</a>).</li>
+    <li><strong>Unity:</strong> صُنعت اللعبة باستخدام محرك Unity من شركة Unity Technologies. لقد أوقفنا خدمات البيانات الاختيارية في Unity (Unity Analytics وإحصاءات الأجهزة وتقارير الأعطال والأداء) ولم نُدرج وحدة التحليلات الخاصة بـ Unity في اللعبة أصلًا، لذا لا ترسل اللعبة أي بيانات إلى Unity. لمزيد من المعلومات: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">سياسة خصوصية Unity</a>.</li>
     <li><strong>النسخ الاحتياطي في Android:</strong> إذا كان النسخ الاحتياطي مفعّلًا على جهازك، فقد يُدرج Android بيانات اللعبة المحفوظة في النسخة الاحتياطية لجهازك المخزّنة في حسابك على Google. أنت وGoogle تتحكمان في هذه النسخة، ولا يمكننا الوصول إليها.</li>
     <li><strong>هذه الصفحة:</strong> تُستضاف سياسة الخصوصية هذه على GitHub Pages. عند فتحها، قد يعالج GitHub بيانات تقنية مثل عنوان IP الخاص بك (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">بيان خصوصية GitHub</a>). لا نضيف إلى هذه الصفحة أي ملفات تعريف ارتباط أو أدوات تحليل أو تتبّع.</li>
   </ul>
 
-  <h2>6. مشاركة البيانات وبيعها</h2>
-  <p>بما أننا لا نجمع أي بيانات شخصية عبر اللعبة، فليس لدينا ما نبيعه أو نؤجّره أو نبادله أو نشاركه مع أي أحد، بمن في ذلك المعلنون ووسطاء البيانات. ولا ننقل أي بيانات إلى دول أخرى.</p>
+  <h2>6. ملفات تعريف الارتباط والتقنيات المشابهة</h2>
+  <p>لا تستخدم اللعبة ملفات تعريف الارتباط (الكوكيز) أو إشارات الويب أو معرّفات الإعلانات أو بصمة الجهاز أو أي تقنية تتبع مشابهة. والشيء الوحيد الذي تحفظه على جهازك هو ملف الحفظ الموصوف في القسم 2، وهو ضروري تمامًا لعمل اللعبة ولا يغادر جهازك أبدًا. ولا يضع هذا الموقع (هذه السياسة وشروط الاستخدام) أي ملفات تعريف ارتباط ولا يحمّل أي شيء من مواقع أخرى. لهذا لا تعرض اللعبة ولا هذا الموقع نافذة موافقة على ملفات تعريف الارتباط: فلا يوجد ما يستدعي موافقتك.</p>
 
-  <h2>7. الإعلانات وعمليات الشراء داخل التطبيق</h2>
-  <p>لا تعرض اللعبة أي إعلانات. ولا يمكن حاليًا شراء أي شيء بأموال حقيقية: فعناصر المتجر التي ستكلّف أموالًا حقيقية معلَّمة بكلمة "قريبا". ليس للذهب والمفاتيح التي تكسبها في اللعبة أي قيمة حقيقية. وإذا أضفنا مستقبلًا ميزات تتضمن بيانات (مثل عمليات الشراء داخل التطبيق التي سيعالج Google Play مدفوعاتها)، فسنحدّث هذه السياسة قبل إتاحة تلك الميزات.</p>
+  <h2>7. مشاركة البيانات وبيعها</h2>
+  <p>بما أن اللعبة نفسها لا تجمع أي بيانات شخصية، فليس لدينا ما نبيعه أو نؤجّره أو نبادله أو نشاركه مع أي أحد، بمن في ذلك المعلنون ووسطاء البيانات. ويقع مقر الخدمات الموضّحة في القسمين 4 و5 (Google وGitHub وMeta) في الولايات المتحدة، وقد تعالج هناك بيانات تقنية مثل عناوين IP وفق ضماناتها الخاصة.</p>
 
-  <h2>8. خصوصية الأطفال</h2>
-  <p>اللعبة مناسبة لعامة الجمهور، بمن فيهم الأطفال. وبما أن اللعبة لا تجمع معلومات شخصية من أي أحد، يمكن للأطفال لعبها دون تقديم أي بيانات شخصية. لا نجمع عن علم معلومات شخصية من الأطفال دون سن 13 عامًا (أو دون الحد الأدنى للسن المعمول به في بلدهم). إذا كنت أحد الوالدين أو وصيًّا وتعتقد أن طفلك أرسل إلينا معلومات شخصية (عبر البريد الإلكتروني مثلًا)، فيُرجى التواصل معنا وسنحذفها.</p>
+  <h2>8. الإعلانات وعمليات الشراء داخل التطبيق</h2>
+  <p>لا تعرض اللعبة أي إعلانات. ولا يمكن حاليًا شراء أي شيء بأموال حقيقية: فعناصر المتجر التي ستكلّف أموالًا حقيقية معلَّمة بكلمة "قريبا". ليس للذهب والمفاتيح التي تكسبها في اللعبة أي قيمة حقيقية. وإذا أضفنا مستقبلًا ميزات تتضمن بيانات (مثل عمليات الشراء داخل التطبيق التي سيعالج Google Play مدفوعاتها)، فسنحدّث هذه السياسة قبل إتاحة تلك الميزات. للاطلاع على القواعد الخاصة بعناصر اللعبة والمشتريات والمبالغ المستردة، راجع <a href="terms.html?lang=ar">شروط الاستخدام</a>.</p>
 
-  <h2>9. إذا تواصلت معنا</h2>
+  <h2>9. خصوصية الأطفال</h2>
+  <p>اللعبة مناسبة لعامة الجمهور، بمن فيهم الأطفال. وبما أن اللعبة لا تجمع معلومات شخصية من أي أحد، يمكن للأطفال لعبها دون تقديم أي بيانات شخصية. لا نجمع عن علم معلومات شخصية من الأطفال دون سن 13 عامًا (أو دون الحد الأدنى للسن المعمول به في بلدهم). إذا كنت أحد الوالدين أو وصيًّا وتعتقد أن طفلك أرسل إلينا معلومات شخصية (عبر البريد الإلكتروني مثلًا)، فيُرجى التواصل معنا وسنحذفها. جائزة المتابعة على Instagram مخصّصة للاعبين الذين بلغوا السن التي تسمح لهم باستخدام Instagram وفق شروطه (13 عامًا على الأقل).</p>
+
+  <h2>10. إذا تواصلت معنا</h2>
   <p>إذا راسلتنا عبر البريد الإلكتروني، فسنتلقى عنوان بريدك الإلكتروني ومحتوى رسالتك. نستخدمهما فقط للرد عليك، ولا نشاركهما مع أي أحد، ونحذفهما عندما لا تعود هناك حاجة إليهما لمعالجة طلبك.</p>
 
-  <h2>10. الاحتفاظ بالبيانات وحذفها</h2>
+  <h2>11. الاحتفاظ بالبيانات وحذفها</h2>
   <ul>
     <li><strong>البيانات على جهازك:</strong> تبقى إلى أن تُلغي تثبيت اللعبة أو تمسح بياناتها (إعدادات Android ← التطبيقات ← Parachute Fall ← مساحة التخزين ← محو البيانات). يؤدي ذلك إلى إعادة ضبط تقدّمك نهائيًا.</li>
     <li><strong>رسائل البريد الإلكتروني:</strong> نحتفظ بها فقط للمدة اللازمة للرد عليك، ويمكنك طلب حذفها في أي وقت.</li>
+    <li><strong>رسائل جائزة المتابعة:</strong> تقرأ خدمة التحقق الرسائل الجديدة خلال دقائق، ولا تحتفظ إلا ببصمة الرمز المؤكَّد ووقت آخر رسالة قرأتها. وتبقى الرسائل في صندوق رسائلنا على Instagram إلى أن تُحذف؛ راسلنا إذا أردت أن نحذف رسالتك.</li>
   </ul>
 
-  <h2>11. حقوقك</h2>
+  <h2>12. حقوقك</h2>
   <p>بحسب مكان إقامتك، تمنحك قوانين مثل اللائحة العامة لحماية البيانات في الاتحاد الأوروبي والمملكة المتحدة (GDPR)، وقانون حماية البيانات الشخصية التركي رقم 6698 (KVKK)، وقانون خصوصية المستهلك في كاليفورنيا (CCPA/CPRA) حقوقًا تتعلق ببياناتك الشخصية، مثل حق الوصول إليها وتصحيحها وحذفها ونقلها، وحق الاعتراض على معالجتها أو تقييدها، وحق سحب موافقتك. وبما أن اللعبة لا تجمع بيانات شخصية، فإن هذه الحقوق تتعلق أساسًا برسائل البريد الإلكتروني التي ترسلها إلينا. لممارستها، راسلنا على <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>، وسنرد خلال 30 يومًا. ويحق لك أيضًا تقديم شكوى إلى هيئة حماية البيانات في بلدك. نحن لا نبيع المعلومات الشخصية ولا نشاركها بالمعنى المحدد في CCPA.</p>
 
-  <h2>12. الأمان</h2>
-  <p>تبقى بيانات لعبك في مساحة التخزين الخاصة باللعبة على جهازك، محميةً بعزل التطبيقات (Sandbox) في Android، ولا تُرسل عبر الإنترنت. أما رسائل البريد الإلكتروني التي ترسلها إلينا فتحميها إجراءات الأمان لدى مزوّد خدمة البريد الإلكتروني الذي نستخدمه.</p>
+  <h2>13. الأمان</h2>
+  <p>تبقى بيانات لعبك في مساحة التخزين الخاصة باللعبة على جهازك، محميةً بعزل التطبيقات (Sandbox) في Android، ولا تُرسل عبر الإنترنت. ويستخدم التحقق من الاتصال والبحث عن الرمز في اللعبة اتصالات HTTPS مشفّرة. أما رسائل البريد الإلكتروني التي ترسلها إلينا فتحميها إجراءات الأمان لدى مزوّد خدمة البريد الإلكتروني الذي نستخدمه.</p>
 
-  <h2>13. التغييرات على هذه السياسة</h2>
+  <h2>14. التغييرات على هذه السياسة</h2>
   <p>قد نحدّث هذه السياسة، مثلًا عند إضافة ميزات جديدة إلى اللعبة. سننشر الإصدار الجديد في هذه الصفحة مع تاريخ "آخر تحديث" جديد، ويؤدي الرابط الموجود في إعدادات اللعبة دائمًا إلى هذه الصفحة. وإذا كان التغيير يؤثر في طريقة التعامل مع بياناتك، فسنحدّث هذه السياسة قبل أن يسري التغيير في اللعبة.</p>
 
-  <h2>14. التواصل معنا</h2>
+  <h2>15. التواصل معنا</h2>
   <p>للأسئلة أو الطلبات المتعلقة بسياسة الخصوصية هذه: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">هذه السياسة متاحة بعدة لغات. في حال وجود اختلاف بين الترجمة والنسخة الإنجليزية، تسري النسخة الإنجليزية.</p>
@@ -771,21 +890,22 @@
 <!-- ============================== Polski ============================== -->
 <article id="pl" data-lang="pl" lang="pl">
   <h1>Parachute Fall – Polityka prywatności</h1>
-  <p class="dates">Data wejścia w życie: 25 września 2026 r. · Ostatnia aktualizacja: 25 września 2026 r.</p>
+  <p class="dates">Data wejścia w życie: 25 września 2026 r. · Ostatnia aktualizacja: 2 października 2026 r.</p>
   <p>Niniejsza polityka prywatności wyjaśnia, w jaki sposób gra mobilna <strong>Parachute Fall</strong> (nazwa pakietu Android <code>com.patpatt.game</code>, dalej „Gra”) postępuje z informacjami. Gra jest tworzona i wydawana przez dewelopera wskazanego na stronie Gry w Google Play (dalej „my”). W razie pytań napisz do nas na adres <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>.</p>
 
   <div class="summary">
     <h2>W skrócie</h2>
     <ul>
-      <li>Gra nie zbiera, nie przesyła, nie sprzedaje ani nie udostępnia żadnych danych osobowych.</li>
+      <li>Sama Gra nie zbiera, nie sprzedaje ani nie udostępnia żadnych danych osobowych.</li>
       <li>Nie ma kont ani logowania, reklam, narzędzi analitycznych ani śledzących, ani zakupów w aplikacji.</li>
       <li>Twoje postępy i ustawienia są zapisywane wyłącznie na Twoim urządzeniu.</li>
-      <li>W Grę można grać całkowicie offline.</li>
+      <li>Gra wymaga połączenia z internetem. Używa go tylko do sprawdzania, czy połączenie działa, oraz – jeśli bierzesz udział w nagrodzie za obserwowanie – do sprawdzenia, czy Twój kod nagrody został potwierdzony. Te zapytania nie zawierają danych osobowych.</li>
+      <li>Ani Gra, ani ta strona nie używają plików cookie.</li>
     </ul>
   </div>
 
   <h2>1. Jakie informacje zbieramy</h2>
-  <p>Za pośrednictwem Gry nie zbieramy żadnych danych osobowych. Gra nie prosi o imię i nazwisko, adres e-mail, numer telefonu, lokalizację, kontakty, zdjęcia ani inne dane osobowe, a także nie tworzy ani nie wykorzystuje identyfikatorów reklamowych ani innych identyfikatorów urządzenia.</p>
+  <p>Za pośrednictwem Gry nie zbieramy żadnych danych osobowych. Gra nie prosi o imię i nazwisko, adres e-mail, numer telefonu, lokalizację, kontakty, zdjęcia ani inne dane osobowe, a także nie tworzy ani nie wykorzystuje identyfikatorów reklamowych ani innych identyfikatorów urządzenia. Jeśli bierzesz udział w nagrodzie za obserwowanie na Instagramie, obowiązuje ograniczone przetwarzanie opisane w sekcji 5.</p>
 
   <h2>2. Informacje przechowywane wyłącznie na Twoim urządzeniu</h2>
   <p>Aby zapamiętać stan rozgrywki, Gra zapisuje niewielki plik w swojej prywatnej pamięci na Twoim urządzeniu („shared preferences” systemu Android). Zawiera on:</p>
@@ -795,6 +915,7 @@
     <li>ustawienia: dźwięk, muzykę, wibracje, sterowanie przechyleniem, jakość grafiki, szybkość sterowania i język;</li>
     <li>statystyki rozgrywki, np. liczbę ukończonych poziomów i ominiętych przeszkód;</li>
     <li>stan codziennych nagród i zadań, informację, czy samouczek został ukończony i czy poproszono Cię już o ocenę Gry.</li>
+    <li>nagroda za obserwowanie: czy otworzyłeś naszą stronę na Instagramie z Gry, kod nagrody utworzony przez Grę dla Twojego urządzenia, czy go wysłałeś oraz czy odebrałeś nagrodę.</li>
   </ul>
   <p>Gra nigdy nie wysyła tego pliku poza Twoje urządzenie, a my nie mamy do niego wglądu. Plik zostaje usunięty po odinstalowaniu Gry lub wyczyszczeniu jej danych. Złoto i klucze w Grze nie mają żadnej realnej wartości.</p>
 
@@ -808,50 +929,65 @@
   </ul>
 
   <h2>4. Uprawnienia</h2>
-  <p>Gra nie prosi o żadne uprawnienia wymagające Twojej zgody (takie jak lokalizacja, aparat, mikrofon, kontakty, pliki czy telefon). Jej pakiet Android zawiera dwa standardowe uprawnienia przyznawane automatycznie podczas instalacji:</p>
+  <p>Gra nie prosi o żadne uprawnienia wymagające Twojej zgody (takie jak lokalizacja, aparat, mikrofon, kontakty, pliki czy telefon). Jej pakiet Android zawiera wyłącznie uprawnienia przyznawane automatycznie podczas instalacji:</p>
   <ul>
+    <li><strong>INTERNET:</strong> do połączenia z internetem, którego Gra potrzebuje do grania (patrz niżej).</li>
+    <li><strong>ACCESS_NETWORK_STATE:</strong> aby sprawdzić, czy urządzenie jest połączone z siecią, dzięki czemu Gra może od razu poinformować Cię o utracie połączenia.</li>
     <li><strong>VIBRATE:</strong> do opisanych wyżej wibracji.</li>
-    <li><strong>INTERNET:</strong> dodawane przez silnik Unity, w którym powstała Gra. Gra nie korzysta z internetu do wysyłania ani odbierania Twoich danych; linki, które klikniesz (np. aby ocenić Grę lub przeczytać tę politykę), otwierają się w Google Play lub w przeglądarce.</li>
+    <li><strong>Uprawnienie wewnętrzne</strong> (<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>), którego biblioteki Androida używają, aby inne aplikacje nie mogły wysyłać wiadomości do Gry. Nie daje ono Grze dostępu do niczego.</li>
   </ul>
+  <p>W Grę gra się online, ale korzysta ona z internetu tylko w dwóch celach:</p>
+  <ul>
+    <li><strong>Sprawdzanie połączenia:</strong> gdy Gra jest otwarta, mniej więcej co 30 sekund pobiera maleńki plik (<code>ping.txt</code>) z naszej usługi w GitHub Pages (<code>therooster0.github.io/parachute-fall-api</code>). Jeśli ten plik jest niedostępny, pyta usługę sprawdzania połączenia Google (<code>www.google.com/generate_204</code>). Bez połączenia Gra wstrzymuje się, dopóki połączenie nie wróci.</li>
+    <li><strong>Nagroda za obserwowanie:</strong> gdy dotkniesz SPRAWDŹ w oknie „Nagroda”, Gra pobiera z tej samej usługi listę potwierdzonych kodów nagród i szuka w niej Twojego kodu (patrz sekcja 5). Twój kod nie jest wysyłany; pobierana jest tylko ta część listy, w której znalazłby się Twój kod.</li>
+  </ul>
+  <p>Te zapytania nie zawierają danych osobowych ani identyfikatorów konta czy urządzenia. Jak przy każdym połączeniu z internetem, serwery, które je odbierają (GitHub, a przy zapasowym sprawdzaniu Google), widzą Twój adres IP i podstawowe informacje techniczne, takie jak czas zapytania. Linki, które klikniesz (np. aby ocenić Grę, otworzyć Instagram albo przeczytać tę politykę lub nasze Warunki korzystania), otwierają się w Google Play, w aplikacji Instagram lub w przeglądarce.</p>
 
   <h2>5. Usługi podmiotów trzecich</h2>
   <p>Gra nie zawiera żadnych zewnętrznych pakietów SDK do reklam, analityki, serwisów społecznościowych ani płatności. Poniższe usługi mogą jednak przetwarzać informacje zgodnie z własnymi politykami prywatności:</p>
   <ul>
     <li><strong>Google Play:</strong> gdy pobierasz, instalujesz lub aktualizujesz Grę, Google przetwarza informacje zgodnie z <a href="https://policies.google.com/privacy?hl=pl">Polityką prywatności Google</a>. Za pośrednictwem Google Play Console Google udostępnia nam wyłącznie zbiorcze statystyki (np. liczbę instalacji) oraz – jeśli zezwolisz urządzeniu na udostępnianie danych o użytkowaniu i diagnostyce – anonimowe raporty o awariach i wydajności, które nie pozwalają Cię zidentyfikować.</li>
     <li><strong>Ocenianie Gry:</strong> jeśli zdecydujesz się ocenić Grę, otworzy ona swoją stronę w Sklepie Google Play; oceny i opinie, które tam opublikujesz, obsługuje Google.</li>
-    <li><strong>Unity:</strong> Gra powstała w silniku Unity firmy Unity Technologies. Wyłączyliśmy w Grze opcjonalne usługi danych Unity (Unity Analytics, statystyki sprzętu, raportowanie awarii i wydajności). Więcej informacji: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">polityka prywatności Unity</a>.</li>
+    <li><strong>Instagram (nagroda za obserwowanie):</strong> jeśli dotkniesz OBSERWUJ w oknie „Nagroda”, nasza strona na Instagramie (@stamgamesdev) otworzy się w aplikacji Instagram lub w przeglądarce. Aby potwierdzić, że nas obserwujesz, możesz wysłać na nasze konto wiadomość na Instagramie z kodem nagrody wyświetlonym w Grze. Nasza usługa weryfikacji automatycznie odczytuje wtedy tę wiadomość przez API Instagrama firmy Meta, używa identyfikatora, który Instagram nadaje nadawcy w ramach naszego konta, aby zapytać Instagram, czy to konto obserwuje nasze, i wysyła krótką odpowiedź. Publikuje wyłącznie nieodwracalny skrót SHA-256 potwierdzonego kodu, którego nie da się powiązać z Tobą ani z Twoim kontem na Instagramie; nie przechowuje Twojego imienia, nazwy użytkownika, identyfikatora ani wiadomości. Twoja wiadomość pozostaje w naszej skrzynce na Instagramie jak każda inna; możesz poprosić nas o usunięcie rozmowy. Wysłanie kodu jest dobrowolne; podstawą prawną tego przetwarzania jest Twoja prośba o otrzymanie nagrody (art. 6 ust. 1 lit. b RODO). Meta przetwarza informacje o korzystaniu z Instagrama zgodnie z <a href="https://privacycenter.instagram.com/policy">Polityką prywatności Instagrama</a>.</li>
+    <li><strong>GitHub (nasza usługa):</strong> sprawdzanie połączenia i lista potwierdzonych kodów są hostowane w GitHub Pages, a usługa weryfikacji działa w GitHub Actions; obie zapewnia GitHub, Inc. (USA). Gdy Gra się łączy, GitHub może przetwarzać dane techniczne, takie jak Twój adres IP (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Oświadczenie GitHub o ochronie prywatności</a>).</li>
+    <li><strong>Sprawdzanie połączenia Google:</strong> tylko gdy nasza usługa jest niedostępna, Gra pyta <code>www.google.com/generate_204</code>, który zwraca pustą odpowiedź; jak w przypadku każdej strony, Google widzi Twój adres IP (<a href="https://policies.google.com/privacy?hl=pl">Polityką prywatności Google</a>).</li>
+    <li><strong>Unity:</strong> Gra powstała na silniku Unity firmy Unity Technologies. Wyłączyliśmy opcjonalne usługi danych Unity (Unity Analytics, statystyki sprzętu, raporty awarii i wydajności) i w ogóle nie dołączyliśmy do Gry modułu analitycznego Unity, więc Gra nie wysyła do Unity żadnych danych. Więcej informacji: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Polityka prywatności Unity</a>.</li>
     <li><strong>Kopia zapasowa Androida:</strong> jeśli na Twoim urządzeniu włączona jest kopia zapasowa, Android może uwzględnić zapisane dane Gry w kopii zapasowej urządzenia przechowywanej na Twoim koncie Google. Tą kopią zarządzasz Ty i Google; my nie mamy do niej dostępu.</li>
     <li><strong>Ta strona:</strong> niniejsza polityka prywatności jest hostowana w GitHub Pages. Gdy ją otwierasz, GitHub może przetwarzać dane techniczne, takie jak Twój adres IP (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Oświadczenie GitHub o ochronie prywatności</a>). Nie dodajemy do tej strony plików cookie ani narzędzi analitycznych czy śledzących.</li>
   </ul>
 
-  <h2>6. Udostępnianie i sprzedaż danych</h2>
-  <p>Ponieważ za pośrednictwem Gry nie zbieramy danych osobowych, nie mamy niczego, co moglibyśmy sprzedać, wynająć, wymienić lub udostępnić komukolwiek, w tym reklamodawcom i brokerom danych. Nie przekazujemy żadnych danych do innych krajów.</p>
+  <h2>6. Pliki cookie i podobne technologie</h2>
+  <p>Gra nie używa plików cookie, sygnałów nawigacyjnych (web beacon), identyfikatorów reklamowych, odcisków urządzenia ani żadnych podobnych technologii śledzenia. Jedyne, co zapisuje na Twoim urządzeniu, to plik zapisu opisany w punkcie 2 – jest on niezbędny do działania Gry i nigdy nie opuszcza Twojego urządzenia. Ta strona (ta polityka i nasze Warunki korzystania) nie zapisuje plików cookie i nie wczytuje niczego z innych stron. Dlatego ani Gra, ani ta strona nie wyświetlają banera zgody na pliki cookie: nie ma na co się zgadzać.</p>
 
-  <h2>7. Reklamy i zakupy w aplikacji</h2>
-  <p>Gra nie wyświetla reklam. Obecnie nie można niczego kupić za prawdziwe pieniądze: produkty w sklepie, które kosztowałyby prawdziwe pieniądze, są oznaczone jako „Wkrótce”. Złoto i klucze zdobyte w Grze nie mają realnej wartości. Jeśli w przyszłości dodamy funkcje związane z danymi (np. zakupy w aplikacji, których płatności obsługiwałby Google Play), zaktualizujemy tę politykę, zanim te funkcje staną się dostępne.</p>
+  <h2>7. Udostępnianie i sprzedaż danych</h2>
+  <p>Ponieważ sama Gra nie zbiera danych osobowych, nie mamy niczego, co moglibyśmy sprzedać, wynająć, wymienić lub udostępnić komukolwiek, w tym reklamodawcom i brokerom danych. Usługi opisane w sekcjach 4 i 5 (Google, GitHub, Meta) mają siedzibę w Stanach Zjednoczonych i mogą tam przetwarzać dane techniczne, takie jak adresy IP, z zastosowaniem własnych zabezpieczeń.</p>
 
-  <h2>8. Prywatność dzieci</h2>
-  <p>Gra jest odpowiednia dla szerokiego grona odbiorców, w tym dzieci. Ponieważ Gra nie zbiera od nikogo danych osobowych, dzieci mogą w nią grać bez podawania jakichkolwiek danych osobowych. Nie zbieramy świadomie danych osobowych dzieci poniżej 13. roku życia (lub poniżej minimalnego wieku obowiązującego w ich kraju). Jeśli jesteś rodzicem lub opiekunem i uważasz, że Twoje dziecko przesłało nam dane osobowe (np. e-mailem), skontaktuj się z nami, a je usuniemy.</p>
+  <h2>8. Reklamy i zakupy w aplikacji</h2>
+  <p>Gra nie wyświetla reklam. Obecnie nie można niczego kupić za prawdziwe pieniądze: produkty w sklepie, które kosztowałyby prawdziwe pieniądze, są oznaczone jako „Wkrótce”. Złoto i klucze zdobyte w Grze nie mają realnej wartości. Jeśli w przyszłości dodamy funkcje związane z danymi (np. zakupy w aplikacji, których płatności obsługiwałby Google Play), zaktualizujemy tę politykę, zanim te funkcje staną się dostępne. Zasady dotyczące przedmiotów w grze, zakupów i zwrotów znajdziesz w naszych <a href="terms.html?lang=pl">Warunkach korzystania</a>.</p>
 
-  <h2>9. Jeśli się z nami skontaktujesz</h2>
+  <h2>9. Prywatność dzieci</h2>
+  <p>Gra jest odpowiednia dla szerokiego grona odbiorców, w tym dzieci. Ponieważ Gra nie zbiera od nikogo danych osobowych, dzieci mogą w nią grać bez podawania jakichkolwiek danych osobowych. Nie zbieramy świadomie danych osobowych dzieci poniżej 13. roku życia (lub poniżej minimalnego wieku obowiązującego w ich kraju). Jeśli jesteś rodzicem lub opiekunem i uważasz, że Twoje dziecko przesłało nam dane osobowe (np. e-mailem), skontaktuj się z nami, a je usuniemy. Nagroda za obserwowanie na Instagramie jest przeznaczona dla graczy, którzy zgodnie z warunkami Instagrama są wystarczająco dorośli, aby z niego korzystać (co najmniej 13 lat).</p>
+
+  <h2>10. Jeśli się z nami skontaktujesz</h2>
   <p>Jeśli napiszesz do nas e-mail, otrzymamy Twój adres e-mail i treść wiadomości. Wykorzystujemy je wyłącznie do udzielenia odpowiedzi, nikomu ich nie udostępniamy i usuwamy je, gdy nie są już potrzebne do obsługi Twojej prośby.</p>
 
-  <h2>10. Przechowywanie i usuwanie danych</h2>
+  <h2>11. Przechowywanie i usuwanie danych</h2>
   <ul>
     <li><strong>Dane na Twoim urządzeniu:</strong> pozostają, dopóki nie odinstalujesz Gry lub nie wyczyścisz jej danych (Ustawienia Androida → Aplikacje → Parachute Fall → Pamięć → Wyczyść dane). Spowoduje to trwałe zresetowanie postępów.</li>
     <li><strong>E-maile:</strong> przechowujemy je tylko tak długo, jak to konieczne do udzielenia odpowiedzi. W każdej chwili możesz poprosić o ich usunięcie.</li>
+    <li><strong>Wiadomości dotyczące nagrody za obserwowanie:</strong> usługa weryfikacji odczytuje nowe wiadomości w ciągu kilku minut i przechowuje tylko skrót potwierdzonego kodu oraz czas ostatniej odczytanej wiadomości. Wiadomości pozostają w naszej skrzynce na Instagramie, dopóki nie zostaną usunięte; napisz do nas, jeśli chcesz, abyśmy usunęli Twoją.</li>
   </ul>
 
-  <h2>11. Twoje prawa</h2>
+  <h2>12. Twoje prawa</h2>
   <p>W zależności od miejsca zamieszkania przepisy takie jak ogólne rozporządzenie o ochronie danych UE i Wielkiej Brytanii (RODO), turecka ustawa nr 6698 o ochronie danych osobowych (KVKK) oraz kalifornijska ustawa o ochronie prywatności konsumentów (CCPA/CPRA) przyznają Ci prawa dotyczące Twoich danych osobowych, takie jak prawo dostępu do nich, ich sprostowania, usunięcia lub przeniesienia, prawo sprzeciwu wobec ich przetwarzania lub żądania jego ograniczenia oraz prawo do wycofania zgody. Ponieważ Gra nie zbiera danych osobowych, prawa te dotyczą głównie e-maili, które do nas wysyłasz. Aby z nich skorzystać, napisz na adres <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>; odpowiemy w ciągu 30 dni. Masz również prawo wnieść skargę do organu ochrony danych w swoim kraju (w Polsce: Prezes Urzędu Ochrony Danych Osobowych). Nie sprzedajemy ani nie udostępniamy danych osobowych w rozumieniu CCPA.</p>
 
-  <h2>12. Bezpieczeństwo</h2>
-  <p>Twoje dane z gry pozostają w prywatnej pamięci Gry na Twoim urządzeniu, chronionej przez piaskownicę aplikacji Androida, i nie są przesyłane przez internet. E-maile, które do nas wysyłasz, są chronione przez zabezpieczenia naszego dostawcy poczty e-mail.</p>
+  <h2>13. Bezpieczeństwo</h2>
+  <p>Twoje dane z gry pozostają w prywatnej pamięci Gry na Twoim urządzeniu, chronionej przez piaskownicę aplikacji Androida, i nie są przesyłane przez internet. Sprawdzanie połączenia i wyszukiwanie kodu w Grze korzystają z szyfrowanych połączeń HTTPS. E-maile, które do nas wysyłasz, są chronione przez zabezpieczenia naszego dostawcy poczty e-mail.</p>
 
-  <h2>13. Zmiany niniejszej polityki</h2>
+  <h2>14. Zmiany niniejszej polityki</h2>
   <p>Możemy aktualizować tę politykę, np. gdy Gra otrzyma nowe funkcje. Nowa wersja zostanie opublikowana na tej stronie z nową datą „Ostatnia aktualizacja”, a link w Ustawieniach Gry zawsze prowadzi tutaj. Jeśli zmiana wpływa na sposób postępowania z Twoimi danymi, zaktualizujemy tę politykę, zanim zmiana zacznie obowiązywać w Grze.</p>
 
-  <h2>14. Kontakt</h2>
+  <h2>15. Kontakt</h2>
   <p>Pytania lub prośby dotyczące niniejszej polityki prywatności: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">Niniejsza polityka jest dostępna w kilku językach. W przypadku rozbieżności między tłumaczeniem a wersją angielską rozstrzygająca jest wersja angielska.</p>
@@ -860,21 +996,22 @@
 <!-- ============================== Español ============================== -->
 <article id="es" data-lang="es" lang="es">
   <h1>Parachute Fall – Política de privacidad</h1>
-  <p class="dates">Fecha de entrada en vigor: 25 de septiembre de 2026 · Última actualización: 25 de septiembre de 2026</p>
+  <p class="dates">Fecha de entrada en vigor: 25 de septiembre de 2026 · Última actualización: 2 de octubre de 2026</p>
   <p>Esta política de privacidad explica cómo el juego para móviles <strong>Parachute Fall</strong> (nombre del paquete de Android <code>com.patpatt.game</code>, el “Juego”) trata la información. El Juego lo desarrolla y publica el desarrollador que figura en la página del Juego en Google Play (“nosotros”). Si tienes alguna pregunta, escríbenos a <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>.</p>
 
   <div class="summary">
     <h2>En resumen</h2>
     <ul>
-      <li>El Juego no recopila, transmite, vende ni comparte ningún dato personal.</li>
+      <li>El Juego en sí no recopila, vende ni comparte ningún dato personal.</li>
       <li>No hay cuentas ni inicio de sesión, ni anuncios, ni herramientas de análisis o seguimiento, ni compras dentro de la aplicación.</li>
       <li>Tu progreso y tus ajustes se guardan solo en tu propio dispositivo.</li>
-      <li>El Juego se puede jugar completamente sin conexión.</li>
+      <li>El Juego necesita conexión a Internet. Solo la usa para comprobar que la conexión funciona y, si participas en el premio por seguirnos, para consultar si tu código de premio se ha confirmado. Estas solicitudes no contienen datos personales.</li>
+      <li>Ni el Juego ni este sitio web usan cookies.</li>
     </ul>
   </div>
 
   <h2>1. Información que recopilamos</h2>
-  <p>No recopilamos ningún dato personal a través del Juego. El Juego no te pide tu nombre, dirección de correo electrónico, número de teléfono, ubicación, contactos, fotos ni ninguna otra información personal, y no crea ni utiliza identificadores publicitarios ni otros identificadores del dispositivo.</p>
+  <p>No recopilamos ningún dato personal a través del Juego. El Juego no te pide tu nombre, dirección de correo electrónico, número de teléfono, ubicación, contactos, fotos ni ninguna otra información personal, y no crea ni utiliza identificadores publicitarios ni otros identificadores del dispositivo. Si participas en el premio por seguirnos en Instagram, se aplica el tratamiento limitado descrito en la sección 5.</p>
 
   <h2>2. Información guardada solo en tu dispositivo</h2>
   <p>Para recordar tu partida, el Juego guarda un pequeño archivo en su almacenamiento privado de tu dispositivo (“shared preferences” de Android). Contiene:</p>
@@ -884,6 +1021,7 @@
     <li>ajustes: sonido, música, vibración, control por inclinación, calidad gráfica, velocidad de control e idioma;</li>
     <li>estadísticas de juego, como el número de niveles completados y de obstáculos esquivados;</li>
     <li>el estado de las recompensas y misiones diarias, si has terminado el tutorial y si ya se te ha pedido que valores el Juego.</li>
+    <li>el premio por seguirnos: si has abierto nuestra página de Instagram desde el Juego, el código de premio que el Juego ha creado para tu dispositivo, si lo has enviado y si has reclamado el premio.</li>
   </ul>
   <p>El Juego nunca envía este archivo fuera de tu dispositivo y nosotros no podemos verlo. Se elimina cuando desinstalas el Juego o borras sus datos. El oro y las llaves del Juego no tienen ningún valor real.</p>
 
@@ -897,50 +1035,65 @@
   </ul>
 
   <h2>4. Permisos</h2>
-  <p>El Juego no solicita ningún permiso que requiera tu aprobación (como ubicación, cámara, micrófono, contactos, archivos o teléfono). Su paquete de Android incluye dos permisos estándar que se conceden automáticamente al instalarlo:</p>
+  <p>El Juego no solicita ningún permiso que requiera tu aprobación (como ubicación, cámara, micrófono, contactos, archivos o teléfono). Su paquete de Android solo incluye permisos que se conceden automáticamente al instalarlo:</p>
   <ul>
+    <li><strong>INTERNET:</strong> para la conexión a Internet que el Juego necesita para jugarse (ver más abajo).</li>
+    <li><strong>ACCESS_NETWORK_STATE:</strong> para saber si tu dispositivo está conectado a una red, de modo que el Juego pueda avisarte enseguida cuando se pierda la conexión.</li>
     <li><strong>VIBRATE:</strong> para la respuesta por vibración descrita arriba.</li>
-    <li><strong>INTERNET:</strong> lo añade el motor Unity con el que está hecho el Juego. El Juego no usa Internet para enviar ni recibir tus datos; los enlaces que tocas (por ejemplo, para valorar el Juego o leer esta política) se abren en Google Play o en tu navegador.</li>
+    <li><strong>Un permiso interno</strong> (<code>com.patpatt.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) que las propias bibliotecas de Android usan para impedir que otras apps envíen mensajes al Juego. No le da al Juego acceso a nada.</li>
   </ul>
+  <p>El Juego se juega en línea, pero solo usa Internet para dos cosas:</p>
+  <ul>
+    <li><strong>Comprobación de la conexión:</strong> mientras el Juego está abierto, descarga aproximadamente cada 30 segundos un archivo diminuto (<code>ping.txt</code>) de nuestro servicio en GitHub Pages (<code>therooster0.github.io/parachute-fall-api</code>). Si no se puede acceder a ese archivo, consulta la comprobación de conexión de Google (<code>www.google.com/generate_204</code>). Sin conexión, el Juego se pausa hasta que vuelve la conexión.</li>
+    <li><strong>Premio por seguirnos:</strong> cuando tocas VERIFICAR en la ventana «Premio», el Juego descarga del mismo servicio una lista de códigos de premio confirmados y busca allí tu código (ver la sección 5). Tu código no se envía; solo se descarga la parte de la lista en la que estaría tu código.</li>
+  </ul>
+  <p>Estas solicitudes no contienen datos personales ni identificadores de cuenta o dispositivo. Como en cualquier conexión a Internet, los servidores que las reciben (GitHub y, en la comprobación de respaldo, Google) ven tu dirección IP e información técnica básica, como la hora de la solicitud. Los enlaces que tocas (por ejemplo, para valorar el Juego, abrir Instagram o leer esta política o nuestros Términos de uso) se abren en Google Play, en la app de Instagram o en tu navegador.</p>
 
   <h2>5. Servicios de terceros</h2>
   <p>El Juego no contiene SDK de terceros de publicidad, análisis, redes sociales ni pagos. No obstante, los siguientes servicios pueden tratar información conforme a sus propias políticas de privacidad:</p>
   <ul>
     <li><strong>Google Play:</strong> cuando descargas, instalas o actualizas el Juego, Google trata la información como se describe en la <a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>. A través de Google Play Console, Google solo nos proporciona estadísticas agregadas (por ejemplo, el número de instalaciones) y, si has permitido que tu dispositivo comparta datos de uso y diagnóstico, informes anónimos de fallos y rendimiento que no te identifican.</li>
     <li><strong>Valorar el Juego:</strong> si decides valorar el Juego, este abre su página en Google Play Store; las valoraciones y reseñas que publiques allí las gestiona Google.</li>
-    <li><strong>Unity:</strong> el Juego está hecho con el motor Unity de Unity Technologies. Hemos desactivado en el Juego los servicios de datos opcionales de Unity (Unity Analytics, estadísticas de hardware e informes de fallos y rendimiento). Más información: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">política de privacidad de Unity</a>.</li>
+    <li><strong>Instagram (premio por seguirnos):</strong> si tocas SEGUIR en la ventana «Premio», nuestra página de Instagram (@stamgamesdev) se abre en la app de Instagram o en tu navegador. Para confirmar que nos sigues, puedes enviar a nuestra cuenta, en un mensaje de Instagram, el código de premio que muestra el Juego. Nuestro servicio de verificación lee entonces automáticamente el mensaje a través de la API de Instagram de Meta, usa el identificador que Instagram asigna al remitente para nuestra cuenta para preguntar a Instagram si esa cuenta sigue a la nuestra y envía una breve respuesta. Solo publica un hash SHA-256 irreversible de un código confirmado, que no se puede vincular contigo ni con tu cuenta de Instagram; no guarda tu nombre, tu nombre de usuario, tu identificador ni tu mensaje. Tu mensaje permanece en nuestra bandeja de Instagram como cualquier otro mensaje; puedes pedirnos que eliminemos la conversación. Enviar el código es tu decisión; la base jurídica de este tratamiento es tu solicitud de recibir el premio (art. 6.1.b del RGPD). Meta trata tu uso de Instagram según la <a href="https://privacycenter.instagram.com/policy">Política de privacidad de Instagram</a>.</li>
+    <li><strong>GitHub (nuestro servicio):</strong> la comprobación de conexión y la lista de códigos confirmados están alojadas en GitHub Pages, y el servicio de verificación funciona en GitHub Actions, ambos prestados por GitHub, Inc. (EE. UU.). Cuando el Juego se conecta, GitHub puede tratar datos técnicos como tu dirección IP (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Declaración de privacidad de GitHub</a>).</li>
+    <li><strong>Comprobación de conexión de Google:</strong> solo si no se puede acceder a nuestro servicio, el Juego consulta <code>www.google.com/generate_204</code>, que devuelve una respuesta vacía; como con cualquier sitio web, Google ve tu dirección IP (<a href="https://policies.google.com/privacy?hl=es">Política de Privacidad de Google</a>).</li>
+    <li><strong>Unity:</strong> el Juego está hecho con el motor Unity de Unity Technologies. Hemos desactivado los servicios de datos opcionales de Unity (Unity Analytics, estadísticas de hardware, informes de fallos y de rendimiento) y no hemos incluido en absoluto el módulo de análisis de Unity en el Juego, por lo que el Juego no envía datos a Unity. Más información: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Política de privacidad de Unity</a>.</li>
     <li><strong>Copia de seguridad de Android:</strong> si la copia de seguridad está activada en tu dispositivo, Android puede incluir los datos guardados del Juego en la copia de seguridad del dispositivo almacenada en tu cuenta de Google. Esa copia la controlan tú y Google; nosotros no tenemos acceso a ella.</li>
     <li><strong>Esta página:</strong> esta política de privacidad está alojada en GitHub Pages. Cuando la abres, GitHub puede tratar datos técnicos como tu dirección IP (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Declaración de privacidad de GitHub</a>). No añadimos a esta página cookies ni herramientas de análisis o seguimiento.</li>
   </ul>
 
-  <h2>6. Compartición y venta de datos</h2>
-  <p>Como no recopilamos datos personales a través del Juego, no tenemos nada que vender, alquilar, intercambiar ni compartir con nadie, incluidos anunciantes e intermediarios de datos. No transferimos ningún dato a otros países.</p>
+  <h2>6. Cookies y tecnologías similares</h2>
+  <p>El Juego no usa cookies, balizas web, identificadores publicitarios, huellas digitales del dispositivo ni ninguna tecnología de seguimiento similar. Lo único que guarda en tu dispositivo es el archivo de partida descrito en la sección 2, que es estrictamente necesario para que el Juego funcione y nunca sale de tu dispositivo. Este sitio web (esta política y nuestros Términos de uso) no instala cookies ni carga nada de otros sitios. Por eso ni el Juego ni este sitio muestran un banner de consentimiento de cookies: no hay nada que aceptar.</p>
 
-  <h2>7. Publicidad y compras dentro de la aplicación</h2>
-  <p>El Juego no muestra anuncios. Actualmente no se puede comprar nada con dinero real: los artículos de la tienda que costarían dinero real están marcados como “Pronto”. El oro y las llaves que se consiguen en el Juego no tienen valor real. Si en el futuro añadimos funciones que impliquen datos (por ejemplo, compras dentro de la aplicación cuyos pagos gestionaría Google Play), actualizaremos esta política antes de que esas funciones estén disponibles.</p>
+  <h2>7. Compartición y venta de datos</h2>
+  <p>Como el Juego en sí no recopila datos personales, no tenemos nada que vender, alquilar, intercambiar ni compartir con nadie, incluidos anunciantes e intermediarios de datos. Los servicios descritos en las secciones 4 y 5 (Google, GitHub, Meta) tienen su sede en Estados Unidos y pueden tratar allí datos técnicos, como direcciones IP, con sus propias garantías.</p>
 
-  <h2>8. Privacidad de los niños</h2>
-  <p>El Juego es apto para todos los públicos, incluidos los niños. Como el Juego no recopila información personal de nadie, los niños pueden jugar sin proporcionar ningún dato personal. No recopilamos a sabiendas información personal de niños menores de 13 años (o de la edad mínima que se aplique en su país). Si eres padre, madre o tutor y crees que tu hijo nos ha enviado información personal (por ejemplo, por correo electrónico), ponte en contacto con nosotros y la eliminaremos.</p>
+  <h2>8. Publicidad y compras dentro de la aplicación</h2>
+  <p>El Juego no muestra anuncios. Actualmente no se puede comprar nada con dinero real: los artículos de la tienda que costarían dinero real están marcados como “Pronto”. El oro y las llaves que se consiguen en el Juego no tienen valor real. Si en el futuro añadimos funciones que impliquen datos (por ejemplo, compras dentro de la aplicación cuyos pagos gestionaría Google Play), actualizaremos esta política antes de que esas funciones estén disponibles. Para las normas sobre objetos del juego, compras y reembolsos, consulta nuestros <a href="terms.html?lang=es">Términos de uso</a>.</p>
 
-  <h2>9. Si te pones en contacto con nosotros</h2>
+  <h2>9. Privacidad de los niños</h2>
+  <p>El Juego es apto para todos los públicos, incluidos los niños. Como el Juego no recopila información personal de nadie, los niños pueden jugar sin proporcionar ningún dato personal. No recopilamos a sabiendas información personal de niños menores de 13 años (o de la edad mínima que se aplique en su país). Si eres padre, madre o tutor y crees que tu hijo nos ha enviado información personal (por ejemplo, por correo electrónico), ponte en contacto con nosotros y la eliminaremos. El premio por seguirnos en Instagram está pensado para jugadores que, según las condiciones de Instagram, tienen edad para usarlo (al menos 13 años).</p>
+
+  <h2>10. Si te pones en contacto con nosotros</h2>
   <p>Si nos escribes un correo electrónico, recibiremos tu dirección de correo y el contenido de tu mensaje. Solo los usamos para responderte, no los compartimos con nadie y los eliminamos cuando ya no son necesarios para atender tu solicitud.</p>
 
-  <h2>10. Conservación y eliminación de datos</h2>
+  <h2>11. Conservación y eliminación de datos</h2>
   <ul>
     <li><strong>Datos en tu dispositivo:</strong> se conservan hasta que desinstalas el Juego o borras sus datos (Ajustes de Android → Aplicaciones → Parachute Fall → Almacenamiento → Borrar datos). Esto restablece tu progreso de forma permanente.</li>
     <li><strong>Correos electrónicos:</strong> se conservan solo el tiempo necesario para responderte. Puedes pedir que los eliminemos en cualquier momento.</li>
+    <li><strong>Mensajes del premio por seguirnos:</strong> el servicio de verificación lee los mensajes nuevos en pocos minutos y solo guarda el hash de un código confirmado y la hora del último mensaje leído. Los mensajes permanecen en nuestra bandeja de Instagram hasta que se eliminan; escríbenos si quieres que eliminemos el tuyo.</li>
   </ul>
 
-  <h2>11. Tus derechos</h2>
+  <h2>12. Tus derechos</h2>
   <p>Según dónde vivas, leyes como el Reglamento General de Protección de Datos de la UE y del Reino Unido (RGPD), la Ley turca n.º 6698 de Protección de Datos Personales (KVKK) y la Ley de Privacidad del Consumidor de California (CCPA/CPRA) te conceden derechos sobre tus datos personales, como el derecho a acceder a ellos, rectificarlos, suprimirlos o portarlos, a oponerte a su tratamiento o solicitar su limitación y a retirar tu consentimiento. Como el Juego no recopila datos personales, estos derechos se refieren principalmente a los correos que nos envíes. Para ejercerlos, escribe a <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a>; responderemos en un plazo de 30 días. También tienes derecho a presentar una reclamación ante la autoridad de protección de datos de tu país (en España, la Agencia Española de Protección de Datos). No vendemos ni compartimos información personal según la definición de la CCPA.</p>
 
-  <h2>12. Seguridad</h2>
-  <p>Tus datos de juego permanecen en el almacenamiento privado del Juego en tu dispositivo, protegido por el aislamiento de aplicaciones (sandbox) de Android, y no se envían por Internet. Los correos que nos envías están protegidos por las medidas de seguridad de nuestro proveedor de correo electrónico.</p>
+  <h2>13. Seguridad</h2>
+  <p>Tus datos de juego permanecen en el almacenamiento privado del Juego en tu dispositivo, protegido por el aislamiento de aplicaciones (sandbox) de Android, y no se envían por Internet. La comprobación de conexión y la consulta del código del Juego usan conexiones HTTPS cifradas. Los correos que nos envías están protegidos por las medidas de seguridad de nuestro proveedor de correo electrónico.</p>
 
-  <h2>13. Cambios en esta política</h2>
+  <h2>14. Cambios en esta política</h2>
   <p>Podemos actualizar esta política, por ejemplo cuando el Juego reciba nuevas funciones. La nueva versión se publicará en esta página con una nueva fecha de “Última actualización”, y el enlace de los Ajustes del Juego siempre lleva aquí. Si un cambio afecta a cómo se tratan tus datos, actualizaremos esta política antes de que el cambio entre en vigor en el Juego.</p>
 
-  <h2>14. Contacto</h2>
+  <h2>15. Contacto</h2>
   <p>Preguntas o solicitudes sobre esta política de privacidad: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
 
   <p class="note">Esta política está disponible en varios idiomas. Si una traducción difiere de la versión en inglés, prevalece la versión en inglés.</p>
@@ -948,7 +1101,7 @@
 
 </main>
 
-<footer>Parachute Fall · <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></footer>
+<footer>Parachute Fall · <a href="./" data-doc="privacy">Privacy Policy</a> · <a href="terms.html" data-doc="terms">Terms of Use</a> · <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></footer>
 
 <script>
 (function () {
@@ -979,6 +1132,9 @@
     for (var j = 0; j < links.length; j++)
       links[j].setAttribute('aria-current', links[j].getAttribute('data-code') === code ? 'true' : 'false');
     document.documentElement.lang = code === 'zh' ? 'zh-Hans' : code;
+    var docs = document.querySelectorAll('footer a[data-doc]');
+    for (var d = 0; d < docs.length; d++)
+      docs[d].setAttribute('href', (docs[d].getAttribute('data-doc') === 'terms' ? 'terms.html' : './') + '?lang=' + code);
   }
 
   for (var k = 0; k < links.length; k++) {

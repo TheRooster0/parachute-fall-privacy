@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parachute Fall – Terms of Use</title>
+<meta name="description" content="Terms of use of the mobile game Parachute Fall (com.patpatt.game): a free online game with no ads, no purchases with real money, in-game items without money value, chest odds shown up front, and refunds through Google Play if purchases are ever added.">
+<link rel="icon" type="image/png" href="favicon.png">
+<script>document.documentElement.className = 'js';</script>
+<style>
+  :root {
+    --bg: #eef6fd;
+    --surface: #ffffff;
+    --text: #1d2a3a;
+    --muted: #55657a;
+    --line: #d5e3f1;
+    --accent: #1f7fd6;
+    --accent-text: #ffffff;
+    --summary-bg: #e6f4e7;
+    --summary-line: #9fd0a4;
+    --header-top: #2f9af0;
+    --header-bottom: #7cc6fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1822;
+      --surface: #16222f;
+      --text: #e4ecf5;
+      --muted: #9eb0c4;
+      --line: #2a3a4c;
+      --accent: #5db2ff;
+      --accent-text: #0f1822;
+      --summary-bg: #17301f;
+      --summary-line: #2f6b3d;
+      --header-top: #14528a;
+      --header-bottom: #1f6fae;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1822;
+    --surface: #16222f;
+    --text: #e4ecf5;
+    --muted: #9eb0c4;
+    --line: #2a3a4c;
+    --accent: #5db2ff;
+    --accent-text: #0f1822;
+    --summary-bg: #17301f;
+    --summary-line: #2f6b3d;
+    --header-top: #14528a;
+    --header-bottom: #1f6fae;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial,
+      "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Naskh Arabic", Tahoma, sans-serif;
+    overflow-wrap: break-word;
+  }
+  header {
+    background: linear-gradient(180deg, var(--header-top), var(--header-bottom));
+    color: #fff;
+    padding: 20px 16px 16px;
+  }
+  .brand {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .brand img { width: 64px; height: 64px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .25); }
+  .brand strong { display: block; font-size: 1.35rem; line-height: 1.2; }
+  .brand span { opacity: .92; font-size: .95rem; }
+  nav {
+    max-width: 800px;
+    margin: 16px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .18);
+    border: 1px solid rgba(255, 255, 255, .35);
+  }
+  nav a:hover, nav a:focus-visible { background: rgba(255, 255, 255, .32); }
+  nav a[aria-current="true"] { background: #fff; color: #155e9e; font-weight: 600; }
+  main { max-width: 800px; margin: 0 auto; padding: 8px 16px 40px; }
+  article {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 20px 28px;
+    margin-top: 20px;
+  }
+  .js article { display: none; }
+  .js article.active { display: block; }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  .dates { color: var(--muted); font-size: .92rem; margin: 0 0 18px; }
+  .summary {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-line);
+    border-radius: 12px;
+    padding: 4px 18px;
+  }
+  .summary h2 { margin-top: 14px; }
+  ul { padding-inline-start: 1.3em; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  code { font-family: ui-monospace, Consolas, monospace; font-size: .92em; }
+  .note { color: var(--muted); font-size: .92rem; border-top: 1px solid var(--line); margin-top: 28px; padding-top: 14px; }
+  footer { max-width: 800px; margin: 0 auto; padding: 0 16px 32px; color: var(--muted); font-size: .88rem; text-align: center; }
+  [lang="ar"] { font-family: "Noto Naskh Arabic", "Segoe UI", Tahoma, "Geeza Pro", sans-serif; line-height: 1.8; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img src="icon.png" alt="" width="64" height="64">
+    <div>
+      <strong>Parachute Fall</strong>
+      <span>Terms of Use · Kullanım Koşulları</span>
+    </div>
+  </div>
+  <nav aria-label="Language">
+    <a href="#en" lang="en" data-code="en">English</a>
+    <a href="#tr" lang="tr" data-code="tr">Türkçe</a>
+    <a href="#de" lang="de" data-code="de">Deutsch</a>
+    <a href="#fr" lang="fr" data-code="fr">Français</a>
+    <a href="#it" lang="it" data-code="it">Italiano</a>
+    <a href="#zh" lang="zh" data-code="zh">中文</a>
+    <a href="#ar" lang="ar" data-code="ar">العربية</a>
+    <a href="#pl" lang="pl" data-code="pl">Polski</a>
+    <a href="#es" lang="es" data-code="es">Español</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============================== English (reference version) ============================== -->
+<article id="en" data-lang="en" lang="en">
+  <h1>Parachute Fall – Terms of Use</h1>
+  <p class="dates">Effective date: 27 September 2026 · Last updated: 2 October 2026</p>
+  <p>These Terms of Use (“Terms”) apply to the mobile game <strong>Parachute Fall</strong> (Android package name <code>com.patpatt.game</code>, the “Game”), developed and published by the developer named on the Game’s Google Play page (“we”, “us”). By installing or playing the Game you agree to these Terms. If you do not agree, please do not use the Game. If you are under the age of majority where you live, please read these Terms with a parent or guardian.</p>
+
+  <div class="summary">
+    <h2>In short</h2>
+    <ul>
+      <li>The Game is free to play, shows no ads and has no hidden costs.</li>
+      <li>The Game is played online: it needs an internet connection, and your mobile operator may charge for the data.</li>
+      <li>Nothing in the Game can currently be bought with real money.</li>
+      <li>Gold, keys and other in-game items are just for fun: they have no money value and are saved only on your device.</li>
+      <li>Chests show what they can contain, and the chances, before you open them.</li>
+      <li>We never pay or reward anyone for ratings or reviews.</li>
+    </ul>
+  </div>
+
+  <h2>1. Your licence to play</h2>
+  <p>We give you a personal, non-exclusive, non-transferable and revocable licence to install and play the Game on devices you own or control, for your own non-commercial entertainment. You may not copy, sell, rent, distribute, modify or reverse-engineer the Game (except where the law expressly allows it), and you may not remove its copyright or other notices.</p>
+
+  <h2>2. In-game items (virtual items)</h2>
+  <p>Gold, keys, chests, abilities, parachutes, characters and other items in the Game (“virtual items”) are part of the Game’s content that we license to you. They have no monetary value, cannot be exchanged for money or anything outside the Game, and cannot be sold or transferred to someone else. They are saved only on your device: if you uninstall the Game, clear its data or lose your device, they are lost, and we cannot restore them, because we have no copy.</p>
+
+  <h2>3. Prices, chests and fair dealing</h2>
+  <ul>
+    <li>Every price in gold or keys is shown before you spend anything, and nothing is spent unless you tap the buy or open button.</li>
+    <li>Each chest shows, before you open it, how much gold it gives and the chance of each of its exclusive items. A chest never gives an exclusive item you already own; once you own them all, it gives extra gold instead.</li>
+    <li>The Game has no countdowns that push you to buy, no hidden fees and no subscriptions.</li>
+    <li>The “Get a reward” offer gives a one-time reward (500 gold, 15 keys and the Turkish flag parachute and jumpsuit) for following our Instagram account. Following is optional. To confirm it, you send the code shown in the Game to our account in an Instagram message; our verification service asks Instagram whether the sending account follows ours, and the Game then hands out the reward once per installation. We may refuse to confirm codes sent abusively (for example, many codes from one account) and may end the offer at any time; rewards already collected stay yours. The offer is ours alone and is not sponsored, endorsed or run by Instagram or Meta; Instagram’s own terms apply on Instagram.</li>
+  </ul>
+
+  <h2>4. Purchases and refunds</h2>
+  <p>At the moment the Game offers no purchases with real money: shop items that would cost real money are marked “Soon” and cannot be bought, and no payment information is ever requested. If we add in-app purchases in the future:</p>
+  <ul>
+    <li>the price, including any taxes, will be shown in your local currency before you confirm a purchase;</li>
+    <li>payments will be processed by Google Play under the Google Play Terms of Service; we never see your payment details;</li>
+    <li>refunds will be handled under Google Play’s refund policies: you can request a refund through Google Play, and you can also contact us; we will review every request in good faith;</li>
+    <li>we will update these Terms and the Privacy Policy before purchases become available.</li>
+  </ul>
+  <p>Nothing in these Terms limits the rights you have as a consumer under the law of the country where you live, such as the right of withdrawal for digital content in the EU where it applies.</p>
+
+  <h2>5. Ratings and reviews</h2>
+  <p>The Game may ask every three levels whether you would like to rate it in the store, until you choose to rate it; you can always tap LATER. Rating is completely optional, the question is the same whatever you think of the Game, and we never offer rewards for ratings or reviews, never ask only satisfied players and never publish reviews that are not genuine.</p>
+
+  <h2>6. Fair play</h2>
+  <p>Please do not use the Game in a way that breaks the law, harms others or interferes with the Game, for example by distributing modified versions of it.</p>
+
+  <h2>7. Updates and availability</h2>
+  <p>The Game is provided free of charge. We may update, change or stop offering the Game or any of its features, for example to fix problems or improve the balance of the levels. Updates may change the gameplay or the content. The Game needs an internet connection: without one, it pauses and shows a notice until the connection is back, and your progress stays on your device. We are not responsible for the availability of your internet connection or for data charges from your mobile operator.</p>
+
+  <h2>8. Intellectual property</h2>
+  <p>The Game, including its code, graphics, sounds, music, texts and name, belongs to us or our licensors and is protected by intellectual property laws. All rights not expressly granted to you in these Terms are reserved.</p>
+
+  <h2>9. Health and safety</h2>
+  <p>Take regular breaks. Do not play in situations where you need to pay attention to your surroundings, such as while walking in traffic or driving. If you or your child have ever had seizures or are sensitive to flashing lights (the storm levels contain lightning flashes), talk to a doctor before playing.</p>
+
+  <h2>10. Disclaimer and limitation of liability</h2>
+  <p>The Game is provided “as is” and “as available”. To the extent permitted by law, we do not guarantee that it will always be available, free of errors or suitable for a particular purpose, and we are not liable for indirect or consequential losses or for the loss of virtual items or game progress. Nothing in these Terms excludes or limits liability that cannot be excluded or limited by law, such as liability for intent, gross negligence, or death or personal injury caused by negligence.</p>
+
+  <h2>11. Privacy</h2>
+  <p>The Game itself collects no personal data. It uses the internet only to check the connection and, for the follow reward, to look up whether your code has been confirmed. The details are in our <a href="./?lang=en">Privacy Policy</a>.</p>
+
+  <h2>12. Changes to these Terms</h2>
+  <p>We may update these Terms, for example when the Game gets new features. The new version will be published on this page with a new “Last updated” date, and the link in the Game’s Settings always leads here. If a change significantly affects you (such as the introduction of purchases), we will publish it before the change takes effect in the Game.</p>
+
+  <h2>13. Governing law</h2>
+  <p>These Terms are governed by the laws of the Republic of Türkiye. If you are a consumer, you also keep the protection of the mandatory laws of the country where you live, and you can bring claims before the courts of that country.</p>
+
+  <h2>14. Contact</h2>
+  <p>Questions about these Terms, refund requests or other concerns: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">These Terms are available in several languages. If a translation differs from the English version, the English version applies.</p>
+</article>
+
+<!-- ============================== Türkçe ============================== -->
+<article id="tr" data-lang="tr" lang="tr">
+  <h1>Parachute Fall – Kullanım Koşulları</h1>
+  <p class="dates">Yürürlük tarihi: 27 Eylül 2026 · Son güncelleme: 2 Ekim 2026</p>
+  <p>Bu Kullanım Koşulları (“Koşullar”), Oyunun Google Play sayfasında adı geçen geliştirici (“biz”) tarafından geliştirilip yayınlanan <strong>Parachute Fall</strong> mobil oyunu (Android paket adı <code>com.patpatt.game</code>, “Oyun”) için geçerlidir. Oyunu yükleyerek veya oynayarak bu Koşulları kabul etmiş olursunuz. Kabul etmiyorsanız lütfen Oyunu kullanmayın. Yaşadığınız yerde reşit değilseniz lütfen bu Koşulları bir ebeveyn veya vasiyle birlikte okuyun.</p>
+
+  <div class="summary">
+    <h2>Kısaca</h2>
+    <ul>
+      <li>Oyun ücretsizdir, reklam göstermez ve gizli ücret içermez.</li>
+      <li>Oyun internetle oynanır: internet bağlantısı gerekir ve mobil operatörünüz veri kullanımı için ücret alabilir.</li>
+      <li>Oyunda şu anda gerçek parayla hiçbir şey satın alınamaz.</li>
+      <li>Altın, anahtar ve diğer oyun içi eşyalar yalnızca eğlence içindir: parasal değerleri yoktur ve yalnızca cihazınızda saklanır.</li>
+      <li>Sandıklar, siz açmadan önce neler çıkabileceğini ve olasılıklarını gösterir.</li>
+      <li>Puan veya yorum için kimseye ödeme yapmaz, ödül vermeyiz.</li>
+    </ul>
+  </div>
+
+  <h2>1. Oyunu oynama lisansınız</h2>
+  <p>Size, sahibi olduğunuz veya kontrol ettiğiniz cihazlarda Oyunu kendi ticari olmayan eğlenceniz için yükleyip oynamanız amacıyla kişisel, münhasır olmayan, devredilemez ve geri alınabilir bir lisans veriyoruz. Oyunu kopyalayamaz, satamaz, kiralayamaz, dağıtamaz, değiştiremez veya tersine mühendislik uygulayamazsınız (yasanın açıkça izin verdiği durumlar hariç); telif hakkı ve diğer bildirimlerini kaldıramazsınız.</p>
+
+  <h2>2. Oyun içi eşyalar (sanal eşyalar)</h2>
+  <p>Oyundaki altın, anahtar, sandık, yetenek, paraşüt, karakter ve diğer eşyalar (“sanal eşyalar”), size lisansladığımız Oyun içeriğinin parçasıdır. Parasal değerleri yoktur; paraya veya Oyun dışındaki herhangi bir şeye çevrilemez, başkasına satılamaz veya devredilemezler. Yalnızca cihazınızda saklanırlar: Oyunu kaldırırsanız, verilerini silerseniz veya cihazınızı kaybederseniz kaybolurlar ve elimizde bir kopyası olmadığı için onları geri getiremeyiz.</p>
+
+  <h2>3. Fiyatlar, sandıklar ve dürüstlük</h2>
+  <ul>
+    <li>Altın veya anahtar cinsinden her fiyat, siz bir şey harcamadan önce gösterilir ve satın alma ya da açma düğmesine dokunmadığınız sürece hiçbir şey harcanmaz.</li>
+    <li>Her sandık, siz açmadan önce vereceği altın miktarını ve özel eşyalarının her birinin çıkma olasılığını gösterir. Sandık, zaten sahip olduğunuz bir özel eşyayı asla vermez; hepsine sahip olduğunuzda onun yerine ekstra altın verir.</li>
+    <li>Oyunda sizi satın almaya zorlayan geri sayımlar, gizli ücretler veya abonelikler yoktur.</li>
+    <li>“Ödül Kazan” teklifi, Instagram hesabımızı takip etmeniz karşılığında bir kereye mahsus ödül verir (500 altın, 15 anahtar ve Türk bayraklı paraşüt ile tulum). Takip etmek isteğe bağlıdır. Takibi onaylatmak için Oyunda gösterilen kodu hesabımıza Instagram mesajıyla gönderirsiniz; doğrulama hizmetimiz gönderen hesabın bizi takip edip etmediğini Instagram’a sorar ve Oyun ödülü her kurulumda bir kez verir. Kötüye kullanım amacıyla gönderilen kodları (örneğin tek hesaptan çok sayıda kod) onaylamayabilir ve teklifi istediğimiz zaman sona erdirebiliriz; alınmış ödüller sizde kalır. Teklif yalnızca bize aittir; Instagram veya Meta tarafından desteklenmez, onaylanmaz ya da yürütülmez. Instagram’da Instagram’ın kendi şartları geçerlidir.</li>
+  </ul>
+
+  <h2>4. Satın almalar ve iadeler</h2>
+  <p>Oyun şu anda gerçek parayla satın alma sunmamaktadır: gerçek parayla satılacak mağaza ürünleri “Yakında” olarak işaretlidir ve satın alınamaz; hiçbir zaman ödeme bilgisi istenmez. İleride uygulama içi satın almalar eklersek:</p>
+  <ul>
+    <li>vergiler dahil fiyat, satın almayı onaylamadan önce yerel para biriminizde gösterilir;</li>
+    <li>ödemeler Google Play Hizmet Şartları kapsamında Google Play tarafından işlenir; ödeme bilgilerinizi hiçbir zaman görmeyiz;</li>
+    <li>iadeler Google Play’in iade politikalarına göre yapılır: iadeyi Google Play üzerinden talep edebilir, ayrıca bize de yazabilirsiniz; her talebi iyi niyetle değerlendiririz;</li>
+    <li>satın almalar kullanıma sunulmadan önce bu Koşulları ve Gizlilik Politikasını güncelleriz.</li>
+  </ul>
+  <p>Bu Koşullardaki hiçbir hüküm, yaşadığınız ülkenin yasalarına göre tüketici olarak sahip olduğunuz hakları (örneğin geçerli olduğu durumlarda dijital içerik için cayma hakkı) sınırlamaz.</p>
+
+  <h2>5. Puanlar ve yorumlar</h2>
+  <p>Oyun, siz puan vermeyi seçene kadar her üç bölümde bir mağazada puan vermek isteyip istemediğinizi sorabilir; her zaman DAHA SONRA’ya dokunabilirsiniz. Puan vermek tamamen isteğe bağlıdır ve Oyun hakkında ne düşünürseniz düşünün soru aynıdır. Puan veya yorum karşılığında asla ödül vermeyiz, yalnızca memnun oyunculara sormayız ve gerçek olmayan yorumlar yayınlamayız.</p>
+
+  <h2>6. Adil oyun</h2>
+  <p>Lütfen Oyunu yasalara aykırı, başkalarına zarar verecek veya Oyunun işleyişini bozacak şekilde (örneğin değiştirilmiş sürümlerini dağıtarak) kullanmayın.</p>
+
+  <h2>7. Güncellemeler ve erişilebilirlik</h2>
+  <p>Oyun ücretsiz olarak sunulur. Oyunu veya herhangi bir özelliğini, örneğin hataları düzeltmek ya da bölümlerin dengesini iyileştirmek için güncelleyebilir, değiştirebilir veya sunmayı bırakabiliriz. Güncellemeler oynanışı veya içeriği değiştirebilir. Oyun internet bağlantısı gerektirir: bağlantı yoksa, bağlantı geri gelene kadar duraklar ve bir uyarı gösterir; ilerlemeniz cihazınızda kalır. İnternet bağlantınızın erişilebilirliğinden veya mobil operatörünüzün veri ücretlerinden sorumlu değiliz.</p>
+
+  <h2>8. Fikri mülkiyet</h2>
+  <p>Kodu, grafikleri, sesleri, müzikleri, metinleri ve adı dahil Oyun, bize veya lisans verenlerimize aittir ve fikri mülkiyet yasalarıyla korunur. Bu Koşullarla size açıkça verilmeyen tüm haklar saklıdır.</p>
+
+  <h2>9. Sağlık ve güvenlik</h2>
+  <p>Düzenli olarak ara verin. Trafikte yürürken veya araç kullanırken olduğu gibi çevrenize dikkat etmeniz gereken durumlarda oynamayın. Siz veya çocuğunuz daha önce nöbet geçirdiyseniz ya da yanıp sönen ışıklara duyarlıysanız (fırtınalı bölümlerde şimşek çakmaları vardır), oynamadan önce bir doktora danışın.</p>
+
+  <h2>10. Sorumluluk reddi ve sınırlaması</h2>
+  <p>Oyun “olduğu gibi” ve “mevcut olduğu şekilde” sunulur. Yasanın izin verdiği ölçüde, Oyunun her zaman erişilebilir, hatasız veya belirli bir amaca uygun olacağını garanti etmeyiz; dolaylı veya sonuç olarak doğan zararlardan ya da sanal eşyaların veya oyun ilerlemesinin kaybından sorumlu değiliz. Bu Koşullardaki hiçbir hüküm; kasıt, ağır ihmal veya ihmalden kaynaklanan ölüm ya da yaralanma gibi yasa gereği hariç tutulamayan veya sınırlanamayan sorumluluğu hariç tutmaz ya da sınırlamaz.</p>
+
+  <h2>11. Gizlilik</h2>
+  <p>Oyunun kendisi hiçbir kişisel veri toplamaz. İnterneti yalnızca bağlantıyı kontrol etmek ve takip ödülü için kodunuzun onaylanıp onaylanmadığına bakmak için kullanır. Ayrıntılar <a href="./?lang=tr">Gizlilik Politikamızda</a>.</p>
+
+  <h2>12. Bu Koşullardaki değişiklikler</h2>
+  <p>Bu Koşulları, örneğin Oyuna yeni özellikler geldiğinde güncelleyebiliriz. Yeni sürüm, yeni bir “Son güncelleme” tarihiyle bu sayfada yayınlanır ve Oyunun Ayarlar ekranındaki bağlantı her zaman buraya çıkar. Bir değişiklik sizi önemli ölçüde etkiliyorsa (örneğin satın almaların eklenmesi), onu Oyunda yürürlüğe girmeden önce yayınlarız.</p>
+
+  <h2>13. Uygulanacak hukuk</h2>
+  <p>Bu Koşullar Türkiye Cumhuriyeti yasalarına tabidir. Tüketiciyseniz, yaşadığınız ülkenin emredici yasalarının sağladığı korumayı da korursunuz ve taleplerinizi o ülkenin mahkemelerine götürebilirsiniz.</p>
+
+  <h2>14. İletişim</h2>
+  <p>Bu Koşullarla ilgili sorular, iade talepleri veya diğer konular için: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">Bu Koşullar birkaç dilde sunulmaktadır. Bir çeviri İngilizce sürümden farklıysa İngilizce sürüm geçerlidir.</p>
+</article>
+
+<!-- ============================== Deutsch ============================== -->
+<article id="de" data-lang="de" lang="de">
+  <h1>Parachute Fall – Nutzungsbedingungen</h1>
+  <p class="dates">Gültig ab: 27. September 2026 · Zuletzt aktualisiert: 2. Oktober 2026</p>
+  <p>Diese Nutzungsbedingungen („Bedingungen“) gelten für das Handyspiel <strong>Parachute Fall</strong> (Android-Paketname <code>com.patpatt.game</code>, das „Spiel“), das von dem auf der Google-Play-Seite des Spiels genannten Entwickler („wir“, „uns“) entwickelt und veröffentlicht wird. Indem Sie das Spiel installieren oder spielen, stimmen Sie diesen Bedingungen zu. Wenn Sie nicht einverstanden sind, nutzen Sie das Spiel bitte nicht. Wenn Sie nach dem Recht Ihres Wohnorts noch nicht volljährig sind, lesen Sie diese Bedingungen bitte zusammen mit einem Elternteil oder Erziehungsberechtigten.</p>
+
+  <div class="summary">
+    <h2>Kurz gesagt</h2>
+    <ul>
+      <li>Das Spiel ist kostenlos, zeigt keine Werbung und hat keine versteckten Kosten.</li>
+      <li>Das Spiel wird online gespielt: Es braucht eine Internetverbindung, und Ihr Mobilfunkanbieter kann für die Daten Gebühren berechnen.</li>
+      <li>Derzeit kann im Spiel nichts mit echtem Geld gekauft werden.</li>
+      <li>Gold, Schlüssel und andere Spielgegenstände dienen nur dem Spaß: Sie haben keinen Geldwert und werden nur auf Ihrem Gerät gespeichert.</li>
+      <li>Truhen zeigen vor dem Öffnen, was sie enthalten können, und die Wahrscheinlichkeiten.</li>
+      <li>Wir bezahlen oder belohnen niemanden für Bewertungen oder Rezensionen.</li>
+    </ul>
+  </div>
+
+  <h2>1. Ihre Lizenz zum Spielen</h2>
+  <p>Wir gewähren Ihnen eine persönliche, nicht ausschließliche, nicht übertragbare und widerrufliche Lizenz, das Spiel auf Geräten, die Ihnen gehören oder die Sie kontrollieren, zu Ihrer eigenen, nicht kommerziellen Unterhaltung zu installieren und zu spielen. Sie dürfen das Spiel nicht kopieren, verkaufen, vermieten, verbreiten, verändern oder zurückentwickeln (außer soweit das Gesetz dies ausdrücklich erlaubt) und keine Urheberrechts- oder sonstigen Hinweise entfernen.</p>
+
+  <h2>2. Spielgegenstände (virtuelle Gegenstände)</h2>
+  <p>Gold, Schlüssel, Truhen, Fähigkeiten, Fallschirme, Figuren und andere Gegenstände im Spiel („virtuelle Gegenstände“) sind Teil der Spielinhalte, die wir Ihnen lizenzieren. Sie haben keinen Geldwert, können nicht gegen Geld oder etwas außerhalb des Spiels eingetauscht und nicht an andere verkauft oder übertragen werden. Sie werden nur auf Ihrem Gerät gespeichert: Wenn Sie das Spiel deinstallieren, seine Daten löschen oder Ihr Gerät verlieren, gehen sie verloren, und wir können sie nicht wiederherstellen, weil wir keine Kopie haben.</p>
+
+  <h2>3. Preise, Truhen und Fairness</h2>
+  <ul>
+    <li>Jeder Preis in Gold oder Schlüsseln wird angezeigt, bevor Sie etwas ausgeben, und nichts wird ausgegeben, ohne dass Sie auf die Kauf- oder Öffnen-Schaltfläche tippen.</li>
+    <li>Jede Truhe zeigt vor dem Öffnen, wie viel Gold sie gibt und mit welcher Wahrscheinlichkeit jeder ihrer exklusiven Gegenstände kommt. Eine Truhe gibt nie einen exklusiven Gegenstand, den Sie schon besitzen; wenn Sie alle besitzen, gibt sie stattdessen Extra-Gold.</li>
+    <li>Das Spiel hat keine Countdowns, die Sie zum Kaufen drängen, keine versteckten Gebühren und keine Abonnements.</li>
+    <li>Das Angebot „Belohnung“ gibt einmalig eine Belohnung (500 Gold, 15 Schlüssel sowie Fallschirm und Overall mit türkischer Flagge), wenn Sie unserem Instagram-Konto folgen. Das Folgen ist freiwillig. Zur Bestätigung senden Sie den im Spiel angezeigten Code per Instagram-Nachricht an unser Konto; unser Bestätigungsdienst fragt Instagram, ob das sendende Konto unserem folgt, und das Spiel gibt die Belohnung dann einmal pro Installation aus. Wir können missbräuchlich gesendete Codes (zum Beispiel viele Codes von einem Konto) ablehnen und das Angebot jederzeit beenden; bereits abgeholte Belohnungen bleiben Ihnen. Das Angebot stammt allein von uns und wird von Instagram oder Meta weder gesponsert noch unterstützt oder durchgeführt; auf Instagram gelten die Bedingungen von Instagram.</li>
+  </ul>
+
+  <h2>4. Käufe und Erstattungen</h2>
+  <p>Derzeit bietet das Spiel keine Käufe mit echtem Geld an: Shop-Artikel, die echtes Geld kosten würden, sind mit „Bald“ gekennzeichnet und können nicht gekauft werden, und es werden nie Zahlungsdaten abgefragt. Falls wir künftig In-App-Käufe hinzufügen:</p>
+  <ul>
+    <li>wird der Preis einschließlich Steuern in Ihrer Landeswährung angezeigt, bevor Sie einen Kauf bestätigen;</li>
+    <li>werden Zahlungen von Google Play nach den Nutzungsbedingungen von Google Play abgewickelt; wir sehen Ihre Zahlungsdaten nie;</li>
+    <li>werden Erstattungen nach den Erstattungsrichtlinien von Google Play behandelt: Sie können eine Erstattung über Google Play beantragen und sich auch an uns wenden; wir prüfen jede Anfrage nach Treu und Glauben;</li>
+    <li>aktualisieren wir diese Bedingungen und die Datenschutzerklärung, bevor Käufe verfügbar werden.</li>
+  </ul>
+  <p>Nichts in diesen Bedingungen schränkt Ihre Rechte als Verbraucher nach dem Recht Ihres Wohnsitzlandes ein, etwa das Widerrufsrecht für digitale Inhalte in der EU, soweit es gilt.</p>
+
+  <h2>5. Bewertungen und Rezensionen</h2>
+  <p>Das Spiel kann alle drei Level fragen, ob Sie es im Store bewerten möchten, bis Sie sich dafür entscheiden; Sie können jederzeit auf SPÄTER tippen. Die Bewertung ist völlig freiwillig, die Frage ist dieselbe, was auch immer Sie vom Spiel halten, und wir bieten nie Belohnungen für Bewertungen oder Rezensionen an, fragen nie nur zufriedene Spieler und veröffentlichen nie Rezensionen, die nicht echt sind.</p>
+
+  <h2>6. Faires Spiel</h2>
+  <p>Bitte nutzen Sie das Spiel nicht auf eine Weise, die gegen Gesetze verstößt, anderen schadet oder das Spiel beeinträchtigt, etwa indem Sie veränderte Versionen davon verbreiten.</p>
+
+  <h2>7. Updates und Verfügbarkeit</h2>
+  <p>Das Spiel wird kostenlos angeboten. Wir können das Spiel oder einzelne Funktionen aktualisieren, ändern oder einstellen, etwa um Fehler zu beheben oder die Balance der Level zu verbessern. Updates können das Spielgeschehen oder die Inhalte verändern. Das Spiel braucht eine Internetverbindung: Ohne Verbindung pausiert es und zeigt einen Hinweis, bis die Verbindung wieder da ist; Ihr Fortschritt bleibt auf Ihrem Gerät. Für die Verfügbarkeit Ihrer Internetverbindung und für Datengebühren Ihres Mobilfunkanbieters sind wir nicht verantwortlich.</p>
+
+  <h2>8. Geistiges Eigentum</h2>
+  <p>Das Spiel, einschließlich Code, Grafiken, Sounds, Musik, Texten und Namen, gehört uns oder unseren Lizenzgebern und ist durch Gesetze zum Schutz geistigen Eigentums geschützt. Alle Rechte, die Ihnen in diesen Bedingungen nicht ausdrücklich eingeräumt werden, bleiben vorbehalten.</p>
+
+  <h2>9. Gesundheit und Sicherheit</h2>
+  <p>Machen Sie regelmäßig Pausen. Spielen Sie nicht in Situationen, in denen Sie auf Ihre Umgebung achten müssen, etwa beim Gehen im Straßenverkehr oder beim Fahren. Wenn Sie oder Ihr Kind schon einmal Krampfanfälle hatten oder empfindlich auf Lichtblitze reagieren (in den Sturm-Leveln gibt es Blitze), sprechen Sie vor dem Spielen mit einer Ärztin oder einem Arzt.</p>
+
+  <h2>10. Haftungsausschluss und Haftungsbeschränkung</h2>
+  <p>Das Spiel wird „wie besehen“ und „wie verfügbar“ bereitgestellt. Soweit gesetzlich zulässig, garantieren wir nicht, dass es jederzeit verfügbar, fehlerfrei oder für einen bestimmten Zweck geeignet ist, und wir haften nicht für mittelbare oder Folgeschäden oder für den Verlust virtueller Gegenstände oder des Spielfortschritts. Nichts in diesen Bedingungen schließt eine Haftung aus oder beschränkt sie, soweit dies gesetzlich nicht zulässig ist, etwa die Haftung für Vorsatz, grobe Fahrlässigkeit oder für fahrlässig verursachte Verletzungen des Lebens, des Körpers oder der Gesundheit.</p>
+
+  <h2>11. Datenschutz</h2>
+  <p>Das Spiel selbst erhebt keine personenbezogenen Daten. Es nutzt das Internet nur, um die Verbindung zu prüfen und für die Folgen-Belohnung nachzusehen, ob Ihr Code bestätigt wurde. Einzelheiten finden Sie in unserer <a href="./?lang=de">Datenschutzerklärung</a>.</p>
+
+  <h2>12. Änderungen dieser Bedingungen</h2>
+  <p>Wir können diese Bedingungen aktualisieren, etwa wenn das Spiel neue Funktionen erhält. Die neue Fassung wird mit neuem Datum „Zuletzt aktualisiert“ auf dieser Seite veröffentlicht, und der Link in den Einstellungen des Spiels führt immer hierher. Wenn eine Änderung Sie wesentlich betrifft (etwa die Einführung von Käufen), veröffentlichen wir sie, bevor sie im Spiel wirksam wird.</p>
+
+  <h2>13. Anwendbares Recht</h2>
+  <p>Diese Bedingungen unterliegen dem Recht der Republik Türkei. Als Verbraucher behalten Sie zusätzlich den Schutz der zwingenden Vorschriften des Landes, in dem Sie leben, und können Ansprüche vor den Gerichten dieses Landes geltend machen.</p>
+
+  <h2>14. Kontakt</h2>
+  <p>Fragen zu diesen Bedingungen, Erstattungsanfragen oder andere Anliegen: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">Diese Bedingungen gibt es in mehreren Sprachen. Weicht eine Übersetzung von der englischen Fassung ab, gilt die englische Fassung.</p>
+</article>
+
+<!-- ============================== Français ============================== -->
+<article id="fr" data-lang="fr" lang="fr">
+  <h1>Parachute Fall – Conditions d’utilisation</h1>
+  <p class="dates">Date d’entrée en vigueur : 27 septembre 2026 · Dernière mise à jour : 2 octobre 2026</p>
+  <p>Les présentes conditions d’utilisation (les « Conditions ») s’appliquent au jeu mobile <strong>Parachute Fall</strong> (nom du package Android <code>com.patpatt.game</code>, le « Jeu »), développé et publié par le développeur indiqué sur la page Google Play du Jeu (« nous »). En installant le Jeu ou en y jouant, vous acceptez ces Conditions. Si vous ne les acceptez pas, veuillez ne pas utiliser le Jeu. Si vous êtes mineur selon la loi de votre pays, lisez ces Conditions avec un parent ou un tuteur.</p>
+
+  <div class="summary">
+    <h2>En bref</h2>
+    <ul>
+      <li>Le Jeu est gratuit, n’affiche aucune publicité et n’a aucun coût caché.</li>
+      <li>Le Jeu se joue en ligne : il nécessite une connexion Internet, et votre opérateur mobile peut facturer les données.</li>
+      <li>Rien ne peut actuellement être acheté avec de l’argent réel dans le Jeu.</li>
+      <li>L’or, les clés et les autres objets du jeu servent seulement à s’amuser : ils n’ont aucune valeur monétaire et ne sont enregistrés que sur votre appareil.</li>
+      <li>Les coffres indiquent ce qu’ils peuvent contenir, et les probabilités, avant que vous les ouvriez.</li>
+      <li>Nous ne payons ni ne récompensons jamais personne pour des notes ou des avis.</li>
+    </ul>
+  </div>
+
+  <h2>1. Votre licence de jeu</h2>
+  <p>Nous vous accordons une licence personnelle, non exclusive, non transférable et révocable pour installer le Jeu et y jouer sur les appareils que vous possédez ou contrôlez, pour votre divertissement personnel et non commercial. Vous ne pouvez pas copier, vendre, louer, distribuer, modifier ou décompiler le Jeu (sauf dans la mesure où la loi l’autorise expressément), ni retirer ses mentions de droits d’auteur ou autres.</p>
+
+  <h2>2. Objets du jeu (objets virtuels)</h2>
+  <p>L’or, les clés, les coffres, les capacités, les parachutes, les personnages et les autres objets du Jeu (les « objets virtuels ») font partie du contenu du Jeu que nous vous concédons sous licence. Ils n’ont aucune valeur monétaire, ne peuvent pas être échangés contre de l’argent ou quoi que ce soit en dehors du Jeu, et ne peuvent être ni vendus ni transférés à quelqu’un d’autre. Ils ne sont enregistrés que sur votre appareil : si vous désinstallez le Jeu, effacez ses données ou perdez votre appareil, ils sont perdus, et nous ne pouvons pas les restaurer, car nous n’en avons aucune copie.</p>
+
+  <h2>3. Prix, coffres et loyauté</h2>
+  <ul>
+    <li>Chaque prix en or ou en clés est affiché avant que vous ne dépensiez quoi que ce soit, et rien n’est dépensé sans que vous appuyiez sur le bouton d’achat ou d’ouverture.</li>
+    <li>Chaque coffre indique, avant son ouverture, la quantité d’or qu’il donne et la probabilité de chacun de ses objets exclusifs. Un coffre ne donne jamais un objet exclusif que vous possédez déjà ; lorsque vous les possédez tous, il donne de l’or supplémentaire à la place.</li>
+    <li>Le Jeu n’a aucun compte à rebours qui vous pousse à acheter, aucuns frais cachés et aucun abonnement.</li>
+    <li>L’offre « Récompense » donne une récompense unique (500 or, 15 clés ainsi que le parachute et la combinaison au drapeau turc) si vous vous abonnez à notre compte Instagram. L’abonnement est facultatif. Pour le confirmer, vous envoyez le code affiché dans le Jeu à notre compte par message Instagram ; notre service de vérification demande à Instagram si le compte expéditeur est abonné au nôtre, puis le Jeu remet la récompense une fois par installation. Nous pouvons refuser de confirmer des codes envoyés de manière abusive (par exemple, de nombreux codes depuis un même compte) et mettre fin à l’offre à tout moment ; les récompenses déjà récupérées vous restent acquises. L’offre est uniquement la nôtre et n’est ni sponsorisée, ni approuvée, ni gérée par Instagram ou Meta ; sur Instagram, les conditions d’Instagram s’appliquent.</li>
+  </ul>
+
+  <h2>4. Achats et remboursements</h2>
+  <p>Pour le moment, le Jeu ne propose aucun achat avec de l’argent réel : les articles de la boutique qui coûteraient de l’argent réel sont marqués « Bientôt » et ne peuvent pas être achetés, et aucune information de paiement n’est jamais demandée. Si nous ajoutons des achats intégrés à l’avenir :</p>
+  <ul>
+    <li>le prix, taxes comprises, sera affiché dans votre devise avant que vous confirmiez un achat ;</li>
+    <li>les paiements seront traités par Google Play selon les Conditions d’utilisation de Google Play ; nous ne voyons jamais vos données de paiement ;</li>
+    <li>les remboursements seront traités selon les règles de remboursement de Google Play : vous pourrez demander un remboursement via Google Play et vous pourrez aussi nous contacter ; nous examinerons chaque demande de bonne foi ;</li>
+    <li>nous mettrons à jour ces Conditions et la Politique de confidentialité avant que les achats ne soient disponibles.</li>
+  </ul>
+  <p>Rien dans ces Conditions ne limite les droits dont vous disposez en tant que consommateur selon la loi de votre pays de résidence, comme le droit de rétractation pour les contenus numériques dans l’UE, lorsqu’il s’applique.</p>
+
+  <h2>5. Notes et avis</h2>
+  <p>Le Jeu peut vous demander tous les trois niveaux si vous souhaitez le noter dans la boutique, jusqu’à ce que vous choisissiez de le faire ; vous pouvez toujours toucher PLUS TARD. Noter le Jeu est entièrement facultatif, la question est la même quel que soit votre avis sur le Jeu, et nous n’offrons jamais de récompense pour des notes ou des avis, ne sollicitons jamais uniquement les joueurs satisfaits et ne publions jamais de faux avis.</p>
+
+  <h2>6. Fair-play</h2>
+  <p>Merci de ne pas utiliser le Jeu d’une manière qui enfreint la loi, nuit à autrui ou perturbe le Jeu, par exemple en diffusant des versions modifiées du Jeu.</p>
+
+  <h2>7. Mises à jour et disponibilité</h2>
+  <p>Le Jeu est proposé gratuitement. Nous pouvons mettre à jour, modifier ou cesser de proposer le Jeu ou l’une de ses fonctionnalités, par exemple pour corriger des problèmes ou améliorer l’équilibre des niveaux. Les mises à jour peuvent modifier le gameplay ou le contenu. Le Jeu nécessite une connexion Internet : sans connexion, il se met en pause et affiche un message jusqu’au retour de la connexion, et votre progression reste sur votre appareil. Nous ne sommes pas responsables de la disponibilité de votre connexion Internet ni des frais de données de votre opérateur mobile.</p>
+
+  <h2>8. Propriété intellectuelle</h2>
+  <p>Le Jeu, y compris son code, ses graphismes, ses sons, sa musique, ses textes et son nom, nous appartient ou appartient à nos concédants et est protégé par le droit de la propriété intellectuelle. Tous les droits qui ne vous sont pas expressément accordés par ces Conditions sont réservés.</p>
+
+  <h2>9. Santé et sécurité</h2>
+  <p>Faites des pauses régulières. Ne jouez pas dans des situations où vous devez faire attention à ce qui vous entoure, par exemple en marchant dans la circulation ou en conduisant. Si vous ou votre enfant avez déjà eu des crises d’épilepsie ou êtes sensibles aux lumières clignotantes (les niveaux de tempête comportent des éclairs), consultez un médecin avant de jouer.</p>
+
+  <h2>10. Exclusion et limitation de responsabilité</h2>
+  <p>Le Jeu est fourni « en l’état » et « selon sa disponibilité ». Dans la mesure permise par la loi, nous ne garantissons pas qu’il sera toujours disponible, exempt d’erreurs ou adapté à un usage particulier, et nous ne sommes pas responsables des dommages indirects ni de la perte d’objets virtuels ou de la progression dans le jeu. Rien dans ces Conditions n’exclut ni ne limite une responsabilité qui ne peut l’être en vertu de la loi, comme la responsabilité pour faute intentionnelle ou lourde, ou pour un décès ou un dommage corporel causé par une négligence.</p>
+
+  <h2>11. Confidentialité</h2>
+  <p>Le Jeu lui-même ne collecte aucune donnée personnelle. Il n’utilise Internet que pour vérifier la connexion et, pour la récompense d’abonnement, pour savoir si votre code a été confirmé. Les détails figurent dans notre <a href="./?lang=fr">Politique de confidentialité</a>.</p>
+
+  <h2>12. Modifications de ces Conditions</h2>
+  <p>Nous pouvons mettre à jour ces Conditions, par exemple lorsque le Jeu reçoit de nouvelles fonctionnalités. La nouvelle version sera publiée sur cette page avec une nouvelle date de « Dernière mise à jour », et le lien dans les Paramètres du Jeu mène toujours ici. Si une modification vous concerne de manière importante (comme l’introduction d’achats), nous la publierons avant qu’elle ne prenne effet dans le Jeu.</p>
+
+  <h2>13. Droit applicable</h2>
+  <p>Ces Conditions sont régies par le droit de la République de Turquie. Si vous êtes un consommateur, vous conservez en outre la protection des dispositions impératives du pays où vous résidez et pouvez porter vos réclamations devant les tribunaux de ce pays.</p>
+
+  <h2>14. Contact</h2>
+  <p>Questions sur ces Conditions, demandes de remboursement ou autres préoccupations : <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">Ces Conditions sont disponibles en plusieurs langues. En cas de différence entre une traduction et la version anglaise, la version anglaise prévaut.</p>
+</article>
+
+<!-- ============================== Italiano ============================== -->
+<article id="it" data-lang="it" lang="it">
+  <h1>Parachute Fall – Termini di utilizzo</h1>
+  <p class="dates">Data di entrata in vigore: 27 settembre 2026 · Ultimo aggiornamento: 2 ottobre 2026</p>
+  <p>I presenti Termini di utilizzo (“Termini”) si applicano al gioco per dispositivi mobili <strong>Parachute Fall</strong> (nome del pacchetto Android <code>com.patpatt.game</code>, il “Gioco”), sviluppato e pubblicato dallo sviluppatore indicato nella pagina Google Play del Gioco (“noi”). Installando il Gioco o giocandoci accetti questi Termini. Se non li accetti, non usare il Gioco. Se secondo la legge del tuo Paese sei minorenne, leggi questi Termini insieme a un genitore o a un tutore.</p>
+
+  <div class="summary">
+    <h2>In breve</h2>
+    <ul>
+      <li>Il Gioco è gratuito, non mostra pubblicità e non ha costi nascosti.</li>
+      <li>Il Gioco si gioca online: serve una connessione a Internet e il tuo operatore mobile può addebitare il traffico dati.</li>
+      <li>Al momento nel Gioco non si può comprare nulla con denaro reale.</li>
+      <li>Oro, chiavi e altri oggetti di gioco servono solo per divertirsi: non hanno valore monetario e sono salvati solo sul tuo dispositivo.</li>
+      <li>I forzieri mostrano cosa possono contenere, e le probabilità, prima che tu li apra.</li>
+      <li>Non paghiamo né premiamo mai nessuno per valutazioni o recensioni.</li>
+    </ul>
+  </div>
+
+  <h2>1. La tua licenza di gioco</h2>
+  <p>Ti concediamo una licenza personale, non esclusiva, non trasferibile e revocabile per installare il Gioco e giocarci sui dispositivi che possiedi o controlli, per il tuo svago personale e non commerciale. Non puoi copiare, vendere, noleggiare, distribuire, modificare o decompilare il Gioco (salvo quanto espressamente consentito dalla legge), né rimuovere le sue note di copyright o di altro tipo.</p>
+
+  <h2>2. Oggetti di gioco (oggetti virtuali)</h2>
+  <p>Oro, chiavi, forzieri, abilità, paracadute, personaggi e altri oggetti del Gioco (“oggetti virtuali”) fanno parte dei contenuti del Gioco che ti concediamo in licenza. Non hanno valore monetario, non possono essere scambiati con denaro o con qualcosa al di fuori del Gioco e non possono essere venduti o trasferiti ad altri. Sono salvati solo sul tuo dispositivo: se disinstalli il Gioco, ne cancelli i dati o perdi il dispositivo, vanno persi e non possiamo ripristinarli, perché non ne abbiamo una copia.</p>
+
+  <h2>3. Prezzi, forzieri e correttezza</h2>
+  <ul>
+    <li>Ogni prezzo in oro o chiavi è mostrato prima che tu spenda qualcosa, e nulla viene speso senza che tu tocchi il pulsante di acquisto o di apertura.</li>
+    <li>Ogni forziere mostra, prima di essere aperto, quanto oro dà e la probabilità di ciascuno dei suoi oggetti esclusivi. Un forziere non dà mai un oggetto esclusivo che possiedi già; quando li possiedi tutti, dà invece oro extra.</li>
+    <li>Il Gioco non ha conti alla rovescia che ti spingono a comprare, costi nascosti o abbonamenti.</li>
+    <li>L’offerta “Premio” dà un premio una tantum (500 oro, 15 chiavi e paracadute e tuta con la bandiera turca) se segui il nostro account Instagram. Seguirci è facoltativo. Per confermarlo, invii al nostro account, con un messaggio Instagram, il codice mostrato nel Gioco; il nostro servizio di verifica chiede a Instagram se l’account mittente segue il nostro, e il Gioco consegna il premio una sola volta per installazione. Possiamo rifiutare di confermare codici inviati in modo abusivo (ad esempio molti codici da un solo account) e terminare l’offerta in qualsiasi momento; i premi già ritirati restano tuoi. L’offerta è soltanto nostra e non è sponsorizzata, approvata né gestita da Instagram o Meta; su Instagram valgono i termini di Instagram.</li>
+  </ul>
+
+  <h2>4. Acquisti e rimborsi</h2>
+  <p>Al momento il Gioco non offre acquisti con denaro reale: gli articoli del negozio che costerebbero denaro reale sono contrassegnati con “Presto” e non possono essere acquistati, e non vengono mai richiesti dati di pagamento. Se in futuro aggiungeremo acquisti in-app:</p>
+  <ul>
+    <li>il prezzo, tasse incluse, sarà mostrato nella tua valuta prima che tu confermi un acquisto;</li>
+    <li>i pagamenti saranno gestiti da Google Play secondo i Termini di servizio di Google Play; non vediamo mai i tuoi dati di pagamento;</li>
+    <li>i rimborsi seguiranno le norme sui rimborsi di Google Play: potrai chiedere un rimborso tramite Google Play e potrai anche contattarci; esamineremo ogni richiesta in buona fede;</li>
+    <li>aggiorneremo questi Termini e l’Informativa sulla privacy prima che gli acquisti siano disponibili.</li>
+  </ul>
+  <p>Nulla in questi Termini limita i diritti che hai come consumatore secondo la legge del Paese in cui vivi, come il diritto di recesso per i contenuti digitali nell’UE, quando si applica.</p>
+
+  <h2>5. Valutazioni e recensioni</h2>
+  <p>Il Gioco può chiederti ogni tre livelli se vuoi valutarlo nello store, finché non scegli di farlo; puoi sempre toccare PIÙ TARDI. La valutazione è del tutto facoltativa, la domanda è la stessa qualunque cosa tu pensi del Gioco, e non offriamo mai premi per valutazioni o recensioni, non chiediamo mai solo ai giocatori soddisfatti e non pubblichiamo mai recensioni non autentiche.</p>
+
+  <h2>6. Gioco leale</h2>
+  <p>Non usare il Gioco in modo illegale, dannoso per gli altri o che ne comprometta il funzionamento, ad esempio distribuendone versioni modificate.</p>
+
+  <h2>7. Aggiornamenti e disponibilità</h2>
+  <p>Il Gioco è offerto gratuitamente. Possiamo aggiornare, modificare o smettere di offrire il Gioco o una sua funzione, ad esempio per correggere problemi o migliorare l’equilibrio dei livelli. Gli aggiornamenti possono cambiare il gameplay o i contenuti. Il Gioco richiede una connessione a Internet: senza connessione si mette in pausa e mostra un avviso finché la connessione non torna, e i tuoi progressi restano sul tuo dispositivo. Non siamo responsabili della disponibilità della tua connessione a Internet né dei costi del traffico dati del tuo operatore mobile.</p>
+
+  <h2>8. Proprietà intellettuale</h2>
+  <p>Il Gioco, compresi codice, grafica, suoni, musica, testi e nome, appartiene a noi o ai nostri licenziatari ed è protetto dalle leggi sulla proprietà intellettuale. Tutti i diritti non espressamente concessi in questi Termini sono riservati.</p>
+
+  <h2>9. Salute e sicurezza</h2>
+  <p>Fai pause regolari. Non giocare in situazioni in cui devi fare attenzione a ciò che ti circonda, ad esempio mentre cammini nel traffico o guidi. Se tu o tuo figlio avete mai avuto crisi epilettiche o siete sensibili alle luci lampeggianti (nei livelli con la tempesta ci sono fulmini), consulta un medico prima di giocare.</p>
+
+  <h2>10. Esclusione e limitazione di responsabilità</h2>
+  <p>Il Gioco è fornito “così com’è” e “come disponibile”. Nei limiti consentiti dalla legge, non garantiamo che sia sempre disponibile, privo di errori o adatto a uno scopo particolare, e non siamo responsabili di danni indiretti o consequenziali né della perdita di oggetti virtuali o dei progressi di gioco. Nulla in questi Termini esclude o limita la responsabilità che non può essere esclusa o limitata per legge, come quella per dolo, colpa grave o per morte o lesioni personali causate da negligenza.</p>
+
+  <h2>11. Privacy</h2>
+  <p>Il Gioco in sé non raccoglie dati personali. Usa Internet solo per verificare la connessione e, per il premio per chi ci segue, per controllare se il tuo codice è stato confermato. I dettagli sono nella nostra <a href="./?lang=it">Informativa sulla privacy</a>.</p>
+
+  <h2>12. Modifiche a questi Termini</h2>
+  <p>Possiamo aggiornare questi Termini, ad esempio quando il Gioco riceve nuove funzioni. La nuova versione sarà pubblicata su questa pagina con una nuova data di “Ultimo aggiornamento”, e il link nelle Impostazioni del Gioco porta sempre qui. Se una modifica ti riguarda in modo significativo (come l’introduzione degli acquisti), la pubblicheremo prima che entri in vigore nel Gioco.</p>
+
+  <h2>13. Legge applicabile</h2>
+  <p>Questi Termini sono regolati dalla legge della Repubblica di Turchia. Se sei un consumatore, mantieni anche la tutela delle norme imperative del Paese in cui vivi e puoi rivolgerti ai tribunali di quel Paese.</p>
+
+  <h2>14. Contatti</h2>
+  <p>Domande su questi Termini, richieste di rimborso o altre questioni: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">Questi Termini sono disponibili in più lingue. Se una traduzione differisce dalla versione inglese, prevale la versione inglese.</p>
+</article>
+
+<!-- ============================== 中文 ============================== -->
+<article id="zh" data-lang="zh" lang="zh-Hans">
+  <h1>Parachute Fall – 使用条款</h1>
+  <p class="dates">生效日期：2026年9月27日 · 最后更新：2026年10月2日</p>
+  <p>本使用条款（“条款”）适用于手机游戏 <strong>Parachute Fall</strong>（Android 软件包名称 <code>com.patpatt.game</code>，下称“本游戏”），本游戏由其 Google Play 页面上注明的开发者（“我们”）开发和发布。安装或游玩本游戏即表示您同意本条款。如果您不同意，请不要使用本游戏。如果您在居住地尚未成年，请与父母或监护人一起阅读本条款。</p>
+
+  <div class="summary">
+    <h2>简而言之</h2>
+    <ul>
+      <li>本游戏免费游玩，不显示广告，也没有任何隐藏费用。</li>
+      <li>本游戏需要联网游玩：需要互联网连接，你的移动运营商可能会收取流量费用。</li>
+      <li>目前在本游戏中无法用真实货币购买任何东西。</li>
+      <li>金币、钥匙和其他游戏内物品仅供娱乐：它们没有货币价值，并且只保存在您的设备上。</li>
+      <li>宝箱在您打开之前就会显示可能获得的内容及其概率。</li>
+      <li>我们绝不会为评分或评价向任何人付费或提供奖励。</li>
+    </ul>
+  </div>
+
+  <h2>1. 您的游戏许可</h2>
+  <p>我们授予您一项个人的、非独占的、不可转让且可撤销的许可，允许您在您拥有或控制的设备上安装和游玩本游戏，仅供您个人非商业娱乐之用。您不得复制、出售、出租、分发、修改或反向工程本游戏（法律明确允许的除外），也不得删除其版权声明或其他声明。</p>
+
+  <h2>2. 游戏内物品（虚拟物品）</h2>
+  <p>本游戏中的金币、钥匙、宝箱、技能、降落伞、角色和其他物品（“虚拟物品”）属于我们许可您使用的游戏内容。它们没有货币价值，不能兑换成金钱或游戏以外的任何东西，也不能出售或转让给他人。它们只保存在您的设备上：如果您卸载本游戏、清除其数据或丢失设备，这些物品就会丢失；由于我们没有任何副本，我们无法恢复它们。</p>
+
+  <h2>3. 价格、宝箱与公平</h2>
+  <ul>
+    <li>在您花费任何东西之前，每个以金币或钥匙计的价格都会显示出来；只有当您点按购买或打开按钮时才会花费。</li>
+    <li>每个宝箱在打开之前都会显示它给予的金币数量，以及其中每件专属物品的获得概率。宝箱绝不会给出您已经拥有的专属物品；当您拥有全部专属物品后，它会改为给予额外的金币。</li>
+    <li>本游戏没有催促您购买的倒计时，没有隐藏费用，也没有订阅。</li>
+    <li>“领取奖励”活动会在你关注我们的 Instagram 账号后一次性给予奖励（500金币、15把钥匙，以及土耳其国旗降落伞和连体服）。关注完全自愿。如需确认关注，请通过 Instagram 私信把本游戏中显示的代码发送给我们的账号；我们的验证服务会向 Instagram 查询发送者账号是否关注了我们，随后本游戏会在每次安装中发放一次奖励。对于以滥用方式发送的代码（例如同一账号发送大量代码），我们可以拒绝确认，并可能随时结束该活动；已领取的奖励仍归你所有。该活动完全由我们提供，并非由 Instagram 或 Meta 赞助、认可或管理；在 Instagram 上适用 Instagram 自己的条款。</li>
+  </ul>
+
+  <h2>4. 购买与退款</h2>
+  <p>目前本游戏不提供任何真实货币购买：需要真实货币的商店商品都标有“即将推出”，无法购买，也从不要求提供任何支付信息。如果我们将来加入应用内购买：</p>
+  <ul>
+    <li>在您确认购买之前，会以您的本地货币显示含税价格；</li>
+    <li>付款将由 Google Play 根据 Google Play 服务条款处理；我们永远看不到您的支付信息；</li>
+    <li>退款将按照 Google Play 的退款政策处理：您可以通过 Google Play 申请退款，也可以联系我们；我们会本着诚信原则审查每一项请求；</li>
+    <li>在购买功能上线之前，我们会更新本条款和隐私政策。</li>
+  </ul>
+  <p>本条款的任何内容均不限制您根据居住国法律作为消费者所享有的权利，例如在适用情况下欧盟对数字内容的撤销权。</p>
+
+  <h2>5. 评分与评价</h2>
+  <p>在你选择评分之前，本游戏可能每隔三关询问一次你是否愿意在商店中为它评分；你随时可以点按“以后再说”。评分完全自愿；无论你对本游戏的看法如何，问题都是一样的。我们绝不会为评分或评价提供奖励，绝不会只询问满意的玩家，也绝不会发布不真实的评价。</p>
+
+  <h2>6. 公平游戏</h2>
+  <p>请勿以违法、伤害他人或干扰本游戏的方式使用本游戏，例如传播本游戏的修改版本。</p>
+
+  <h2>7. 更新与可用性</h2>
+  <p>本游戏免费提供。我们可能会更新、更改或停止提供本游戏或其任何功能，例如为了修复问题或改善关卡平衡。更新可能会改变玩法或内容。 本游戏需要互联网连接：没有连接时，游戏会暂停并显示提示，直到连接恢复，你的进度仍保存在你的设备上。我们不对你的互联网连接是否可用或你的移动运营商收取的流量费用负责。</p>
+
+  <h2>8. 知识产权</h2>
+  <p>本游戏（包括其代码、图形、音效、音乐、文字和名称）归我们或我们的许可方所有，受知识产权法律保护。本条款中未明确授予您的所有权利均予以保留。</p>
+
+  <h2>9. 健康与安全</h2>
+  <p>请定时休息。请不要在需要注意周围环境的情况下游玩，例如在车流中行走或驾驶时。如果您或您的孩子曾经发生过癫痫发作，或对闪烁的光线敏感（暴风雨关卡中有闪电），请在游玩前咨询医生。</p>
+
+  <h2>10. 免责声明与责任限制</h2>
+  <p>本游戏按“现状”和“现有”基础提供。在法律允许的范围内，我们不保证本游戏始终可用、没有错误或适合特定用途，并且对间接或后果性损失以及虚拟物品或游戏进度的丢失不承担责任。本条款的任何内容均不排除或限制依法不得排除或限制的责任，例如因故意、重大过失或因过失导致的死亡或人身伤害而承担的责任。</p>
+
+  <h2>11. 隐私</h2>
+  <p>本游戏本身不收集任何个人数据。它只将互联网用于检查连接，以及在关注奖励中查询你的代码是否已确认。详情请参阅我们的<a href="./?lang=zh">隐私政策</a>。</p>
+
+  <h2>12. 本条款的变更</h2>
+  <p>我们可能会更新本条款，例如在本游戏加入新功能时。新版本将在本页面发布并注明新的“最后更新”日期，本游戏“设置”中的链接始终指向这里。如果某项变更对您有重大影响（例如加入购买功能），我们会在其于本游戏中生效之前发布。</p>
+
+  <h2>13. 适用法律</h2>
+  <p>本条款受土耳其共和国法律管辖。如果您是消费者，您仍享有您居住国强制性法律提供的保护，并可向该国法院提起诉讼。</p>
+
+  <h2>14. 联系我们</h2>
+  <p>关于本条款的问题、退款申请或其他事项：<a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">本条款提供多种语言版本。如翻译版本与英文版本存在差异，以英文版本为准。</p>
+</article>
+
+<!-- ============================== العربية ============================== -->
+<article id="ar" data-lang="ar" lang="ar">
+  <h1>Parachute Fall – شروط الاستخدام</h1>
+  <p class="dates">تاريخ السريان: 27 سبتمبر 2026 · آخر تحديث: 2 أكتوبر 2026</p>
+  <p>تسري شروط الاستخدام هذه («الشروط») على لعبة الهاتف المحمول <strong>Parachute Fall</strong> (اسم حزمة Android هو <code>com.patpatt.game</code>، ويُشار إليها بـ«اللعبة»)، التي يطوّرها وينشرها المطوّر المذكور في صفحة اللعبة على Google Play («نحن»). بتثبيت اللعبة أو اللعب بها فإنك توافق على هذه الشروط. وإذا كنت لا توافق عليها، فيُرجى عدم استخدام اللعبة. وإذا لم تكن قد بلغت سن الرشد في بلدك، فيُرجى قراءة هذه الشروط مع أحد والديك أو وليّ أمرك.</p>
+
+  <div class="summary">
+    <h2>باختصار</h2>
+    <ul>
+      <li>اللعبة مجانية، ولا تعرض إعلانات، ولا تتضمن أي تكاليف خفية.</li>
+      <li>تُلعب اللعبة عبر الإنترنت: فهي تحتاج إلى اتصال بالإنترنت، وقد يفرض مشغّل شبكة الجوال رسومًا على البيانات.</li>
+      <li>لا يمكن حاليًا شراء أي شيء في اللعبة بأموال حقيقية.</li>
+      <li>الذهب والمفاتيح وغيرها من عناصر اللعبة هي للمتعة فقط: ليست لها قيمة مالية، وتُحفظ على جهازك فقط.</li>
+      <li>تعرض الصناديق ما يمكن أن تحتويه ونسب الحصول عليه قبل أن تفتحها.</li>
+      <li>لا ندفع أبدًا لأي شخص ولا نكافئه مقابل التقييمات أو المراجعات.</li>
+    </ul>
+  </div>
+
+  <h2>1. ترخيصك للّعب</h2>
+  <p>نمنحك ترخيصًا شخصيًا وغير حصري وغير قابل للتحويل وقابلًا للإلغاء لتثبيت اللعبة واللعب بها على الأجهزة التي تملكها أو تتحكم بها، لأغراض ترفيهك الشخصي غير التجاري. ولا يجوز لك نسخ اللعبة أو بيعها أو تأجيرها أو توزيعها أو تعديلها أو إجراء هندسة عكسية لها (إلا بقدر ما يسمح به القانون صراحةً)، ولا إزالة إشعارات حقوق النشر أو غيرها منها.</p>
+
+  <h2>2. عناصر اللعبة (العناصر الافتراضية)</h2>
+  <p>الذهب والمفاتيح والصناديق والقدرات والمظلات والشخصيات وغيرها من العناصر في اللعبة («العناصر الافتراضية») هي جزء من محتوى اللعبة الذي نرخّصه لك. ليست لها قيمة مالية، ولا يمكن استبدالها بالمال أو بأي شيء خارج اللعبة، ولا يمكن بيعها أو نقلها إلى شخص آخر. وهي محفوظة على جهازك فقط: إذا ألغيت تثبيت اللعبة أو مسحت بياناتها أو فقدت جهازك فإنها تضيع، ولا يمكننا استعادتها لأنه ليست لدينا أي نسخة منها.</p>
+
+  <h2>3. الأسعار والصناديق والتعامل النزيه</h2>
+  <ul>
+    <li>يُعرض كل سعر بالذهب أو المفاتيح قبل أن تنفق أي شيء، ولا يُنفق شيء ما لم تنقر على زر الشراء أو الفتح.</li>
+    <li>يعرض كل صندوق قبل فتحه كمية الذهب التي يمنحها ونسبة الحصول على كل عنصر من عناصره الحصرية. ولا يمنحك الصندوق أبدًا عنصرًا حصريًا تملكه بالفعل؛ وعندما تملكها كلها يمنحك ذهبًا إضافيًا بدلًا منها.</li>
+    <li>لا تحتوي اللعبة على عدادات تنازلية تضغط عليك للشراء، ولا على رسوم خفية ولا اشتراكات.</li>
+    <li>يمنح عرض «اربح جائزة» جائزة لمرة واحدة (500 ذهب و15 مفتاحًا والمظلة والبدلة بعلم تركيا) مقابل متابعة حسابنا على Instagram. المتابعة اختيارية. ولتأكيدها، ترسل الرمز الظاهر في اللعبة إلى حسابنا في رسالة على Instagram؛ فتسأل خدمة التحقق لدينا Instagram عمّا إذا كان الحساب المرسِل يتابع حسابنا، ثم تمنح اللعبة الجائزة مرة واحدة لكل تثبيت. ويجوز لنا رفض تأكيد الرموز المرسلة بطريقة مسيئة (مثل رموز كثيرة من حساب واحد)، وإنهاء العرض في أي وقت؛ وتبقى الجوائز التي استلمتها لك. هذا العرض خاص بنا وحدنا، ولا ترعاه Instagram أو Meta ولا تؤيده ولا تديره؛ وتسري على Instagram شروط Instagram نفسها.</li>
+  </ul>
+
+  <h2>4. المشتريات والمبالغ المستردة</h2>
+  <p>لا تقدم اللعبة حاليًا أي عمليات شراء بأموال حقيقية: فعناصر المتجر التي قد تكلّف أموالًا حقيقية مُعلَّمة بعبارة «قريبًا» ولا يمكن شراؤها، ولا تُطلب أي معلومات دفع على الإطلاق. وإذا أضفنا عمليات شراء داخل التطبيق في المستقبل:</p>
+  <ul>
+    <li>سيُعرض السعر شاملًا الضرائب بعملتك المحلية قبل أن تؤكد أي عملية شراء؛</li>
+    <li>ستتولى Google Play معالجة المدفوعات وفقًا لبنود خدمة Google Play، ولن نرى بيانات الدفع الخاصة بك أبدًا؛</li>
+    <li>ستُعالج المبالغ المستردة وفقًا لسياسات الاسترداد في Google Play: يمكنك طلب الاسترداد عبر Google Play، ويمكنك أيضًا التواصل معنا، وسننظر في كل طلب بحسن نية؛</li>
+    <li>سنحدّث هذه الشروط وسياسة الخصوصية قبل أن تصبح عمليات الشراء متاحة.</li>
+  </ul>
+  <p>لا يحدّ أي شيء في هذه الشروط من الحقوق التي تتمتع بها بصفتك مستهلكًا بموجب قانون البلد الذي تعيش فيه، مثل حق الانسحاب من شراء المحتوى الرقمي في الاتحاد الأوروبي حيثما ينطبق.</p>
+
+  <h2>5. التقييمات والمراجعات</h2>
+  <p>قد تسألك اللعبة كل ثلاث مراحل إن كنت ترغب في تقييمها في المتجر، إلى أن تختار التقييم؛ ويمكنك دائمًا النقر على «لاحقا». التقييم اختياري تمامًا، والسؤال هو نفسه أيًّا كان رأيك في اللعبة، ولا نقدم أبدًا مكافآت مقابل التقييمات أو المراجعات، ولا نسأل اللاعبين الراضين فقط، ولا ننشر أبدًا مراجعات غير حقيقية.</p>
+
+  <h2>6. اللعب النزيه</h2>
+  <p>يُرجى عدم استخدام اللعبة بطريقة تخالف القانون أو تضر بالآخرين أو تعطّل اللعبة، مثل توزيع نسخ معدّلة منها.</p>
+
+  <h2>7. التحديثات والتوفر</h2>
+  <p>تُقدَّم اللعبة مجانًا. ويجوز لنا تحديث اللعبة أو أي من ميزاتها أو تغييرها أو التوقف عن تقديمها، مثلًا لإصلاح المشكلات أو تحسين توازن المراحل. وقد تغيّر التحديثات طريقة اللعب أو المحتوى. تحتاج اللعبة إلى اتصال بالإنترنت: فعند عدم وجود اتصال تتوقف مؤقتًا وتعرض تنبيهًا حتى يعود الاتصال، ويبقى تقدّمك على جهازك. ولسنا مسؤولين عن توفر اتصالك بالإنترنت أو عن رسوم البيانات التي يفرضها مشغّل شبكة الجوال.</p>
+
+  <h2>8. الملكية الفكرية</h2>
+  <p>اللعبة، بما في ذلك الشيفرة والرسومات والأصوات والموسيقى والنصوص والاسم، مملوكة لنا أو لمانحي التراخيص لدينا ومحمية بقوانين الملكية الفكرية. وجميع الحقوق غير الممنوحة لك صراحةً في هذه الشروط محفوظة.</p>
+
+  <h2>9. الصحة والسلامة</h2>
+  <p>خذ فترات راحة منتظمة. لا تلعب في مواقف تحتاج فيها إلى الانتباه لما حولك، مثل المشي بين السيارات أو القيادة. وإذا سبق أن أُصبت أنت أو طفلك بنوبات صرع أو كانت لديكما حساسية تجاه الأضواء الوامضة (تحتوي مراحل العاصفة على ومضات برق)، فاستشر طبيبًا قبل اللعب.</p>
+
+  <h2>10. إخلاء المسؤولية وتحديدها</h2>
+  <p>تُقدَّم اللعبة «كما هي» و«حسب توفرها». وفي الحدود التي يسمح بها القانون، لا نضمن أن تكون متاحة دائمًا أو خالية من الأخطاء أو مناسبة لغرض معيّن، ولا نتحمل المسؤولية عن الأضرار غير المباشرة أو التبعية أو عن فقدان العناصر الافتراضية أو التقدم في اللعبة. ولا يستبعد أي شيء في هذه الشروط أو يحدّ من المسؤولية التي لا يجوز استبعادها أو تحديدها قانونًا، مثل المسؤولية عن العمد أو الإهمال الجسيم أو عن الوفاة أو الإصابة الشخصية الناجمة عن الإهمال.</p>
+
+  <h2>11. الخصوصية</h2>
+  <p>لا تجمع اللعبة نفسها أي بيانات شخصية. ولا تستخدم الإنترنت إلا للتحقق من الاتصال، وللتحقق في جائزة المتابعة مما إذا كان رمزك قد تأكّد. التفاصيل في <a href="./?lang=ar">سياسة الخصوصية</a>.</p>
+
+  <h2>12. التغييرات على هذه الشروط</h2>
+  <p>قد نحدّث هذه الشروط، مثلًا عندما تحصل اللعبة على ميزات جديدة. وستُنشر النسخة الجديدة في هذه الصفحة بتاريخ «آخر تحديث» جديد، ويؤدي الرابط في إعدادات اللعبة دائمًا إلى هنا. وإذا كان التغيير يؤثر فيك تأثيرًا كبيرًا (مثل إضافة عمليات الشراء)، فسننشره قبل أن يدخل حيز التنفيذ في اللعبة.</p>
+
+  <h2>13. القانون الواجب التطبيق</h2>
+  <p>تخضع هذه الشروط لقوانين جمهورية تركيا. وإذا كنت مستهلكًا، فإنك تحتفظ أيضًا بالحماية التي توفرها القوانين الإلزامية في البلد الذي تعيش فيه، ويمكنك رفع دعاواك أمام محاكم ذلك البلد.</p>
+
+  <h2>14. التواصل معنا</h2>
+  <p>للأسئلة المتعلقة بهذه الشروط أو طلبات الاسترداد أو أي استفسارات أخرى: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">تتوفر هذه الشروط بعدة لغات. وإذا اختلفت ترجمة عن النسخة الإنجليزية، فإن النسخة الإنجليزية هي المعتمدة.</p>
+</article>
+
+<!-- ============================== Polski ============================== -->
+<article id="pl" data-lang="pl" lang="pl">
+  <h1>Parachute Fall – Warunki korzystania</h1>
+  <p class="dates">Data wejścia w życie: 27 września 2026 r. · Ostatnia aktualizacja: 2 października 2026 r.</p>
+  <p>Niniejsze Warunki korzystania („Warunki”) dotyczą gry mobilnej <strong>Parachute Fall</strong> (nazwa pakietu Android <code>com.patpatt.game</code>, „Gra”), tworzonej i wydawanej przez dewelopera wskazanego na stronie Gry w Google Play („my”). Instalując Grę lub grając w nią, akceptujesz te Warunki. Jeśli się z nimi nie zgadzasz, nie korzystaj z Gry. Jeśli zgodnie z prawem Twojego kraju nie jesteś pełnoletni, przeczytaj te Warunki razem z rodzicem lub opiekunem.</p>
+
+  <div class="summary">
+    <h2>W skrócie</h2>
+    <ul>
+      <li>Gra jest darmowa, nie wyświetla reklam i nie ma ukrytych kosztów.</li>
+      <li>W Grę gra się online: wymaga ona połączenia z internetem, a operator komórkowy może naliczać opłaty za transmisję danych.</li>
+      <li>Obecnie w Grze nie można niczego kupić za prawdziwe pieniądze.</li>
+      <li>Złoto, klucze i inne przedmioty w grze służą tylko do zabawy: nie mają wartości pieniężnej i są zapisywane wyłącznie na Twoim urządzeniu.</li>
+      <li>Skrzynie pokazują, co mogą zawierać i z jakim prawdopodobieństwem, zanim je otworzysz.</li>
+      <li>Nigdy nikomu nie płacimy ani nie dajemy nagród za oceny lub recenzje.</li>
+    </ul>
+  </div>
+
+  <h2>1. Twoja licencja na grę</h2>
+  <p>Udzielamy Ci osobistej, niewyłącznej, niezbywalnej i odwołalnej licencji na instalowanie Gry i granie w nią na urządzeniach, które posiadasz lub kontrolujesz, dla Twojej własnej, niekomercyjnej rozrywki. Nie możesz kopiować, sprzedawać, wynajmować, rozpowszechniać, modyfikować ani poddawać Gry inżynierii wstecznej (z wyjątkiem przypadków wyraźnie dozwolonych przez prawo) ani usuwać z niej informacji o prawach autorskich lub innych oznaczeń.</p>
+
+  <h2>2. Przedmioty w grze (przedmioty wirtualne)</h2>
+  <p>Złoto, klucze, skrzynie, umiejętności, spadochrony, postacie i inne przedmioty w Grze („przedmioty wirtualne”) są częścią treści Gry, na które udzielamy Ci licencji. Nie mają wartości pieniężnej, nie można ich wymienić na pieniądze ani na nic poza Grą i nie można ich sprzedać ani przekazać innej osobie. Są zapisywane wyłącznie na Twoim urządzeniu: jeśli odinstalujesz Grę, wyczyścisz jej dane lub zgubisz urządzenie, przepadną, a my nie możemy ich przywrócić, bo nie mamy ich kopii.</p>
+
+  <h2>3. Ceny, skrzynie i uczciwość</h2>
+  <ul>
+    <li>Każda cena w złocie lub kluczach jest pokazywana, zanim cokolwiek wydasz, a nic nie zostaje wydane, dopóki nie dotkniesz przycisku kupna lub otwarcia.</li>
+    <li>Każda skrzynia przed otwarciem pokazuje, ile złota daje, i prawdopodobieństwo każdego ze swoich wyjątkowych przedmiotów. Skrzynia nigdy nie daje wyjątkowego przedmiotu, który już masz; gdy masz wszystkie, daje zamiast tego dodatkowe złoto.</li>
+    <li>W Grze nie ma odliczań, które naciskają na zakup, ukrytych opłat ani subskrypcji.</li>
+    <li>Oferta „Nagroda” daje jednorazową nagrodę (500 złota, 15 kluczy oraz spadochron i kombinezon z flagą Turcji) za obserwowanie naszego konta na Instagramie. Obserwowanie jest dobrowolne. Aby je potwierdzić, wysyłasz na nasze konto wiadomość na Instagramie z kodem wyświetlonym w Grze; nasza usługa weryfikacji pyta Instagram, czy konto nadawcy obserwuje nasze, a Gra przyznaje nagrodę raz na instalację. Możemy odmówić potwierdzenia kodów wysyłanych w sposób nadużywający (np. wielu kodów z jednego konta) i w każdej chwili zakończyć ofertę; odebrane nagrody zostają u Ciebie. Oferta pochodzi wyłącznie od nas i nie jest sponsorowana, popierana ani prowadzona przez Instagram ani Meta; na Instagramie obowiązują warunki Instagrama.</li>
+  </ul>
+
+  <h2>4. Zakupy i zwroty</h2>
+  <p>Obecnie Gra nie oferuje żadnych zakupów za prawdziwe pieniądze: przedmioty w sklepie, które kosztowałyby prawdziwe pieniądze, są oznaczone jako „Wkrótce” i nie można ich kupić, a Gra nigdy nie prosi o dane płatnicze. Jeśli w przyszłości dodamy zakupy w aplikacji:</p>
+  <ul>
+    <li>cena wraz z podatkami zostanie pokazana w Twojej walucie, zanim potwierdzisz zakup;</li>
+    <li>płatności będzie obsługiwać Google Play zgodnie z Warunkami korzystania z usługi Google Play; nigdy nie widzimy Twoich danych płatniczych;</li>
+    <li>zwroty będą rozpatrywane zgodnie z zasadami zwrotów Google Play: możesz poprosić o zwrot przez Google Play, a także skontaktować się z nami; każdą prośbę rozpatrzymy w dobrej wierze;</li>
+    <li>zaktualizujemy te Warunki i Politykę prywatności, zanim zakupy staną się dostępne.</li>
+  </ul>
+  <p>Nic w tych Warunkach nie ogranicza praw, które przysługują Ci jako konsumentowi na mocy prawa kraju, w którym mieszkasz, takich jak prawo do odstąpienia od umowy dotyczącej treści cyfrowych w UE, jeśli ma zastosowanie.</p>
+
+  <h2>5. Oceny i recenzje</h2>
+  <p>Gra może co trzy poziomy pytać, czy chcesz ocenić ją w sklepie, dopóki nie zdecydujesz się tego zrobić; zawsze możesz dotknąć PÓŹNIEJ. Wystawienie oceny jest całkowicie dobrowolne, pytanie jest takie samo niezależnie od tego, co myślisz o Grze, a my nigdy nie dajemy nagród za oceny lub recenzje, nie pytamy wyłącznie zadowolonych graczy i nigdy nie publikujemy nieprawdziwych recenzji.</p>
+
+  <h2>6. Uczciwa gra</h2>
+  <p>Nie korzystaj z Gry w sposób niezgodny z prawem, szkodzący innym lub zakłócający działanie Gry, na przykład rozpowszechniając jej zmodyfikowane wersje.</p>
+
+  <h2>7. Aktualizacje i dostępność</h2>
+  <p>Gra jest udostępniana bezpłatnie. Możemy aktualizować, zmieniać lub przestać udostępniać Grę albo dowolną jej funkcję, na przykład aby naprawić błędy lub poprawić balans poziomów. Aktualizacje mogą zmieniać rozgrywkę lub treść. Gra wymaga połączenia z internetem: bez niego wstrzymuje się i wyświetla komunikat, dopóki połączenie nie wróci, a Twoje postępy pozostają na urządzeniu. Nie odpowiadamy za dostępność Twojego połączenia z internetem ani za opłaty za transmisję danych naliczane przez operatora komórkowego.</p>
+
+  <h2>8. Własność intelektualna</h2>
+  <p>Gra, w tym jej kod, grafika, dźwięki, muzyka, teksty i nazwa, należy do nas lub naszych licencjodawców i jest chroniona prawem własności intelektualnej. Wszelkie prawa, które nie zostały Ci wyraźnie przyznane w tych Warunkach, są zastrzeżone.</p>
+
+  <h2>9. Zdrowie i bezpieczeństwo</h2>
+  <p>Rób regularne przerwy. Nie graj w sytuacjach, w których musisz uważać na otoczenie, np. idąc w ruchu ulicznym lub prowadząc pojazd. Jeśli Ty lub Twoje dziecko mieliście kiedyś napady padaczkowe lub jesteście wrażliwi na migające światło (na poziomach z burzą pojawiają się błyskawice), przed grą skonsultuj się z lekarzem.</p>
+
+  <h2>10. Wyłączenie i ograniczenie odpowiedzialności</h2>
+  <p>Gra jest udostępniana w stanie „takim, w jakim jest” i „w miarę dostępności”. W zakresie dozwolonym przez prawo nie gwarantujemy, że zawsze będzie dostępna, wolna od błędów lub odpowiednia do określonego celu, i nie odpowiadamy za szkody pośrednie ani wynikowe, ani za utratę przedmiotów wirtualnych lub postępów w grze. Nic w tych Warunkach nie wyłącza ani nie ogranicza odpowiedzialności, której nie można wyłączyć ani ograniczyć zgodnie z prawem, np. za winę umyślną, rażące niedbalstwo albo śmierć lub uszkodzenie ciała spowodowane zaniedbaniem.</p>
+
+  <h2>11. Prywatność</h2>
+  <p>Sama Gra nie zbiera żadnych danych osobowych. Korzysta z internetu tylko do sprawdzania połączenia oraz – w przypadku nagrody za obserwowanie – do sprawdzenia, czy Twój kod został potwierdzony. Szczegóły znajdziesz w naszej <a href="./?lang=pl">Polityce prywatności</a>.</p>
+
+  <h2>12. Zmiany Warunków</h2>
+  <p>Możemy aktualizować te Warunki, na przykład gdy w Grze pojawią się nowe funkcje. Nowa wersja zostanie opublikowana na tej stronie z nową datą „Ostatniej aktualizacji”, a link w Ustawieniach Gry zawsze prowadzi tutaj. Jeśli zmiana istotnie Cię dotyczy (np. wprowadzenie zakupów), opublikujemy ją, zanim zacznie obowiązywać w Grze.</p>
+
+  <h2>13. Prawo właściwe</h2>
+  <p>Te Warunki podlegają prawu Republiki Turcji. Jeśli jesteś konsumentem, zachowujesz również ochronę wynikającą z bezwzględnie obowiązujących przepisów kraju, w którym mieszkasz, i możesz dochodzić roszczeń przed sądami tego kraju.</p>
+
+  <h2>14. Kontakt</h2>
+  <p>Pytania dotyczące tych Warunków, prośby o zwrot lub inne sprawy: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">Te Warunki są dostępne w kilku językach. Jeśli tłumaczenie różni się od wersji angielskiej, obowiązuje wersja angielska.</p>
+</article>
+
+<!-- ============================== Español ============================== -->
+<article id="es" data-lang="es" lang="es">
+  <h1>Parachute Fall – Términos de uso</h1>
+  <p class="dates">Fecha de entrada en vigor: 27 de septiembre de 2026 · Última actualización: 2 de octubre de 2026</p>
+  <p>Estos Términos de uso (los «Términos») se aplican al juego para móviles <strong>Parachute Fall</strong> (nombre del paquete de Android <code>com.patpatt.game</code>, el «Juego»), desarrollado y publicado por el desarrollador que figura en la página del Juego en Google Play («nosotros»). Al instalar el Juego o jugar a él, aceptas estos Términos. Si no estás de acuerdo, no uses el Juego. Si eres menor de edad según la ley de tu país, lee estos Términos con tu padre, madre o tutor.</p>
+
+  <div class="summary">
+    <h2>En resumen</h2>
+    <ul>
+      <li>El Juego es gratuito, no muestra anuncios y no tiene costes ocultos.</li>
+      <li>El Juego se juega en línea: necesita conexión a Internet y tu operador móvil puede cobrarte por los datos.</li>
+      <li>Actualmente no se puede comprar nada con dinero real en el Juego.</li>
+      <li>El oro, las llaves y otros objetos del juego son solo para divertirse: no tienen valor económico y se guardan únicamente en tu dispositivo.</li>
+      <li>Los cofres muestran lo que pueden contener, y las probabilidades, antes de que los abras.</li>
+      <li>Nunca pagamos ni recompensamos a nadie por valoraciones o reseñas.</li>
+    </ul>
+  </div>
+
+  <h2>1. Tu licencia para jugar</h2>
+  <p>Te concedemos una licencia personal, no exclusiva, intransferible y revocable para instalar el Juego y jugar a él en los dispositivos que poseas o controles, para tu entretenimiento personal y no comercial. No puedes copiar, vender, alquilar, distribuir, modificar ni aplicar ingeniería inversa al Juego (salvo en la medida en que la ley lo permita expresamente), ni eliminar sus avisos de derechos de autor u otros avisos.</p>
+
+  <h2>2. Objetos del juego (objetos virtuales)</h2>
+  <p>El oro, las llaves, los cofres, las habilidades, los paracaídas, los personajes y los demás objetos del Juego («objetos virtuales») forman parte del contenido del Juego que te licenciamos. No tienen valor económico, no pueden canjearse por dinero ni por nada fuera del Juego, y no pueden venderse ni transferirse a otra persona. Se guardan únicamente en tu dispositivo: si desinstalas el Juego, borras sus datos o pierdes el dispositivo, se pierden, y no podemos restaurarlos porque no tenemos ninguna copia.</p>
+
+  <h2>3. Precios, cofres y juego limpio</h2>
+  <ul>
+    <li>Cada precio en oro o llaves se muestra antes de que gastes nada, y no se gasta nada sin que toques el botón de comprar o abrir.</li>
+    <li>Cada cofre muestra, antes de abrirlo, cuánto oro da y la probabilidad de cada uno de sus objetos exclusivos. Un cofre nunca da un objeto exclusivo que ya tengas; cuando los tienes todos, da oro extra en su lugar.</li>
+    <li>El Juego no tiene cuentas atrás que te presionen para comprar, ni cargos ocultos ni suscripciones.</li>
+    <li>La oferta «Premio» da un premio único (500 de oro, 15 llaves y el paracaídas y el mono con la bandera turca) por seguir nuestra cuenta de Instagram. Seguirnos es opcional. Para confirmarlo, envías a nuestra cuenta, en un mensaje de Instagram, el código que muestra el Juego; nuestro servicio de verificación pregunta a Instagram si la cuenta remitente sigue a la nuestra y el Juego entrega el premio una vez por instalación. Podemos negarnos a confirmar códigos enviados de forma abusiva (por ejemplo, muchos códigos desde una misma cuenta) y terminar la oferta en cualquier momento; los premios ya reclamados siguen siendo tuyos. La oferta es solo nuestra y no está patrocinada, respaldada ni gestionada por Instagram ni por Meta; en Instagram se aplican las condiciones de Instagram.</li>
+  </ul>
+
+  <h2>4. Compras y reembolsos</h2>
+  <p>Por ahora el Juego no ofrece compras con dinero real: los artículos de la tienda que costarían dinero real están marcados como «Pronto» y no se pueden comprar, y nunca se piden datos de pago. Si en el futuro añadimos compras dentro de la aplicación:</p>
+  <ul>
+    <li>el precio, impuestos incluidos, se mostrará en tu moneda local antes de que confirmes una compra;</li>
+    <li>los pagos los procesará Google Play según los Términos del Servicio de Google Play; nunca vemos tus datos de pago;</li>
+    <li>los reembolsos se gestionarán según las políticas de reembolso de Google Play: podrás solicitar un reembolso a través de Google Play y también podrás escribirnos; revisaremos cada solicitud de buena fe;</li>
+    <li>actualizaremos estos Términos y la Política de privacidad antes de que las compras estén disponibles.</li>
+  </ul>
+  <p>Nada de lo dispuesto en estos Términos limita los derechos que tienes como consumidor según la ley del país donde vives, como el derecho de desistimiento para contenidos digitales en la UE, cuando se aplique.</p>
+
+  <h2>5. Valoraciones y reseñas</h2>
+  <p>El Juego puede preguntarte cada tres niveles si quieres valorarlo en la tienda, hasta que decidas hacerlo; siempre puedes tocar MÁS TARDE. Valorarlo es totalmente opcional, la pregunta es la misma pienses lo que pienses del Juego, y nunca ofrecemos recompensas por valoraciones o reseñas, nunca preguntamos solo a los jugadores satisfechos y nunca publicamos reseñas que no sean auténticas.</p>
+
+  <h2>6. Juego limpio</h2>
+  <p>No uses el Juego de forma que infrinja la ley, perjudique a otras personas o interfiera con el Juego, por ejemplo distribuyendo versiones modificadas de él.</p>
+
+  <h2>7. Actualizaciones y disponibilidad</h2>
+  <p>El Juego se ofrece gratuitamente. Podemos actualizar, cambiar o dejar de ofrecer el Juego o cualquiera de sus funciones, por ejemplo para corregir problemas o mejorar el equilibrio de los niveles. Las actualizaciones pueden cambiar la jugabilidad o el contenido. El Juego necesita conexión a Internet: sin ella, se pausa y muestra un aviso hasta que vuelve la conexión, y tu progreso se queda en tu dispositivo. No somos responsables de la disponibilidad de tu conexión a Internet ni de los cargos por datos de tu operador móvil.</p>
+
+  <h2>8. Propiedad intelectual</h2>
+  <p>El Juego, incluidos su código, gráficos, sonidos, música, textos y nombre, nos pertenece a nosotros o a nuestros licenciantes y está protegido por las leyes de propiedad intelectual. Se reservan todos los derechos que no se te concedan expresamente en estos Términos.</p>
+
+  <h2>9. Salud y seguridad</h2>
+  <p>Haz descansos con regularidad. No juegues en situaciones en las que debas prestar atención a tu entorno, como al caminar entre el tráfico o al conducir. Si tú o tu hijo o hija habéis tenido alguna vez convulsiones o sois sensibles a las luces parpadeantes (los niveles con tormenta tienen relámpagos), consulta a un médico antes de jugar.</p>
+
+  <h2>10. Exención y limitación de responsabilidad</h2>
+  <p>El Juego se ofrece «tal cual» y «según disponibilidad». En la medida en que lo permita la ley, no garantizamos que esté siempre disponible, libre de errores o sea adecuado para un fin concreto, y no somos responsables de daños indirectos o consecuentes ni de la pérdida de objetos virtuales o del progreso en el juego. Nada de lo dispuesto en estos Términos excluye ni limita la responsabilidad que no pueda excluirse o limitarse por ley, como la responsabilidad por dolo, negligencia grave o por muerte o lesiones personales causadas por negligencia.</p>
+
+  <h2>11. Privacidad</h2>
+  <p>El Juego en sí no recopila datos personales. Solo usa Internet para comprobar la conexión y, en el premio por seguirnos, para consultar si tu código se ha confirmado. Los detalles están en nuestra <a href="./?lang=es">Política de privacidad</a>.</p>
+
+  <h2>12. Cambios en estos Términos</h2>
+  <p>Podemos actualizar estos Términos, por ejemplo cuando el Juego reciba nuevas funciones. La nueva versión se publicará en esta página con una nueva fecha de «Última actualización», y el enlace en los Ajustes del Juego siempre lleva aquí. Si un cambio te afecta de forma importante (como la introducción de compras), lo publicaremos antes de que entre en vigor en el Juego.</p>
+
+  <h2>13. Ley aplicable</h2>
+  <p>Estos Términos se rigen por las leyes de la República de Turquía. Si eres consumidor, conservas además la protección de las normas imperativas del país donde vives y puedes presentar tus reclamaciones ante los tribunales de ese país.</p>
+
+  <h2>14. Contacto</h2>
+  <p>Preguntas sobre estos Términos, solicitudes de reembolso u otras cuestiones: <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></p>
+
+  <p class="note">Estos Términos están disponibles en varios idiomas. Si una traducción difiere de la versión en inglés, prevalece la versión en inglés.</p>
+</article>
+
+</main>
+
+<footer>Parachute Fall · <a href="./" data-doc="privacy">Privacy Policy</a> · <a href="terms.html" data-doc="terms">Terms of Use</a> · <a href="mailto:stamgamesdev@gmail.com">stamgamesdev@gmail.com</a></footer>
+
+<script>
+(function () {
+  var codes = ['en', 'tr', 'de', 'fr', 'it', 'zh', 'ar', 'pl', 'es'];
+  var articles = document.querySelectorAll('article[data-lang]');
+  var links = document.querySelectorAll('nav a[data-code]');
+
+  // ?lang= (the link in the game passes the game's language), then #code, then the browser's languages, then English.
+  function pick() {
+    var match = /[?&]lang=([a-z]{2})/i.exec(location.search);
+    if (match && codes.indexOf(match[1].toLowerCase()) >= 0) return match[1].toLowerCase();
+    var hash = location.hash.slice(1).toLowerCase();
+    if (codes.indexOf(hash) >= 0) return hash;
+    var wanted = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < wanted.length; i++) {
+      var code = String(wanted[i] || '').toLowerCase().split('-')[0];
+      if (codes.indexOf(code) >= 0) return code;
+    }
+    return 'en';
+  }
+
+  function show(code) {
+    for (var i = 0; i < articles.length; i++) {
+      var on = articles[i].getAttribute('data-lang') === code;
+      articles[i].classList.toggle('active', on);
+      if (on) document.title = articles[i].querySelector('h1').textContent;
+    }
+    for (var j = 0; j < links.length; j++)
+      links[j].setAttribute('aria-current', links[j].getAttribute('data-code') === code ? 'true' : 'false');
+    document.documentElement.lang = code === 'zh' ? 'zh-Hans' : code;
+    var docs = document.querySelectorAll('footer a[data-doc]');
+    for (var d = 0; d < docs.length; d++)
+      docs[d].setAttribute('href', (docs[d].getAttribute('data-doc') === 'terms' ? 'terms.html' : './') + '?lang=' + code);
+  }
+
+  for (var k = 0; k < links.length; k++) {
+    links[k].addEventListener('click', function (event) {
+      event.preventDefault();
+      var code = this.getAttribute('data-code');
+      show(code);
+      try { history.replaceState(null, '', '?lang=' + code); } catch (e) {}
+      window.scrollTo(0, 0);
+    });
+  }
+
+  show(pick());
+})();
+</script>
+</body>
+</html>
