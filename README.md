@@ -1,6 +1,6 @@
 # Parachute Fall – Privacy Policy and Terms of Use
 
-The legal pages of the mobile game **Parachute Fall** (Android package `com.patpatt.game`), published with GitHub Pages:
+The legal pages of the mobile game **Parachute Fall**, published with GitHub Pages:
 
 - Privacy Policy: **https://therooster0.github.io/parachute-fall-privacy/**
 - Terms of Use (with the purchase and refund terms): **https://therooster0.github.io/parachute-fall-privacy/terms.html**
